@@ -65,10 +65,11 @@
   "resources": {
     "resources": [
       {
-        "file": "assets/Player.png",
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Player",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite.png\"}",
+        "name": "NewSprite",
         "smoothed": true,
         "userAdded": true
       },
@@ -121,7 +122,7 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
           "name": "Roboto-Regular.ttf"
         }
-      }
+      } 
     ],
     "resourceFolders": []
   },
@@ -145,11 +146,11 @@
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+      "referenceTo": "/eventsFunctionsExtensions/smoothcamera"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/smoothcamera"
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
     }
   ],
   "externalLayouts": [],
