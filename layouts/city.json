@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.18305734955560152,
+    "zoomFactor": 0.16572117247526963,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -130,14 +130,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 794,
+      "height": 796,
       "keepRatio": true,
       "layer": "",
       "name": "Water",
       "persistentUuid": "e255d385-d005-4c93-a461-fb3d6c14bfbc",
       "width": 64,
       "x": 1694,
-      "y": -948,
+      "y": -950,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -164,7 +164,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1183,
+      "height": 666,
       "keepRatio": true,
       "layer": "",
       "name": "Water",
@@ -3491,6 +3491,23 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 454,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Water",
+      "persistentUuid": "46ef7d42-483e-4cfa-b7a3-3d9f36003462",
+      "width": 64,
+      "x": 652,
+      "y": 555,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -3504,16 +3521,16 @@
       "effects": [],
       "behaviors": [
         {
-          "cost": 2,
-          "impassable": true,
           "name": "PathfindingObstacle",
-          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+          "cost": 2,
+          "impassable": true
         },
         {
-          "canBeGrabbed": false,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ],
@@ -3577,7 +3594,21 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "cost": 2,
+          "impassable": true,
+          "name": "PathfindingObstacle",
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+        },
+        {
+          "canBeGrabbed": false,
+          "name": "Platform",
+          "platformType": "NormalPlatform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
+        }
+      ],
       "animations": [
         {
           "name": "Water",
