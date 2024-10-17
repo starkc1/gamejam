@@ -3495,6 +3495,20 @@
     {
       "angle": 0,
       "customSize": true,
+      "depth": 0,
+      "height": 73.84615384615385,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Player",
+      "persistentUuid": "390d4fb2-f578-40d6-bc1d-fcc89f5a2040",
+      "width": 50,
+      "x": 777,
+      "y": 194,
+      "zOrder": 52,
+    },
+    {
+      "angle": 0,
+      "customSize": true,
       "depth": 1,
       "height": 454,
       "keepRatio": true,
@@ -3537,6 +3551,18 @@
       "width": 256,
       "x": -1408,
       "y": -918,
+    },
+    {
+      "customSize": true,
+      "depth": 0,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Citizen",
+      "persistentUuid": "795b7d33-a6da-4698-b52f-76eb1499d170",
+      "width": 64,
+      "x": 1206,
+      "y": 460,
       "zOrder": 53,
       "numberProperties": [],
       "stringProperties": [],
@@ -3938,6 +3964,10 @@
     {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Pathfinding",
+      "type": "PathfindingBehavior::PathfindingBehavior"
     },
     {
       "name": "PathfindingObstacle",
