@@ -217,6 +217,32 @@
         "name": "Base",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Farmer_Idle Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "18e0a4f615f708004f5c448dd2bacc0f44cd154f55eb9e267585a3c9f019c5e8_Farmer_Idle Down_1.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/18e0a4f615f708004f5c448dd2bacc0f44cd154f55eb9e267585a3c9f019c5e8_Farmer_Idle Down_1.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Robot Farmer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "6ace963652231a918a058c40b40172fea55c507733067408e8d99308c134de31_Robot Farmer.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Wesxdz Game Assets/skullcup/Characters/6ace963652231a918a058c40b40172fea55c507733067408e8d99308c134de31_Robot Farmer.png",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
@@ -328,17 +354,16 @@
       ],
       "animations": [
         {
-          "name": "Base",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Base",
+                  "image": "6ace963652231a918a058c40b40172fea55c507733067408e8d99308c134de31_Robot Farmer.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -354,20 +379,203 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 26,
-                        "y": 20
+                        "x": 0,
+                        "y": 0
                       },
                       {
-                        "x": 33,
-                        "y": 20
+                        "x": 15,
+                        "y": 0
                       },
                       {
-                        "x": 33,
-                        "y": 32
+                        "x": 15,
+                        "y": 16
                       },
                       {
-                        "x": 26,
-                        "y": 32
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Citizen",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "Type",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Adult",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "name": "Child",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Elderly",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Police Officer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Priest",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Teacher",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "Gender",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Female",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Male",
+              "type": "boolean",
+              "value": true
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "FightOrFlight",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Worth",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Spawn",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Church",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Home",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Police Station",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "School",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "Emotion",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "acceleration": 4000,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 100,
+          "name": "Pathfinding",
+          "rotateObject": true,
+          "smoothingMaxCellGap": 1,
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Base Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "18e0a4f615f708004f5c448dd2bacc0f44cd154f55eb9e267585a3c9f019c5e8_Farmer_Idle Down_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 4
+                      },
+                      {
+                        "x": 14,
+                        "y": 4
+                      },
+                      {
+                        "x": 14,
+                        "y": 24
+                      },
+                      {
+                        "x": 1,
+                        "y": 24
                       }
                     ]
                   ]
@@ -382,6 +590,9 @@
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
+      {
+        "objectName": "Citizen"
+      },
       {
         "objectName": "Player"
       }
