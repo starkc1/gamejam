@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Main Menu",
   "gdVersion": {
     "build": 213,
     "major": 5,
@@ -165,6 +165,52 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "assets/Wall2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Wall2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/nebula_46.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "33820ecebb49dfabf28969a96cf438fe9f72a67da1bc7bccb88a4f27a4321100_nebula_46.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Effects Pack/33820ecebb49dfabf28969a96cf438fe9f72a67da1bc7bccb88a4f27a4321100_nebula_46.png",
+          "name": "gdevelop-asset-store"
+        },
         "file": "assets/Base.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -351,6 +397,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/main-menu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/farm"
     }
   ],
   "externalEvents": [],
