@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.36732575450588467,
+    "zoomFactor": 0.16572117247526963,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -130,14 +130,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 794,
+      "height": 796,
       "keepRatio": true,
       "layer": "",
       "name": "Water",
       "persistentUuid": "e255d385-d005-4c93-a461-fb3d6c14bfbc",
       "width": 64,
       "x": 1694,
-      "y": -948,
+      "y": -950,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -164,7 +164,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1183,
+      "height": 666,
       "keepRatio": true,
       "layer": "",
       "name": "Water",
@@ -3505,6 +3505,20 @@
       "x": 777,
       "y": 194,
       "zOrder": 52,
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 454,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Water",
+      "persistentUuid": "46ef7d42-483e-4cfa-b7a3-3d9f36003462",
+      "width": 64,
+      "x": 652,
+      "y": 555,
+      "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3611,7 +3625,21 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "cost": 2,
+          "impassable": true,
+          "name": "PathfindingObstacle",
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+        },
+        {
+          "canBeGrabbed": false,
+          "name": "Platform",
+          "platformType": "NormalPlatform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
+        }
+      ],
       "animations": [
         {
           "name": "Water",
@@ -3841,24 +3869,12 @@
       "type": "PlatformBehavior::PlatformBehavior"
     },
     {
-      "name": "PlatformerObject",
-      "type": "PlatformBehavior::PlatformerObjectBehavior"
-    },
-    {
       "name": "Resizable",
       "type": "ResizableCapability::ResizableBehavior"
     },
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "SmoothCamera",
-      "type": "SmoothCamera::SmoothCamera"
-    },
-    {
-      "name": "TopDownMovement",
-      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
     }
   ]
 }
