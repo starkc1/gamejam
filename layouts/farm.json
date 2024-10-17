@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.07671019818340925,
+    "zoomFactor": 0.06081793941801207,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -33,8 +33,8 @@
       "name": "MoundOfFlesh",
       "persistentUuid": "eb872348-7c97-4cb1-b76e-afbbe43ec079",
       "width": 0,
-      "x": 794,
-      "y": 452,
+      "x": 844,
+      "y": 364,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -53,39 +53,6 @@
       "x": -2632,
       "y": -2647,
       "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "342dfa75-d3bc-41df-b212-7191410eb117",
-      "width": 0,
-      "x": 7146,
-      "y": -1906,
-      "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 428,
-      "keepRatio": true,
-      "layer": "Mid layer",
-      "name": "Star",
-      "persistentUuid": "62266f1a-4325-451b-a08b-b79fefdb80b7",
-      "width": 598,
-      "x": 618,
-      "y": 352,
-      "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -191,6 +158,72 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Player",
+      "persistentUuid": "f5f83945-4384-460f-a73d-066c8443c299",
+      "width": 0,
+      "x": 903,
+      "y": -1488,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 674,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Transporter",
+      "persistentUuid": "e73618fa-9226-436d-8817-2c662aaaec14",
+      "width": 963,
+      "x": 3711,
+      "y": -2218,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "62e160bf-ebcd-4483-9a7a-2335a6b04ac5",
+      "width": 0,
+      "x": 7659,
+      "y": -937,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 1252,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Player",
+      "persistentUuid": "2b1905cd-d0cf-4764-94d4-abb84a853a90",
+      "width": 1252,
+      "x": 2813,
+      "y": -2354,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -204,16 +237,16 @@
       "effects": [],
       "behaviors": [
         {
-          "cost": 2,
-          "impassable": true,
           "name": "PathfindingObstacle",
-          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+          "cost": 2,
+          "impassable": true
         },
         {
-          "canBeGrabbed": false,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ],
@@ -407,7 +440,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Star",
+      "name": "Transporter",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -415,7 +448,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "Star",
+          "name": "Transporter",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -425,7 +458,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "33820ecebb49dfabf28969a96cf438fe9f72a67da1bc7bccb88a4f27a4321100_nebula_46.png",
+                  "image": "Transporter",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -441,20 +474,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 17,
-                        "y": 17
+                        "x": 0,
+                        "y": 0
                       },
                       {
-                        "x": 87,
-                        "y": 17
+                        "x": 64,
+                        "y": 0
                       },
                       {
-                        "x": 87,
-                        "y": 90
+                        "x": 64,
+                        "y": 64
                       },
                       {
-                        "x": 17,
-                        "y": 90
+                        "x": 0,
+                        "y": 64
                       }
                     ]
                   ]
@@ -473,18 +506,55 @@
         "objectName": "Wall"
       },
       {
-        "objectName": "Star"
-      },
-      {
         "objectName": "Boundary"
       },
       {
         "objectName": "MoundOfFlesh"
+      },
+      {
+        "objectName": "Transporter"
       }
     ]
   },
   "events": [
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": ""
+    },
+    {
+      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -515,8 +585,32 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "Transporter",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"City\"",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -657,12 +751,24 @@
       "type": "PlatformBehavior::PlatformBehavior"
     },
     {
+      "name": "PlatformerObject",
+      "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
       "name": "Resizable",
       "type": "ResizableCapability::ResizableBehavior"
     },
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "SmoothCamera",
+      "type": "SmoothCamera::SmoothCamera"
+    },
+    {
+      "name": "TopDownMovement",
+      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
     }
   ]
 }

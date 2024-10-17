@@ -201,20 +201,58 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/nebula_46.png",
+        "file": "assets/Base.png",
         "kind": "image",
-        "metadata": "",
-        "name": "33820ecebb49dfabf28969a96cf438fe9f72a67da1bc7bccb88a4f27a4321100_nebula_46.png",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Base",
         "smoothed": true,
         "userAdded": true,
         "origin": {
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Effects Pack/33820ecebb49dfabf28969a96cf438fe9f72a67da1bc7bccb88a4f27a4321100_nebula_46.png",
           "name": "gdevelop-asset-store"
-        },
-        "file": "assets/Base.png",
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Rock with grass 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "6e343a5721109a7667d3ec0a01c07264628b32321770c07c95b0ab418802ad0a_Rock with grass 2.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Foliage Pack (100 assets)/Rock/6e343a5721109a7667d3ec0a01c07264628b32321770c07c95b0ab418802ad0a_Rock with grass 2.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/mapPack_tilesheet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "7d96c72f9d5f1ef43fba65d1f40e501096bda68318be74315ee31d031eb810be_mapPack_tilesheet.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Tilemaps/High Definition/7d96c72f9d5f1ef43fba65d1f40e501096bda68318be74315ee31d031eb810be_mapPack_tilesheet.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Transporter.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
-        "name": "Base",
+        "name": "Transporter",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Transporter2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Transporter2",
         "smoothed": true,
         "userAdded": true
       },
@@ -265,6 +303,8 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 0,
           "canGoDownFromJumpthru": false,
           "canGrabPlatforms": false,
@@ -277,9 +317,7 @@
           "ladderClimbingSpeed": 0,
           "maxFallingSpeed": 0,
           "maxSpeed": 250,
-          "name": "PlatformerObject",
           "slopeMaxAngle": 60,
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "useLegacyTrajectory": false,
           "xGrabTolerance": 10,
           "yGrabOffset": 0
@@ -337,6 +375,8 @@
           "IsCalledManually": false
         },
         {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 4000,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -346,9 +386,7 @@
           "ignoreDefaultControls": false,
           "maxSpeed": 200,
           "movementAngleOffset": -45,
-          "name": "TopDownMovement",
           "rotateObject": false,
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "viewpoint": "TrueIsometry"
         }
       ],
