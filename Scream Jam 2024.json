@@ -93,7 +93,8 @@
         "origin": {
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Playing Cards/Cards/5fa66c77488d454ab30c8584449c494d88da3a357186e6e9caa6d21ab2dca1a2_Large Card_Spades 10.png",
           "name": "gdevelop-asset-store"
-        },
+        }
+      },
         {
         "alwaysLoaded": false,
         "file": "assets/Red Button With Stone Frame_Hovered.png",
