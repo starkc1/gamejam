@@ -66,6 +66,36 @@
     "resources": [
       {
         "alwaysLoaded": false,
+        "file": "assets/Wall.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Wall",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Water.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Water",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Large Card_Spades 10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "5fa66c77488d454ab30c8584449c494d88da3a357186e6e9caa6d21ab2dca1a2_Large Card_Spades 10.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Playing Cards/Cards/5fa66c77488d454ab30c8584449c494d88da3a357186e6e9caa6d21ab2dca1a2_Large Card_Spades 10.png",
+          "name": "gdevelop-asset-store"
+        },
+        {
+        "alwaysLoaded": false,
         "file": "assets/Red Button With Stone Frame_Hovered.png",
         "kind": "image",
         "metadata": "",
@@ -89,6 +119,24 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/0bc6460559978afa6726124ef313f6faa64903b5d2f19fd3f3474af804bcfe9f_Red Button With Stone Frame_Idle.png",
           "name": "Red Button With Stone Frame_Idle.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": true,
+        "userAdded": true
       },
       {
         "alwaysLoaded": false,
@@ -126,7 +174,7 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/untitled-scene"
+      "referenceTo": "/layouts/city"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -135,6 +183,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/firebullet"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
