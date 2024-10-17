@@ -404,6 +404,10 @@
   ],
   "behaviorsSharedData": [
     {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
     },
@@ -416,6 +420,10 @@
       "type": "OpacityCapability::OpacityBehavior"
     },
     {
+      "name": "PlatformerObject",
+      "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
       "name": "Resizable",
       "type": "ResizableCapability::ResizableBehavior"
     },
@@ -424,8 +432,16 @@
       "type": "ScalableCapability::ScalableBehavior"
     },
     {
+      "name": "SmoothCamera",
+      "type": "SmoothCamera::SmoothCamera"
+    },
+    {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "TopDownMovement",
+      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
     }
   ]
 }
