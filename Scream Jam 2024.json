@@ -184,6 +184,19 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Fantasy RPG character/character/18e0a4f615f708004f5c448dd2bacc0f44cd154f55eb9e267585a3c9f019c5e8_Farmer_Idle Down_1.png",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Robot Farmer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "6ace963652231a918a058c40b40172fea55c507733067408e8d99308c134de31_Robot Farmer.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Wesxdz Game Assets/skullcup/Characters/6ace963652231a918a058c40b40172fea55c507733067408e8d99308c134de31_Robot Farmer.png",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
@@ -295,17 +308,16 @@
       ],
       "animations": [
         {
-          "name": "Base",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Base",
+                  "image": "6ace963652231a918a058c40b40172fea55c507733067408e8d99308c134de31_Robot Farmer.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -321,20 +333,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 26,
-                        "y": 20
+                        "x": 0,
+                        "y": 0
                       },
                       {
-                        "x": 33,
-                        "y": 20
+                        "x": 15,
+                        "y": 0
                       },
                       {
-                        "x": 33,
-                        "y": 32
+                        "x": 15,
+                        "y": 16
                       },
                       {
-                        "x": 26,
-                        "y": 32
+                        "x": 0,
+                        "y": 16
                       }
                     ]
                   ]
@@ -349,37 +361,32 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Citizen",
-      "persistentUuid": "a759c9bb-44fd-4f81-a218-4301c105c3e0",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
         {
+          "folded": true,
           "name": "Type",
-          "persistentUuid": "0a4effcd-fb1d-40c2-8fa0-1bae25fe9a2c",
           "type": "structure",
           "children": [
             {
               "folded": true,
               "name": "Adult",
-              "persistentUuid": "444d5f73-befc-4592-bb8e-cad18ab2801f",
               "type": "boolean",
               "value": true
             },
             {
               "name": "Child",
-              "persistentUuid": "bf7bc209-c314-4e2f-9dc9-3954899e5115",
               "type": "boolean",
               "value": false
             },
             {
               "name": "Elderly",
-              "persistentUuid": "e59efa5a-daa6-4982-a8f1-30926a201630",
               "type": "boolean",
               "value": false
             },
             {
               "name": "Police Officer",
-              "persistentUuid": "63efe587-1574-47c8-9e37-3cc3b3b015fb",
               "type": "boolean",
               "value": false
             },
@@ -391,26 +398,23 @@
             {
               "folded": true,
               "name": "Teacher",
-              "persistentUuid": "de11d2d5-11c4-401b-8a18-131082ead4e4",
               "type": "boolean",
               "value": false
             }
           ]
         },
         {
+          "folded": true,
           "name": "Gender",
-          "persistentUuid": "4bc646e0-65ac-4f72-bd95-68381a2e49b9",
           "type": "structure",
           "children": [
             {
               "name": "Female",
-              "persistentUuid": "db16b2e2-643d-4b92-be71-605cc4ad87bf",
               "type": "boolean",
               "value": false
             },
             {
               "name": "Male",
-              "persistentUuid": "1d5ff220-04a1-4f8a-898a-3b844f737b3b",
               "type": "boolean",
               "value": true
             }
@@ -429,14 +433,15 @@
           "value": 0
         },
         {
+          "folded": true,
           "name": "Spawn",
           "type": "structure",
           "children": [
             {
               "folded": true,
-              "name": "Chruch",
-              "type": "number",
-              "value": 0
+              "name": "Church",
+              "type": "boolean",
+              "value": false
             },
             {
               "folded": true,
@@ -461,7 +466,6 @@
         {
           "folded": true,
           "name": "Emotion",
-          "persistentUuid": "a7460caa-eaaa-44ad-bcb7-c23072663dbd",
           "type": "number",
           "value": 0
         }
@@ -483,26 +487,6 @@
           "rotateObject": true,
           "smoothingMaxCellGap": 1,
           "type": "PathfindingBehavior::PathfindingBehavior"
-        },
-        {
-          "acceleration": 4000,
-          "canGoDownFromJumpthru": true,
-          "canGrabPlatforms": false,
-          "canGrabWithoutMoving": true,
-          "deceleration": 4000,
-          "gravity": 0,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 0,
-          "jumpSustainTime": 0,
-          "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 0,
-          "maxSpeed": 100,
-          "name": "PlatformerObject",
-          "slopeMaxAngle": 60,
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
-          "yGrabOffset": 0
         }
       ],
       "animations": [
