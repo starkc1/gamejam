@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4481978045410392,
+    "zoomFactor": 0.2160739732387561,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -3513,14 +3513,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 0,
-      "height": 256,
+      "height": 64,
       "keepRatio": true,
       "layer": "",
       "name": "Player",
       "persistentUuid": "69aee828-bde0-4b5e-b5d4-6e4f0d47bae5",
-      "width": 256,
-      "x": -1408,
-      "y": -918,
+      "width": 64,
+      "x": -1339,
+      "y": -904,
       "zOrder": 53,
       "numberProperties": [],
       "stringProperties": [],
@@ -3946,6 +3946,10 @@
     {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Pathfinding",
+      "type": "PathfindingBehavior::PathfindingBehavior"
     },
     {
       "name": "PathfindingObstacle",

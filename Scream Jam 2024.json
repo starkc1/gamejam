@@ -1,7 +1,7 @@
 {
   "firstLayout": "Main Menu",
   "gdVersion": {
-    "build": 213,
+    "build": 216,
     "major": 5,
     "minor": 4,
     "revision": 0
@@ -255,6 +255,33 @@
         "name": "Transporter2",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Base2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Base2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "farmer1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "farmer1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "farmera1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "farmera1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -376,7 +403,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Base",
+                  "image": "farmera1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -392,20 +419,105 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 26,
-                        "y": 20
+                        "x": 0,
+                        "y": 0
                       },
                       {
-                        "x": 33,
-                        "y": 20
+                        "x": 31,
+                        "y": 0
                       },
                       {
-                        "x": 33,
+                        "x": 31,
                         "y": 32
                       },
                       {
-                        "x": 26,
+                        "x": 0,
                         "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Citizen",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "name": "Pathfinding",
+          "rotateObject": true,
+          "smoothingMaxCellGap": 1,
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        },
+        {
+          "canBeGrabbed": false,
+          "isFolded": true,
+          "name": "Platform",
+          "platformType": "NormalPlatform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "Base",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "farmer1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
                       }
                     ]
                   ]
@@ -422,6 +534,9 @@
     "children": [
       {
         "objectName": "Player"
+      },
+      {
+        "objectName": "Citizen"
       }
     ]
   },
