@@ -29,7 +29,7 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "Top layer",
+      "layer": "",
       "name": "MoundOfFlesh",
       "persistentUuid": "eb872348-7c97-4cb1-b76e-afbbe43ec079",
       "width": 0,
@@ -161,22 +161,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Player",
-      "persistentUuid": "f5f83945-4384-460f-a73d-066c8443c299",
-      "width": 0,
-      "x": 903,
-      "y": -1488,
-      "zOrder": 15,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 1,
       "height": 674,
@@ -212,14 +196,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 0,
-      "height": 1252,
+      "height": 1228,
       "keepRatio": true,
       "layer": "",
       "name": "Player",
-      "persistentUuid": "2b1905cd-d0cf-4764-94d4-abb84a853a90",
-      "width": 1252,
-      "x": 2813,
-      "y": -2354,
+      "persistentUuid": "17b358a8-13aa-416a-936f-c0c30c3570ce",
+      "width": 1228,
+      "x": 609,
+      "y": -384,
       "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],
@@ -611,6 +595,24 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "CentreCamera"
+          },
+          "parameters": [
+            "",
+            "Player",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -640,72 +642,6 @@
           "width": 0
         }
       ],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
-          },
-          "booleanParameters": {}
-        }
-      ]
-    },
-    {
-      "ambientLightColorB": 200,
-      "ambientLightColorG": 200,
-      "ambientLightColorR": 200,
-      "camera3DFarPlaneDistance": 10000,
-      "camera3DFieldOfView": 45,
-      "camera3DNearPlaneDistance": 3,
-      "cameraType": "",
-      "followBaseLayerCamera": false,
-      "isLightingLayer": false,
-      "isLocked": false,
-      "name": "Mid layer",
-      "renderingType": "",
-      "visibility": true,
-      "cameras": [],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
-          },
-          "booleanParameters": {}
-        }
-      ]
-    },
-    {
-      "ambientLightColorB": 200,
-      "ambientLightColorG": 200,
-      "ambientLightColorR": 200,
-      "camera3DFarPlaneDistance": 10000,
-      "camera3DFieldOfView": 45,
-      "camera3DNearPlaneDistance": 3,
-      "cameraType": "",
-      "followBaseLayerCamera": false,
-      "isLightingLayer": false,
-      "isLocked": false,
-      "name": "Top layer",
-      "renderingType": "",
-      "visibility": true,
-      "cameras": [],
       "effects": [
         {
           "effectType": "Scene3D::HemisphereLight",

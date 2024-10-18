@@ -3495,20 +3495,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 0,
-      "height": 73.84615384615385,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Player",
-      "persistentUuid": "390d4fb2-f578-40d6-bc1d-fcc89f5a2040",
-      "width": 50,
-      "x": 777,
-      "y": 194,
-      "zOrder": 52,
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 1,
       "height": 454,
       "keepRatio": true,
@@ -3525,22 +3511,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Player",
-      "persistentUuid": "d6b26f2f-c550-4ef0-80bb-4e52f60a8cd8",
-      "width": 0,
-      "x": 3472,
-      "y": -794,
-      "zOrder": 52,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 0,
       "height": 256,
@@ -3551,18 +3521,6 @@
       "width": 256,
       "x": -1408,
       "y": -918,
-    },
-    {
-      "customSize": true,
-      "depth": 0,
-      "height": 96,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Citizen",
-      "persistentUuid": "795b7d33-a6da-4698-b52f-76eb1499d170",
-      "width": 64,
-      "x": 1206,
-      "y": 460,
       "zOrder": 53,
       "numberProperties": [],
       "stringProperties": [],
@@ -3880,12 +3838,34 @@
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "CentreCamera"
+          },
+          "parameters": [
+            "",
+            "Player",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "value": "DepartScene"
+            "value": "CollisionNP"
           },
           "parameters": [
+            "Player",
+            "Transporter",
+            "",
+            "",
             ""
           ]
         }
@@ -3893,9 +3873,11 @@
       "actions": [
         {
           "type": {
-            "value": "PlayerAuthentication::DisplayAuthenticationBanner"
+            "value": "Scene"
           },
           "parameters": [
+            "",
+            "\"Farm\"",
             ""
           ]
         }
@@ -3964,10 +3946,6 @@
     {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
-    },
-    {
-      "name": "Pathfinding",
-      "type": "PathfindingBehavior::PathfindingBehavior"
     },
     {
       "name": "PathfindingObstacle",
