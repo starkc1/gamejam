@@ -9,7 +9,7 @@
   "title": "City Scene",
   "v": 173,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -17,8 +17,8 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.2160739732387561,
+    "snap": true,
+    "zoomFactor": 0.3797121001947974,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -3519,8 +3519,8 @@
       "name": "Player",
       "persistentUuid": "69aee828-bde0-4b5e-b5d4-6e4f0d47bae5",
       "width": 64,
-      "x": -1339,
-      "y": -904,
+      "x": -1344,
+      "y": -896,
       "zOrder": 53,
       "numberProperties": [],
       "stringProperties": [],
@@ -3539,6 +3539,39 @@
       "x": -1596,
       "y": -948,
       "zOrder": 54,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 75,
+      "layer": "GUI",
+      "name": "InventoryBar",
+      "persistentUuid": "543761be-b215-4ba0-b215-883843a146aa",
+      "width": 500,
+      "x": 704,
+      "y": 928,
+      "zOrder": 55,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 95,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "Hoe",
+      "persistentUuid": "6e5fd44b-f114-4747-875f-f913d9eb7cfd",
+      "width": 95,
+      "x": 705,
+      "y": 896,
+      "zOrder": 56,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3911,6 +3944,39 @@
           "width": 0
         }
       ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "GUI",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
       "effects": [
         {
           "effectType": "Scene3D::HemisphereLight",

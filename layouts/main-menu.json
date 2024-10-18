@@ -423,6 +423,14 @@
       "type": "OpacityCapability::OpacityBehavior"
     },
     {
+      "name": "Pathfinding",
+      "type": "PathfindingBehavior::PathfindingBehavior"
+    },
+    {
+      "name": "Platform",
+      "type": "PlatformBehavior::PlatformBehavior"
+    },
+    {
       "name": "PlatformerObject",
       "type": "PlatformBehavior::PlatformerObjectBehavior"
     },

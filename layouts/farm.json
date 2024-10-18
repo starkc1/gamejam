@@ -679,6 +679,10 @@
       "type": "OpacityCapability::OpacityBehavior"
     },
     {
+      "name": "Pathfinding",
+      "type": "PathfindingBehavior::PathfindingBehavior"
+    },
+    {
       "name": "PathfindingObstacle",
       "type": "PathfindingBehavior::PathfindingObstacleBehavior"
     },

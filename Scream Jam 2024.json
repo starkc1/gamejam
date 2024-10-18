@@ -282,6 +282,42 @@
         "name": "farmera1.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "OFDN UI Pack - Inventory A.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "OFDN UI Pack - Inventory A.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "OFDN UI Pack - Inventory B1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "OFDN UI Pack - Inventory B1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "render_hoe.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "render_hoe.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "hoe.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hoe.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -453,6 +489,8 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -463,17 +501,15 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "maxSpeed": 200,
-          "name": "Pathfinding",
           "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
         },
         {
-          "canBeGrabbed": false,
           "isFolded": true,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ],
@@ -527,6 +563,126 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "InventoryBar",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "OFDN UI Pack - Inventory B1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 7
+                      },
+                      {
+                        "x": 1965,
+                        "y": 7
+                      },
+                      {
+                        "x": 1965,
+                        "y": 516
+                      },
+                      {
+                        "x": 11,
+                        "y": 516
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Hoe",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hoe.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 282,
+                        "y": 74
+                      },
+                      {
+                        "x": 1696,
+                        "y": 74
+                      },
+                      {
+                        "x": 1696,
+                        "y": 1924
+                      },
+                      {
+                        "x": 282,
+                        "y": 1924
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -537,6 +693,12 @@
       },
       {
         "objectName": "Citizen"
+      },
+      {
+        "objectName": "InventoryBar"
+      },
+      {
+        "objectName": "Hoe"
       }
     ]
   },
