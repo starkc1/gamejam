@@ -255,6 +255,77 @@
         "name": "Transporter2",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/DialogBox.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "DialogBox",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/none.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "none",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Base.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\NewSprite3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/dialog.json",
+        "kind": "json",
+        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/dialog.json\"}",
+        "name": "dialog",
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MoundOfFlesh.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MoundOfFlesh",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MoundOfFlesh2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MoundOfFlesh2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/DialogBox2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/DialogBox2.png\"}",
+        "name": "DialogBox2",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -426,7 +497,20 @@
     ]
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "dialogState",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "textScrollSpeed",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
