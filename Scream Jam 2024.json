@@ -497,6 +497,16 @@
         "name": "hoe2.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "Caution.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Caution.wav",
+        "preloadAsMusic": true,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
