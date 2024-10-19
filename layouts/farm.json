@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.0891751186210152,
+    "zoomFactor": 0.14890670595874445,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -36,7 +36,7 @@
       "width": 256,
       "x": 844,
       "y": 364,
-      "zOrder": 4,
+      "zOrder": 4, 
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1915,17 +1915,6 @@
             "TopDownMovement",
             "=",
             "800"
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "CoinAmount",
-            "Text",
-            "=",
-            "coins"
           ]
         }
       ]
