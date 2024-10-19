@@ -568,6 +568,7 @@
           "yGrabOffset": 0
         },
         {
+          "isFolded": true,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 4000,

@@ -11,8 +11,8 @@
   "uiSettings": {
     "grid": true,
     "gridType": "rectangular",
-    "gridWidth": 32,
-    "gridHeight": 32,
+    "gridWidth": 64,
+    "gridHeight": 64,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridColor": 10401023,
@@ -147,7 +147,7 @@
       "width": 64,
       "x": 1694,
       "y": -950,
-      "zOrder": 9,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -164,7 +164,7 @@
       "width": 1085,
       "x": 651,
       "y": -218,
-      "zOrder": 10,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -181,7 +181,7 @@
       "width": 64,
       "x": 651,
       "y": -173,
-      "zOrder": 11,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -198,7 +198,7 @@
       "width": 601,
       "x": 697,
       "y": 945,
-      "zOrder": 12,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -215,7 +215,7 @@
       "width": 64,
       "x": 1234,
       "y": 958,
-      "zOrder": 13,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -232,7 +232,7 @@
       "width": 815,
       "x": 454,
       "y": 2025,
-      "zOrder": 14,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -249,7 +249,7 @@
       "width": 64,
       "x": 453,
       "y": 2082,
-      "zOrder": 15,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2901,24 +2901,7 @@
       "width": 64,
       "x": 652,
       "y": 555,
-      "zOrder": 11,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Player",
-      "persistentUuid": "69aee828-bde0-4b5e-b5d4-6e4f0d47bae5",
-      "width": 64,
-      "x": -1339,
-      "y": -904,
-      "zOrder": 9999,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2960,14 +2943,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 0,
-      "height": 95,
+      "height": 64,
       "keepRatio": true,
-      "layer": "Collectibles",
+      "layer": "",
       "name": "Hoe",
       "persistentUuid": "6e5fd44b-f114-4747-875f-f913d9eb7cfd",
-      "width": 95,
-      "x": -1144,
-      "y": -712,
+      "width": 64,
+      "x": -1153,
+      "y": -706,
       "zOrder": 100,
       "numberProperties": [],
       "stringProperties": [],
@@ -3154,13 +3137,13 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "Tileset",
       "name": "RpgUrbanMap16x16",
       "persistentUuid": "b159bb40-0f03-4214-9f12-39a8bc387528",
       "width": 0,
-      "x": -1537,
-      "y": -991,
-      "zOrder": 4,
+      "x": -1558,
+      "y": -965,
+      "zOrder": -100,
       "numberProperties": [],
       "stringProperties": [
         {
@@ -3239,7 +3222,7 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "GUI",
+      "layer": "",
       "name": "Coin",
       "persistentUuid": "2b891158-7dc7-41cb-8bd9-24de9fa4d2e7",
       "width": 0,
@@ -3262,6 +3245,23 @@
       "x": 15,
       "y": 90,
       "zOrder": 10005,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Player",
+      "persistentUuid": "bd46f550-d574-43c8-a3e6-355d04c58ab0",
+      "width": 64,
+      "x": -961,
+      "y": -769,
+      "zOrder": 9999,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3569,7 +3569,7 @@
           "parameters": [
             "",
             "=",
-            "lerp(CameraX(), Player.X(), .05)",
+            "lerp(CameraX(), Player.X(), 1)",
             "\"Collectibles\"",
             ""
           ]
@@ -3581,7 +3581,7 @@
           "parameters": [
             "",
             "=",
-            "lerp(CameraX(), Player.X(), .05)",
+            "lerp(CameraX(), Player.X(), 1)",
             "",
             ""
           ]
@@ -3593,7 +3593,7 @@
           "parameters": [
             "",
             "=",
-            "lerp(CameraY(), Player.Y(), .05)",
+            "lerp(CameraY(), Player.Y(), 1)",
             "",
             ""
           ]
@@ -3605,8 +3605,32 @@
           "parameters": [
             "",
             "=",
-            "lerp(CameraY(), Player.Y(), .05)",
+            "lerp(CameraY(), Player.Y(), 1)",
             "\"Collectibles\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCameraCenterX"
+          },
+          "parameters": [
+            "",
+            "=",
+            "lerp(CameraX(), Player.X(), 0.5)",
+            "\"Tileset\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCameraCenterY"
+          },
+          "parameters": [
+            "",
+            "=",
+            "lerp(CameraY(), Player.Y(), 0.5)",
+            "\"Tileset\"",
             ""
           ]
         },
@@ -3829,6 +3853,39 @@
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
+      "cameraType": "perspective",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": true,
+      "name": "Tileset",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
       "cameraType": "",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
@@ -3911,6 +3968,39 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "Collectibles",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Dialog",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
