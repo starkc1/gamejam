@@ -18,10 +18,19 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.13138826996359879,
+    "zoomFactor": 0.2386775827025829,
     "windowMask": false
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "Collectibles",
+      "objects": [
+        {
+          "name": "Hoe"
+        }
+      ]
+    }
+  ],
   "variables": [],
   "instances": [
     {
@@ -2953,13 +2962,13 @@
       "depth": 0,
       "height": 95,
       "keepRatio": true,
-      "layer": "",
+      "layer": "Collectibles",
       "name": "Hoe",
       "persistentUuid": "6e5fd44b-f114-4747-875f-f913d9eb7cfd",
       "width": 95,
-      "x": -1152,
-      "y": -704,
-      "zOrder": 56,
+      "x": -1144,
+      "y": -712,
+      "zOrder": 100,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3149,8 +3158,8 @@
       "name": "RpgUrbanMap16x16",
       "persistentUuid": "b159bb40-0f03-4214-9f12-39a8bc387528",
       "width": 0,
-      "x": -1550,
-      "y": -966,
+      "x": -1537,
+      "y": -991,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [
@@ -3459,13 +3468,49 @@
       "actions": [
         {
           "type": {
-            "value": "CentreCamera"
+            "value": "SetCameraCenterX"
           },
           "parameters": [
             "",
-            "Player",
+            "=",
+            "lerp(CameraX(), Player.X(), .05)",
+            "\"Collectibles\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCameraCenterX"
+          },
+          "parameters": [
             "",
+            "=",
+            "lerp(CameraX(), Player.X(), .05)",
             "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCameraCenterY"
+          },
+          "parameters": [
+            "",
+            "=",
+            "lerp(CameraY(), Player.Y(), .05)",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCameraCenterY"
+          },
+          "parameters": [
+            "",
+            "=",
+            "lerp(CameraY(), Player.Y(), .05)",
+            "\"Collectibles\"",
             ""
           ]
         }
@@ -3564,13 +3609,22 @@
                   },
                   "parameters": [
                     "InventorySlot",
-                    "InventoryBar.X()",
-                    "InventoryBar.Y()",
+                    "0",
+                    "720",
                     ""
                   ]
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "ChangeLayer"
+                  },
+                  "parameters": [
+                    "Hoe",
+                    "\"GUI\""
+                  ]
+                },
                 {
                   "type": {
                     "value": "MettreXY"
@@ -3580,7 +3634,7 @@
                     "=",
                     "InventorySlot.X()",
                     "=",
-                    "InventorySlot.Y()"
+                    "InventorySlot.Y()\n"
                   ]
                 },
                 {
@@ -3590,7 +3644,7 @@
                   "parameters": [
                     "Hoe",
                     "Sticker",
-                    "InventoryBar",
+                    "InventorySlot",
                     ""
                   ]
                 },
@@ -3602,6 +3656,39 @@
                     "Hoe",
                     "=",
                     "InventorySlot.ZOrder()+1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Hoe",
+                    "Resizable",
+                    "60",
+                    "60"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "InventorySlot",
+                    "Item",
+                    "=",
+                    "Collectibles.ObjectName()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "InventorySlot",
+                    "HasItem",
+                    "True",
+                    ""
                   ]
                 }
               ]
@@ -3673,6 +3760,39 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "GUI",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Collectibles",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

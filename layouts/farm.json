@@ -2367,6 +2367,10 @@
       "type": "SmoothCamera::SmoothCamera"
     },
     {
+      "name": "Sticker",
+      "type": "Sticker::Sticker"
+    },
+    {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
     },

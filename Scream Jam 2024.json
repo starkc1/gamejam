@@ -479,6 +479,24 @@
         "name": "Transporter3",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "OFDN UI Pack - Inventory B2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "OFDN UI Pack - Inventory B2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "hoe2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hoe2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -501,6 +519,7 @@
       "effects": [],
       "behaviors": [
         {
+          "isFolded": true,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 0,
@@ -519,58 +538,6 @@
           "useLegacyTrajectory": false,
           "xGrabTolerance": 10,
           "yGrabOffset": 0
-        },
-        {
-          "name": "SmoothCamera",
-          "type": "SmoothCamera::SmoothCamera",
-          "LeftwardSpeed": 1,
-          "RightwardSpeed": 1,
-          "UpwardSpeed": 1,
-          "DownwardSpeed": 1,
-          "FollowOnX": true,
-          "FollowOnY": true,
-          "FollowFreeAreaLeft": 0,
-          "FollowFreeAreaRight": 0,
-          "FollowFreeAreaTop": 0,
-          "FollowFreeAreaBottom": 0,
-          "CameraOffsetX": 0,
-          "CameraOffsetY": 0,
-          "CameraDelay": 0,
-          "ForecastTime": 0,
-          "ForecastHistoryDuration": 0,
-          "LogLeftwardSpeed": 2.0247e-320,
-          "LogRightwardSpeed": 2.0247e-320,
-          "LogDownwardSpeed": 2.0247e-320,
-          "LogUpwardSpeed": 2.0247e-320,
-          "DelayedCenterX": 2.0247e-320,
-          "DelayedCenterY": 2.0247e-320,
-          "ForecastHistoryMeanX": 2.0247e-320,
-          "ForecastHistoryMeanY": 2.0247e-320,
-          "ForecastHistoryVarianceX": 2.0247e-320,
-          "ForecastHistoryCovariance": 2.0247e-320,
-          "ForecastHistoryLinearA": 2.0247e-320,
-          "ForecastHistoryLinearB": 2.0247e-320,
-          "ForecastedX": 2.0247e-320,
-          "ForecastedY": 2.0247e-320,
-          "ProjectedNewestX": 2.0247e-320,
-          "ProjectedNewestY": 2.0247e-320,
-          "ProjectedOldestX": 2.0247e-320,
-          "ProjectedOldestY": 2.0247e-320,
-          "ForecastHistoryVarianceY": 2.0247e-320,
-          "Index": 2.0247e-320,
-          "CameraDelayCatchUpSpeed": 0,
-          "CameraExtraDelay": 2.0247e-320,
-          "WaitingSpeedXMax": 2.0247e-320,
-          "WaitingSpeedYMax": 2.0247e-320,
-          "WaitingEnd": 2.0247e-320,
-          "CameraDelayCatchUpDuration": 2.0247e-320,
-          "LeftwardSpeedMax": 9000,
-          "RightwardSpeedMax": 9000,
-          "UpwardSpeedMax": 9000,
-          "DownwardSpeedMax": 9000,
-          "OldX": 9000.000000007454,
-          "OldY": 9000.000000007454,
-          "IsCalledManually": false
         },
         {
           "name": "TopDownMovement",
@@ -762,7 +729,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "OFDN UI Pack - Inventory B1.png",
+                  "image": "OFDN UI Pack - Inventory B2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -778,20 +745,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 11,
-                        "y": 7
+                        "x": 22,
+                        "y": 15
                       },
                       {
-                        "x": 1965,
-                        "y": 7
+                        "x": 1954,
+                        "y": 15
                       },
                       {
-                        "x": 1965,
-                        "y": 516
+                        "x": 1954,
+                        "y": 508
                       },
                       {
-                        "x": 11,
-                        "y": 516
+                        "x": 22,
+                        "y": 508
                       }
                     ]
                   ]
@@ -820,7 +787,7 @@
         {
           "name": "Sticker",
           "type": "Sticker::Sticker",
-          "OnlyFollowPosition": false,
+          "OnlyFollowPosition": true,
           "IsDestroyedWithParent": false
         }
       ],
@@ -835,7 +802,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "hoe.png",
+                  "image": "hoe2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
