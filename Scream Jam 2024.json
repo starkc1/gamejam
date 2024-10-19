@@ -716,8 +716,6 @@
           ]
         }
       ]
-<<<<<<< Updated upstream
-=======
     },
     {
       "adaptCollisionMaskAutomatically": true,
@@ -924,7 +922,6 @@
         "characterSize": 40,
         "color": "102;0;0"
       }
->>>>>>> Stashed changes
     }
   ],
   "objectsFolderStructure": {
@@ -935,8 +932,6 @@
       },
       {
         "objectName": "Citizen"
-<<<<<<< Updated upstream
-=======
       },
       {
         "objectName": "Coin"
@@ -949,7 +944,6 @@
       },
       {
         "objectName": "FleshAmount"
->>>>>>> Stashed changes
       }
     ]
   },
