@@ -167,7 +167,7 @@
         "alwaysLoaded": false,
         "file": "assets/Wall2.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Wall2.png\"}",
         "name": "Wall2",
         "smoothed": true,
         "userAdded": false
@@ -242,7 +242,7 @@
         "alwaysLoaded": false,
         "file": "assets/Transporter.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Transporter.png\"}",
         "name": "Transporter",
         "smoothed": true,
         "userAdded": true
@@ -261,9 +261,12 @@
         "file": "assets/DialogBox.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
-        "name": "DialogBox"
+        "name": "DialogBox",
+        "smoothed": false,
+        "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "assets/Base2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -303,9 +306,11 @@
         "file": "assets/dialog.json",
         "kind": "json",
         "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/dialog.json\"}",
-        "name": "dialog"
+        "name": "dialog",
+        "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "farmer1.png",
         "kind": "image",
         "metadata": "",
@@ -341,12 +346,86 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "farmera1.png",
         "kind": "image",
         "metadata": "",
         "name": "farmera1.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MoundOfFlesh2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\MoundOfFlesh2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Mound.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Mound",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Mound2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Mound2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Mound3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Mound3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/mapPack_tilesheet_2X.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "mapPack_tilesheet_2X.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Tilemaps/High Definition/5f0063211bf3fddcc0a7c68a2cafb734e57e96df0f5a55d4906ffcfac71936b0_mapPack_tilesheet_2X.png",
+          "name": "mapPack_tilesheet_2X.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/House.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "House.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Building/25a026f33b5e093c8924530e3c5d5cb269192d57720b1ae766d8350f1d1f5667_House.png",
+          "name": "House.png"
+        }
+      },
+      {
+        "file": "assets/Mountain Group 2.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "Mountain Group 2.glb",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/3D Fantasy RTS/rock/ffa9f5ae083f049b975cf6ecb19aff8ead2b971dbc558b74c7ada75901d3492d_Mountain Group 2.glb",
+          "name": "Mountain Group 2.glb"
+        }
       }
     ],
     "resourceFolders": []
@@ -518,6 +597,8 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -528,17 +609,15 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "maxSpeed": 200,
-          "name": "Pathfinding",
           "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
         },
         {
-          "canBeGrabbed": false,
           "isFolded": true,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ],
