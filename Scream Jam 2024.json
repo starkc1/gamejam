@@ -463,24 +463,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/Coin.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Coin",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Flesh.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Flesh",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "Caution.wav",
         "kind": "audio",
         "metadata": "",
@@ -898,6 +880,48 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "FleshAmount",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 102
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "color": "102;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -917,6 +941,9 @@
       },
       {
         "objectName": "Flesh"
+      },
+      {
+        "objectName": "FleshAmount"
       }
     ]
   },
@@ -933,16 +960,6 @@
       "name": "textScrollSpeed",
       "type": "number",
       "value": 0
-    },
-    {
-      "name": "coins",
-      "type": "number",
-      "value": 69
-    },
-    {
-      "name": "flesh",
-      "type": "number",
-      "value": 666
     }
   ],
   "layouts": [
