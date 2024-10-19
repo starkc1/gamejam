@@ -18,7 +18,11 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.2952916551236138,
+<<<<<<< Updated upstream
+    "zoomFactor": 0.13138826996359879,
+=======
+    "zoomFactor": 0.5468750000000103,
+>>>>>>> Stashed changes
     "windowMask": false
   },
   "objectsGroups": [],
@@ -138,7 +142,7 @@
       "width": 64,
       "x": 1694,
       "y": -950,
-      "zOrder": 1,
+      "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -155,7 +159,7 @@
       "width": 1085,
       "x": 651,
       "y": -218,
-      "zOrder": 1,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -172,7 +176,7 @@
       "width": 64,
       "x": 651,
       "y": -173,
-      "zOrder": 1,
+      "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -189,7 +193,7 @@
       "width": 601,
       "x": 697,
       "y": 945,
-      "zOrder": 1,
+      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -206,7 +210,7 @@
       "width": 64,
       "x": 1234,
       "y": 958,
-      "zOrder": 1,
+      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -223,7 +227,7 @@
       "width": 815,
       "x": 454,
       "y": 2025,
-      "zOrder": 1,
+      "zOrder": 14,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -240,7 +244,7 @@
       "width": 64,
       "x": 453,
       "y": 2082,
-      "zOrder": 1,
+      "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2892,7 +2896,7 @@
       "width": 64,
       "x": 652,
       "y": 555,
-      "zOrder": 1,
+      "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2940,8 +2944,8 @@
       "name": "RpgUrbanMap16x16",
       "persistentUuid": "b159bb40-0f03-4214-9f12-39a8bc387528",
       "width": 0,
-      "x": -1557,
-      "y": -970,
+      "x": -1550,
+      "y": -966,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [
@@ -2951,6 +2955,8 @@
         }
       ],
       "initialVariables": []
+<<<<<<< Updated upstream
+=======
     },
     {
       "angle": 0,
@@ -2983,6 +2989,39 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Dialog",
+      "name": "Flesh",
+      "persistentUuid": "c6028c9e-be3f-42eb-a775-778cc9f4fab8",
+      "width": 0,
+      "x": 15,
+      "y": 90,
+      "zOrder": 10002,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Dialog",
+      "name": "FleshAmount",
+      "persistentUuid": "e28b3258-665f-4426-bd1c-b1eb99466c01",
+      "width": 0,
+      "x": 83,
+      "y": 96,
+      "zOrder": 10003,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+>>>>>>> Stashed changes
     }
   ],
   "objects": [
@@ -3322,6 +3361,8 @@
           ]
         }
       ]
+<<<<<<< Updated upstream
+=======
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -3346,8 +3387,20 @@
             "=",
             "coins"
           ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "FleshAmount",
+            "Text",
+            "=",
+            "flesh"
+          ]
         }
       ]
+>>>>>>> Stashed changes
     }
   ],
   "layers": [
@@ -3377,39 +3430,6 @@
           "width": 0
         }
       ],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
-          },
-          "booleanParameters": {}
-        }
-      ]
-    },
-    {
-      "ambientLightColorB": 200,
-      "ambientLightColorG": 200,
-      "ambientLightColorR": 200,
-      "camera3DFarPlaneDistance": 10000,
-      "camera3DFieldOfView": 45,
-      "camera3DNearPlaneDistance": 3,
-      "cameraType": "",
-      "followBaseLayerCamera": false,
-      "isLightingLayer": false,
-      "isLocked": false,
-      "name": "Dialog",
-      "renderingType": "",
-      "visibility": true,
-      "cameras": [],
       "effects": [
         {
           "effectType": "Scene3D::HemisphereLight",
@@ -3473,6 +3493,10 @@
     {
       "name": "SmoothCamera",
       "type": "SmoothCamera::SmoothCamera"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "TopDownMovement",
