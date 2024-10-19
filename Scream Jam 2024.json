@@ -426,6 +426,41 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/3D Fantasy RTS/rock/ffa9f5ae083f049b975cf6ecb19aff8ead2b971dbc558b74c7ada75901d3492d_Mountain Group 2.glb",
           "name": "Mountain Group 2.glb"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tilemap_packed3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tilemap_packed3.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Tilemaps/Pixel Art/f521b34c9bc3530f68e642eff768b852adad0728dd02cd51c31130f3277b0caf_tilemap_packed3.png",
+          "name": "tilemap_packed3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tilemap_packed7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tilemap_packed7.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Tilemaps/Pixel Art/5e5fb8fc3ff76222de103f5f0f371de26cbdb9e5682d98b325808f830f67c849_tilemap_packed7.png",
+          "name": "tilemap_packed7.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Transporter3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Transporter3",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
