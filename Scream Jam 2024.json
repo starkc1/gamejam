@@ -525,6 +525,195 @@
         "name": "assets\\Coin.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/groundMarker.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "groundMarker",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/VineGrow.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "VineGrow",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/VineGrow.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/VineGrow.png\",\"extension\":\".png\"}",
+        "name": "assets\\VineGrow.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BasicGrowth.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BasicGrowth7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BasicGrowth4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BasicGrowth5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/VineGrow2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "VineGrow2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/VineGrow3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "VineGrow3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/VineGrow4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "VineGrow4",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -600,8 +789,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 16
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1205,6 +1394,17 @@
       "name": "flesh",
       "type": "number",
       "value": 666
+    },
+    {
+      "name": "seeds",
+      "type": "structure",
+      "children": [
+        {
+          "name": "vine",
+          "type": "number",
+          "value": 6
+        }
+      ]
     }
   ],
   "layouts": [
@@ -1223,6 +1423,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/snaptogrid"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/sticker"
