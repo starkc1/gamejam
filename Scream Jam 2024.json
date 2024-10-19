@@ -167,7 +167,7 @@
         "alwaysLoaded": false,
         "file": "assets/Wall2.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Wall2.png\"}",
         "name": "Wall2",
         "smoothed": true,
         "userAdded": false
@@ -242,7 +242,7 @@
         "alwaysLoaded": false,
         "file": "assets/Transporter.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Transporter.png\"}",
         "name": "Transporter",
         "smoothed": true,
         "userAdded": true
@@ -356,6 +356,15 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "assets/MoundOfFlesh2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\MoundOfFlesh2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
         "file": "OFDN UI Pack - Inventory A.png",
         "kind": "image",
         "metadata": "",
@@ -365,37 +374,109 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "OFDN UI Pack - Inventory B1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "OFDN UI Pack - Inventory B1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "render_hoe.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "render_hoe.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "hoe.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "hoe.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Slot.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Slot",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Mound.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Mound",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Mound2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Mound2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Mound3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Mound3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/mapPack_tilesheet_2X.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "mapPack_tilesheet_2X.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Tilemaps/High Definition/5f0063211bf3fddcc0a7c68a2cafb734e57e96df0f5a55d4906ffcfac71936b0_mapPack_tilesheet_2X.png",
+          "name": "mapPack_tilesheet_2X.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/House.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "House.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Building/25a026f33b5e093c8924530e3c5d5cb269192d57720b1ae766d8350f1d1f5667_House.png",
+          "name": "House.png"
+        }
+      },
+      {
+        "file": "assets/Mountain Group 2.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "Mountain Group 2.glb",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/3D Fantasy RTS/rock/ffa9f5ae083f049b975cf6ecb19aff8ead2b971dbc558b74c7ada75901d3492d_Mountain Group 2.glb",
+          "name": "Mountain Group 2.glb"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tilemap_packed3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tilemap_packed3.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Tilemaps/Pixel Art/f521b34c9bc3530f68e642eff768b852adad0728dd02cd51c31130f3277b0caf_tilemap_packed3.png",
+          "name": "tilemap_packed3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tilemap_packed7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tilemap_packed7.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Tilemaps/Pixel Art/5e5fb8fc3ff76222de103f5f0f371de26cbdb9e5682d98b325808f830f67c849_tilemap_packed7.png",
+          "name": "tilemap_packed7.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Transporter3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Transporter3",
         "smoothed": true,
         "userAdded": false
       }
