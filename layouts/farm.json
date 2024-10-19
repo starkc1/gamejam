@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.14890670595874445,
+    "zoomFactor": 1.0891751186210152,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1086,6 +1086,70 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Dialog",
+      "name": "CoinAmount",
+      "persistentUuid": "54977dbd-6422-4f17-8a58-d9e1b4099b54",
+      "width": 0,
+      "x": 83,
+      "y": 20,
+      "zOrder": 29,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Dialog",
+      "name": "Coin",
+      "persistentUuid": "7e1fc52e-5a4f-428e-bbbb-6ad91ba561a3",
+      "width": 0,
+      "x": 7,
+      "y": 8,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Flesh",
+      "persistentUuid": "6c2ad544-c0f0-4773-99ad-98d41c7e8cf1",
+      "width": 0,
+      "x": 15,
+      "y": 90,
+      "zOrder": 31,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FleshAmount",
+      "persistentUuid": "0a6ea8aa-dd24-4d5f-afee-db6f5fe8d296",
+      "width": 0,
+      "x": 83,
+      "y": 96,
+      "zOrder": 32,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1710,6 +1774,48 @@
         "width": 429,
         "animations": []
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "FleshAmount",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 102
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "color": "102;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1747,6 +1853,9 @@
       },
       {
         "objectName": "MountainGroup2"
+      },
+      {
+        "objectName": "FleshAmount"
       }
     ]
   },
@@ -1806,6 +1915,17 @@
             "TopDownMovement",
             "=",
             "800"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "CoinAmount",
+            "Text",
+            "=",
+            "coins"
           ]
         }
       ]
