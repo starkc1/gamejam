@@ -18,11 +18,8 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-<<<<<<< Updated upstream
     "zoomFactor": 0.13138826996359879,
-=======
     "zoomFactor": 0.5468750000000103,
->>>>>>> Stashed changes
     "windowMask": false
   },
   "objectsGroups": [],
@@ -2955,8 +2952,6 @@
         }
       ],
       "initialVariables": []
-<<<<<<< Updated upstream
-=======
     },
     {
       "angle": 0,
@@ -3021,7 +3016,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
->>>>>>> Stashed changes
     }
   ],
   "objects": [
@@ -3361,8 +3355,6 @@
           ]
         }
       ]
-<<<<<<< Updated upstream
-=======
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -3400,7 +3392,6 @@
           ]
         }
       ]
->>>>>>> Stashed changes
     }
   ],
   "layers": [
