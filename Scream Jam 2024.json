@@ -471,6 +471,24 @@
         "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Flesh.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Flesh.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Coin.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Coin.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -738,7 +756,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Coin",
+                  "image": "assets\\Coin.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -789,7 +807,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "",
+      "string": "Text",
       "font": "",
       "textAlignment": "left",
       "characterSize": 40,
@@ -812,7 +830,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "",
+        "text": "Text",
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
@@ -841,7 +859,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Flesh",
+                  "image": "assets\\Flesh.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -960,6 +978,16 @@
       "name": "textScrollSpeed",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "coins",
+      "type": "number",
+      "value": 69
+    },
+    {
+      "name": "flesh",
+      "type": "number",
+      "value": 666
     }
   ],
   "layouts": [
