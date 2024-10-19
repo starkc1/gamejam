@@ -1146,8 +1146,8 @@
       "name": "Donkey",
       "persistentUuid": "325506c2-79c8-4aa6-b9c4-2c13909503ba",
       "width": 128,
-      "x": 256,
-      "y": 128,
+      "x": -640,
+      "y": -1024,
       "zOrder": 33,
       "numberProperties": [],
       "stringProperties": [],
@@ -1163,8 +1163,8 @@
       "name": "Donkey",
       "persistentUuid": "a16abb01-615b-470c-92c4-b845ffdb7efc",
       "width": 128,
-      "x": 1664,
-      "y": 384,
+      "x": 1152,
+      "y": 128,
       "zOrder": 34,
       "numberProperties": [],
       "stringProperties": [],
@@ -1180,8 +1180,8 @@
       "name": "Donkey",
       "persistentUuid": "cc6bcb2b-1e8f-41d9-ba9d-c4c1463a00f6",
       "width": 128,
-      "x": 768,
-      "y": -384,
+      "x": 1152,
+      "y": -1536,
       "zOrder": 35,
       "numberProperties": [],
       "stringProperties": [],
@@ -1199,9 +1199,9 @@
       "effects": [],
       "behaviors": [
         {
+          "cost": 2,
           "name": "PathfindingObstacle",
           "type": "PathfindingBehavior::PathfindingObstacleBehavior",
-          "cost": 2,
           "impassable": true
         },
         {
@@ -1566,6 +1566,7 @@
         "text": "Test",
         "font": "",
         "textAlignment": "left",
+        "verticalTextAlignment": "top",
         "characterSize": 40,
         "color": "255;255;255"
       }
@@ -1607,6 +1608,7 @@
         "text": "Text\nText",
         "font": "",
         "textAlignment": "left",
+        "verticalTextAlignment": "top",
         "characterSize": 40,
         "color": "255;255;255"
       }
@@ -1819,6 +1821,10 @@
       "effects": [],
       "behaviors": [
         {
+          "isFolded": true,
+          "maxSpeed": 0,
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -1828,11 +1834,28 @@
           "extraBorder": 0,
           "gridOffsetX": 0,
           "gridOffsetY": 0,
-          "maxSpeed": 180,
-          "name": "Pathfinding",
           "rotateObject": false,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
+        },
+        {
+          "acceleration": 0,
+          "canGoDownFromJumpthru": false,
+          "canGrabPlatforms": false,
+          "canGrabWithoutMoving": false,
+          "deceleration": 0,
+          "gravity": 0,
+          "ignoreDefaultControls": false,
+          "jumpSpeed": 0,
+          "jumpSustainTime": 0,
+          "ladderClimbingSpeed": 0,
+          "maxFallingSpeed": 0,
+          "maxSpeed": 0,
+          "name": "PlatformerObject",
+          "slopeMaxAngle": 60,
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "useLegacyTrajectory": false,
+          "xGrabTolerance": 0,
+          "yGrabOffset": 0
         }
       ],
       "animations": [
@@ -1846,7 +1869,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "donkey-1295054_1280.png",
+                  "image": "assets\\donkey-1295054_1280.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2082,8 +2105,8 @@
             "Donkey",
             "Random(2000)",
             "Random(2000)",
-            "3",
-            "1"
+            "20",
+            "0"
           ]
         }
       ]

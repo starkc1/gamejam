@@ -1,7 +1,7 @@
 {
   "firstLayout": "Main Menu",
   "gdVersion": {
-    "build": 213,
+    "build": 216,
     "major": 5,
     "minor": 4,
     "revision": 0
@@ -556,9 +556,9 @@
       "effects": [],
       "behaviors": [
         {
+          "isFolded": true,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "isFolded": true,
           "acceleration": 0,
           "canGoDownFromJumpthru": false,
           "canGrabPlatforms": false,
@@ -577,9 +577,9 @@
           "yGrabOffset": 0
         },
         {
+          "isFolded": true,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "isFolded": true,
           "acceleration": 4000,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -671,9 +671,9 @@
           "smoothingMaxCellGap": 1
         },
         {
+          "isFolded": true,
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior",
-          "isFolded": true,
           "canBeGrabbed": false,
           "platformType": "NormalPlatform",
           "yGrabOffset": 0
@@ -1050,6 +1050,7 @@
         "text": "Text",
         "font": "",
         "textAlignment": "left",
+        "verticalTextAlignment": "top",
         "characterSize": 40,
         "color": "248;231;28"
       }
@@ -1152,6 +1153,7 @@
         "text": "Text",
         "font": "",
         "textAlignment": "left",
+        "verticalTextAlignment": "top",
         "characterSize": 40,
         "color": "102;0;0"
       }
