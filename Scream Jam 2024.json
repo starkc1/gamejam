@@ -261,9 +261,12 @@
         "file": "assets/DialogBox.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
-        "name": "DialogBox"
+        "name": "DialogBox",
+        "smoothed": false,
+        "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "assets/Base2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -303,9 +306,11 @@
         "file": "assets/dialog.json",
         "kind": "json",
         "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/dialog.json\"}",
-        "name": "dialog"
+        "name": "dialog",
+        "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "farmer1.png",
         "kind": "image",
         "metadata": "",
@@ -341,6 +346,7 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
         "file": "farmera1.png",
         "kind": "image",
         "metadata": "",
@@ -381,6 +387,15 @@
         "kind": "image",
         "metadata": "",
         "name": "hoe.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Slot.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Slot",
         "smoothed": true,
         "userAdded": false
       }
@@ -635,7 +650,24 @@
       "name": "InventoryBar",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "Items",
+          "type": "array",
+          "children": [
+            {
+              "type": "string",
+              "value": "Hoe"
+            }
+          ]
+        },
+        {
+          "name": "Active",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [],
       "behaviors": [],
       "animations": [
@@ -695,9 +727,22 @@
       "name": "Hoe",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "Collected",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": false
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -748,6 +793,78 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "InventorySlot",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Item",
+          "type": "string",
+          "value": "0"
+        },
+        {
+          "name": "HasItem",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Slot",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slot",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 23,
+                        "y": 23
+                      },
+                      {
+                        "x": 40,
+                        "y": 23
+                      },
+                      {
+                        "x": 40,
+                        "y": 40
+                      },
+                      {
+                        "x": 23,
+                        "y": 40
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -764,6 +881,9 @@
       },
       {
         "objectName": "Hoe"
+      },
+      {
+        "objectName": "InventorySlot"
       }
     ]
   },
@@ -798,6 +918,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/sticker"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/smoothcamera"

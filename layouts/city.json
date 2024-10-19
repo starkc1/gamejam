@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.3797121001947974,
+    "zoomFactor": 0.6897782140104591,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -3546,14 +3546,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 0,
+      "depth": 1,
       "height": 75,
       "layer": "GUI",
       "name": "InventoryBar",
       "persistentUuid": "543761be-b215-4ba0-b215-883843a146aa",
-      "width": 500,
-      "x": 704,
-      "y": 928,
+      "width": 692,
+      "x": 588,
+      "y": 992,
       "zOrder": 55,
       "numberProperties": [],
       "stringProperties": [],
@@ -3565,13 +3565,189 @@
       "depth": 0,
       "height": 95,
       "keepRatio": true,
-      "layer": "GUI",
+      "layer": "",
       "name": "Hoe",
       "persistentUuid": "6e5fd44b-f114-4747-875f-f913d9eb7cfd",
       "width": 95,
-      "x": 705,
-      "y": 896,
+      "x": -1152,
+      "y": -704,
       "zOrder": 56,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "InventorySlot",
+      "persistentUuid": "42170084-6325-4178-8069-1bb84bb598f3",
+      "width": 0,
+      "x": 1184,
+      "y": 992,
+      "zOrder": 57,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "InventorySlot",
+      "persistentUuid": "b1b7eea7-5b22-41ab-8137-4c80df1ea6f8",
+      "width": 0,
+      "x": 608,
+      "y": 992,
+      "zOrder": 57,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "InventorySlot",
+      "persistentUuid": "3ce6588b-3714-46d8-8289-e068996d6c74",
+      "width": 0,
+      "x": 672,
+      "y": 992,
+      "zOrder": 57,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "InventorySlot",
+      "persistentUuid": "05c0652f-7187-49e0-bf69-19112c92cb98",
+      "width": 0,
+      "x": 736,
+      "y": 992,
+      "zOrder": 57,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "InventorySlot",
+      "persistentUuid": "c4cd6d67-b556-49a3-852f-6985b7e1af32",
+      "width": 0,
+      "x": 800,
+      "y": 992,
+      "zOrder": 57,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "InventorySlot",
+      "persistentUuid": "ad432b26-d5e2-4b98-b0db-b44a0c1fce67",
+      "width": 0,
+      "x": 864,
+      "y": 992,
+      "zOrder": 57,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "InventorySlot",
+      "persistentUuid": "4a884091-57b4-47ed-a476-f4db1a781d9d",
+      "width": 0,
+      "x": 928,
+      "y": 992,
+      "zOrder": 57,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "InventorySlot",
+      "persistentUuid": "e78142bf-6bd9-4c7b-bd6e-eefad9ee8825",
+      "width": 0,
+      "x": 928,
+      "y": 992,
+      "zOrder": 57,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "InventorySlot",
+      "persistentUuid": "b6778b27-f1bc-4abc-8fb6-86c8b1820d90",
+      "width": 0,
+      "x": 992,
+      "y": 992,
+      "zOrder": 57,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "InventorySlot",
+      "persistentUuid": "c6e297f6-1cbc-40a0-9cff-94dd8565c2e8",
+      "width": 0,
+      "x": 1056,
+      "y": 992,
+      "zOrder": 57,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "InventorySlot",
+      "persistentUuid": "c9721408-220a-4149-a8e4-cdd9b0fe9d50",
+      "width": 0,
+      "x": 1120,
+      "y": 992,
+      "zOrder": 57,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3915,6 +4091,121 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::ForEach",
+      "object": "Hoe",
+      "conditions": [],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "e"
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "Hoe",
+                "4",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Hoe",
+                "Collected",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "InventorySlot",
+                    "HasItem",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PickNearest"
+                  },
+                  "parameters": [
+                    "InventorySlot",
+                    "InventoryBar.X()",
+                    "InventoryBar.Y()",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Hoe",
+                    "=",
+                    "InventorySlot.X()",
+                    "=",
+                    "InventorySlot.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Sticker::Sticker::Stick"
+                  },
+                  "parameters": [
+                    "Hoe",
+                    "Sticker",
+                    "InventoryBar",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Hoe",
+                    "=",
+                    "InventorySlot.ZOrder()+1"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
@@ -4040,6 +4331,10 @@
     {
       "name": "SmoothCamera",
       "type": "SmoothCamera::SmoothCamera"
+    },
+    {
+      "name": "Sticker",
+      "type": "Sticker::Sticker"
     },
     {
       "name": "TopDownMovement",
