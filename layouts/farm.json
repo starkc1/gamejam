@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.14890670595874445,
+    "zoomFactor": 0.2216924727500543,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1806,6 +1806,18 @@
             "TopDownMovement",
             "=",
             "800"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "Caution.wav",
+            "yes",
+            "20",
+            "1"
           ]
         }
       ]
