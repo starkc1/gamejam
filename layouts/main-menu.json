@@ -111,7 +111,6 @@
         "text": "Scream Game! BOO!!",
         "font": "",
         "textAlignment": "left",
-        "verticalTextAlignment": "top",
         "characterSize": 42,
         "color": "255;255;255"
       }
@@ -183,7 +182,6 @@
             "text": "Play",
             "font": "Roboto-Regular.ttf",
             "textAlignment": "center",
-            "verticalTextAlignment": "top",
             "characterSize": 40,
             "color": "255;255;255"
           }
@@ -267,7 +265,6 @@
             "text": "Exit",
             "font": "Roboto-Regular.ttf",
             "textAlignment": "center",
-            "verticalTextAlignment": "top",
             "characterSize": 40,
             "color": "255;255;255"
           }
