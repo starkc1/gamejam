@@ -714,13 +714,83 @@
         "name": "VineGrow4",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Green Small tree 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Small tree 1.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Generic Backgrounds/Plant/1d345af725d5b523aee8833e2eec9bd317a156eaf54ea03cc20d34bf82849629_Green Small tree 1.png",
+          "name": "Green Small tree 1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tiled_sea.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiled_sea.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pirate Pack (190 assets)/PNG/Retina/Sea/5bf50b4a49b40cdab578d8eec6720ef953fb6f8309ce6e34c501bc9bd224d903_tiled_sea.png",
+          "name": "tiled_sea.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/water flatfriz bright surface.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "water flatfriz bright surface.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/RC Art - Water Aqua System/BG Water/5a02ffb68422ac34c2ea22018392cdf29b77e12b096fcd29bc36d657333684cc_water flatfriz bright surface.png",
+          "name": "water flatfriz bright surface.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Vendor Truck.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Vendor Truck.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Vehicle Pack/Vehicles/Truck/412a7f878e4dce449d757fca1749cf1f72aa1be759f9bc03320b84df211de315_Vendor Truck.png",
+          "name": "Vendor Truck.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "TX Tileset Grass.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TX Tileset Grass.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/donkey-1295054_1280.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\donkey-1295054_1280.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
   },
   "objects": [
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Player",
       "type": "Sprite",
@@ -801,19 +871,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 5,
+                        "y": 8
                       },
                       {
-                        "x": 31,
-                        "y": 0
+                        "x": 26,
+                        "y": 8
                       },
                       {
-                        "x": 31,
+                        "x": 26.5,
+                        "y": 18
+                      },
+                      {
+                        "x": 26.5,
                         "y": 32
                       },
                       {
-                        "x": 0,
+                        "x": 5,
                         "y": 32
                       }
                     ]
@@ -1423,10 +1497,6 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/snaptogrid"
-    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/sticker"
