@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.20746499616301883,
+    "zoomFactor": 0.7562477198107503,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -67,8 +67,8 @@
       "name": "Player",
       "persistentUuid": "17b358a8-13aa-416a-936f-c0c30c3570ce",
       "width": 128,
-      "x": 3200,
-      "y": -1920,
+      "x": 3136,
+      "y": -1984,
       "zOrder": 99,
       "numberProperties": [],
       "stringProperties": [],
@@ -1146,7 +1146,14 @@
       "persistentUuid": "13a36555-7746-4a71-8739-41f2184fa832",
       "width": 0,
       "x": 896,
-      "y": -1664},{
+      "y": -1664,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
       "customSize": true,
       "depth": 1,
       "height": 640,
@@ -1189,8 +1196,14 @@
       "persistentUuid": "19f60140-bbb5-4654-82ee-8f6f040a44b6",
       "width": 0,
       "x": 1408,
-      "y": -1536},
-      {
+      "y": -1536,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
       "customSize": true,
       "depth": 1,
       "height": 128,
@@ -1430,6 +1443,71 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "VineGrow",
+      "persistentUuid": "4aedc344-de9d-4dab-9857-1d1376efd026",
+      "width": 0,
+      "x": 1536,
+      "y": -1536,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "VineSeed",
+      "persistentUuid": "b998ce59-f9e3-40f2-a81d-adb63d49786d",
+      "width": 0,
+      "x": 1856,
+      "y": 7,
+      "zOrder": 101,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "vineSeedCount",
+      "persistentUuid": "9f6bd37b-a271-4e3b-a97e-6227947cdcb8",
+      "width": 0,
+      "x": 1792,
+      "y": 13,
+      "zOrder": 102,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 84,
+      "keepRatio": true,
+      "layer": "",
+      "name": "needToFeed",
+      "persistentUuid": "f26149f3-84b3-4c59-a337-0d2f9dffd179",
+      "width": 256,
+      "x": 770,
+      "y": -821,
+      "zOrder": 103,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1443,9 +1521,9 @@
       "effects": [],
       "behaviors": [
         {
-          "cost": 2,
           "name": "PathfindingObstacle",
           "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+          "cost": 2,
           "impassable": true
         },
         {
@@ -1525,6 +1603,16 @@
           "name": "No_Planting_Radius",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "Total_Amount_Fed",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Flesh_Needed",
+          "type": "number",
+          "value": 500
         }
       ],
       "effects": [],
@@ -1983,10 +2071,10 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": false,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ],
@@ -2337,6 +2425,129 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Donkey",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "acceleration": 0,
+          "canGoDownFromJumpthru": true,
+          "canGrabPlatforms": false,
+          "canGrabWithoutMoving": false,
+          "deceleration": 0,
+          "gravity": 0,
+          "ignoreDefaultControls": false,
+          "jumpSpeed": 0,
+          "jumpSustainTime": 0,
+          "ladderClimbingSpeed": 0,
+          "maxFallingSpeed": 0,
+          "maxSpeed": 0,
+          "name": "PlatformerObject",
+          "slopeMaxAngle": 0,
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "useLegacyTrajectory": false,
+          "xGrabTolerance": 0,
+          "yGrabOffset": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\donkey-1295054_1280.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1280,
+                        "y": 0
+                      },
+                      {
+                        "x": 1280,
+                        "y": 1266
+                      },
+                      {
+                        "x": 0,
+                        "y": 1266
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "needToFeed",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 40,
+      "color": {
+        "b": 98,
+        "g": 67,
+        "r": 240
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "102;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "color": "240;67;98"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2350,6 +2561,9 @@
       },
       {
         "objectName": "MoundOfFlesh"
+      },
+      {
+        "objectName": "needToFeed"
       },
       {
         "objectName": "Transporter"
@@ -2380,6 +2594,9 @@
       },
       {
         "objectName": "VineGrow"
+      },
+      {
+        "objectName": "Donkey"
       }
     ]
   },
@@ -2547,6 +2764,28 @@
             "Random(2000)",
             "20",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "vineSeedCount",
+            "Text",
+            "=",
+            "seeds.vine"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "needToFeed",
+            "Text",
+            "=",
+            "MoundOfFlesh.Total_Amount_Fed+\"/\"+MoundOfFlesh.Flesh_Needed"
           ]
         }
       ]
@@ -2988,6 +3227,18 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "plant growth and planting "
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -3195,6 +3446,98 @@
                 "1"
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "feeding grandpa"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Distance"
+          },
+          "parameters": [
+            "Player",
+            "MoundOfFlesh",
+            "200",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "f"
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "MoundOfFlesh",
+            "Total_Amount_Fed",
+            "<",
+            "MoundOfFlesh.Flesh_Needed"
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "flesh",
+            ">",
+            "0"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "flesh",
+            "-",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "MoundOfFlesh",
+            "Total_Amount_Fed",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "FleshAmount",
+            "Text",
+            "=",
+            "flesh"
           ]
         }
       ]
