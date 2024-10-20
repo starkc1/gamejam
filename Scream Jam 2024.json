@@ -536,6 +536,14 @@
         "userAdded": false
       },
       {
+        "file": "assets/groundMarker.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "groundMarker",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
         "alwaysLoaded": false,
         "file": "assets/Generic Character 1_Down_1.png",
         "kind": "image",
@@ -546,6 +554,198 @@
         "origin": {
           "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Generic Character/041cc9fadb84781546066455de59410af100147ea80adcc4ca167c2a4a8ff6d8_Generic Character 1_Down_1.png",
           "name": "Generic Character 1_Down_1.png"
+        }
+      },
+      {
+      "file": "assets/BasicGrowth.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/VineGrow.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "VineGrow",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/VineGrow.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/VineGrow.png\",\"extension\":\".png\"}",
+        "name": "assets\\VineGrow.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BasicGrowth.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BasicGrowth7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BasicGrowth4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\BasicGrowth5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/VineGrow2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "VineGrow2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BasicGrowth11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/VineGrow3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "VineGrow3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/VineGrow4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "VineGrow4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Green Small tree 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Small tree 1.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Generic Backgrounds/Plant/1d345af725d5b523aee8833e2eec9bd317a156eaf54ea03cc20d34bf82849629_Green Small tree 1.png",
+          "name": "Green Small tree 1.png"
         }
       },
       {
@@ -562,6 +762,18 @@
         }
       },
       {
+        "file": "assets/tiled_sea.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiled_sea.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pirate Pack (190 assets)/PNG/Retina/Sea/5bf50b4a49b40cdab578d8eec6720ef953fb6f8309ce6e34c501bc9bd224d903_tiled_sea.png",
+          "name": "tiled_sea.png"
+        }
+      },
+      {
         "alwaysLoaded": false,
         "file": "assets/Generic Character 1_Down_3.png",
         "kind": "image",
@@ -572,6 +784,18 @@
         "origin": {
           "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Generic Character/1aa965f6b0007d6915343a9d95c50880a89246f64331a6327e03065d78980c04_Generic Character 1_Down_3.png",
           "name": "Generic Character 1_Down_3.png"
+        }
+      },
+      {
+        "file": "assets/water flatfriz bright surface.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "water flatfriz bright surface.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/RC Art - Water Aqua System/BG Water/5a02ffb68422ac34c2ea22018392cdf29b77e12b096fcd29bc36d657333684cc_water flatfriz bright surface.png",
+          "name": "water flatfriz bright surface.png"
         }
       },
       {
@@ -588,6 +812,18 @@
         }
       },
       {
+        "file": "assets/Vendor Truck.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Vendor Truck.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Vehicle Pack/Vehicles/Truck/412a7f878e4dce449d757fca1749cf1f72aa1be759f9bc03320b84df211de315_Vendor Truck.png",
+          "name": "Vendor Truck.png"
+        }
+      },
+      {
         "alwaysLoaded": false,
         "file": "assets/Generic Character 1_Left_2.png",
         "kind": "image",
@@ -600,6 +836,43 @@
           "name": "Generic Character 1_Left_2.png"
         }
       },
+      {
+      "file": "TX Tileset Grass.png",
+      "kind": "image",
+      "metadata": "",
+      "name": "TX Tileset Grass.png",
+      "smoothed": true,
+      "userAdded": false
+    },
+    {
+      "alwaysLoaded": false,
+      "file": "assets/donkey-1295054_1280.png",
+      "kind": "image",
+      "metadata": "",
+      "name": "assets\\donkey-1295054_1280.png",
+      "smoothed": true,
+      "userAdded": true
+    },
+    {
+      "alwaysLoaded": false,
+      "file": "assets/vineSeed.png",
+      "kind": "image",
+      "metadata": "{\"extension\":\".png\"}",
+      "name": "vineSeed",
+      "smoothed": true,
+      "userAdded": false
+    },
+    {
+      "file": "assets/Nosifer-Regular.ttf",
+      "kind": "font",
+      "metadata": "",
+      "name": "1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
+      "userAdded": false,
+      "origin": {
+        "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
+        "name": "gdevelop-asset-store"
+      }
+    },
       {
         "alwaysLoaded": false,
         "file": "assets/Generic Character 1_Left_3.png",
@@ -1314,13 +1587,43 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Tiny Characters/females/cb5a2db705f09bab16f48ef46a2eccec8bb1bfc1a19cbdc2b794310ee93fff7c_Female Character 1_Walking Up_3.png",
           "name": "Female Character 1_Walking Up_3.png"
         }
+      },
+      {
+      "file": "assets/doorTrigger.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "doorTrigger",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Kenney Mini Square.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "d73fbc705487707ea61faa2b865e21e3b24bea3319f75c2a124ad13bcae99ab4_Kenney Mini Square.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/d73fbc705487707ea61faa2b865e21e3b24bea3319f75c2a124ad13bcae99ab4_Kenney Mini Square.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/MetalMania-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "11ed64262caf521cd24c19af2a005d28c4618e6a36c62ae3fc25353d157feeaf_MetalMania-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/11ed64262caf521cd24c19af2a005d28c4618e6a36c62ae3fc25353d157feeaf_MetalMania-Regular.ttf",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
   },
   "objects": [
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Player",
       "type": "Sprite",
@@ -1389,8 +1692,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 16
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1401,19 +1704,23 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 5,
+                        "y": 8
                       },
                       {
-                        "x": 31,
-                        "y": 0
+                        "x": 26,
+                        "y": 8
                       },
                       {
-                        "x": 31,
+                        "x": 26.5,
+                        "y": 18
+                      },
+                      {
+                        "x": 26.5,
                         "y": 32
                       },
                       {
-                        "x": 0,
+                        "x": 5,
                         "y": 32
                       }
                     ]
@@ -3905,6 +4212,109 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "VineSeed",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "vineSeed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "vineSeed",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 10,
+                        "y": 8
+                      },
+                      {
+                        "x": 59,
+                        "y": 8
+                      },
+                      {
+                        "x": 59,
+                        "y": 62
+                      },
+                      {
+                        "x": 10,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "vineSeedCount",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 3,
+        "g": 173,
+        "r": 92
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "color": "92;173;3"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -3948,6 +4358,12 @@
       },
       {
         "objectName": "FleshAmount"
+      },
+      {
+        "objectName": "VineSeed"
+      },
+      {
+        "objectName": "vineSeedCount"
       }
     ]
   },
@@ -3979,6 +4395,22 @@
       "name": "Seed",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "seeds",
+      "type": "structure",
+      "children": [
+        {
+          "name": "vine",
+          "type": "number",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "name": "day",
+      "type": "number",
+      "value": 1
     }
   ],
   "layouts": [
@@ -3993,10 +4425,22 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/farm"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/transition"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game-over"
     }
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/snaptogrid"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/sticker"
