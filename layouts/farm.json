@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6622955665506585,
+    "zoomFactor": 0.5800155239905038,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -2583,6 +2583,14 @@
       "effects": [],
       "behaviors": [
         {
+          "canBeGrabbed": false,
+          "name": "Platform",
+          "platformType": "NormalPlatform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
+        },
+        {
+          "isFolded": true,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 0,
@@ -2653,48 +2661,6 @@
           ]
         }
       ]
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "needToFeed",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Text",
-      "font": "1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
-      "textAlignment": "center",
-      "characterSize": 30,
-      "color": {
-        "b": 98,
-        "g": 67,
-        "r": 240
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": true,
-        "isShadowEnabled": true,
-        "italic": false,
-        "outlineColor": "0;0;0",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "102;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Text",
-        "font": "1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
-        "textAlignment": "center",
-        "verticalTextAlignment": "center",
-        "characterSize": 30,
-        "color": "240;67;98"
-      }
     },
     {
       "adaptCollisionMaskAutomatically": true,
@@ -2811,9 +2777,6 @@
       },
       {
         "objectName": "MoundOfFlesh"
-      },
-      {
-        "objectName": "needToFeed"
       },
       {
         "objectName": "Transporter"

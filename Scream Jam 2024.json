@@ -1876,6 +1876,48 @@
         "characterSize": 40,
         "color": "92;173;3"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "needToFeed",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 30,
+      "color": {
+        "b": 98,
+        "g": 67,
+        "r": 240
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "102;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 30,
+        "color": "240;67;98"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1913,6 +1955,9 @@
       },
       {
         "objectName": "vineSeedCount"
+      },
+      {
+        "objectName": "needToFeed"
       }
     ]
   },

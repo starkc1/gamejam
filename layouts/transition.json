@@ -195,6 +195,16 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
+            "fleshFed",
+            "=",
+            "fleshFed - fleshNeeded"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
             "fleshNeeded",
             "=",
             "((day * Random(500)) + fleshNeeded)"
