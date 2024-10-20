@@ -7511,13 +7511,12 @@
         },
         {
           "type": {
-            "value": "BooleanObjectVariable"
+            "value": "BooleanVariable"
           },
           "parameters": [
-            "Player",
             "knifeOut",
             "True",
-            ""
+            "True"
           ]
         }
       ],
@@ -7549,13 +7548,12 @@
         },
         {
           "type": {
-            "value": "BooleanObjectVariable"
+            "value": "BooleanVariable"
           },
           "parameters": [
-            "Player",
             "knifeOut",
             "True",
-            ""
+            "True"
           ]
         }
       ],
@@ -7590,13 +7588,12 @@
       "conditions": [
         {
           "type": {
-            "value": "BooleanObjectVariable"
+            "value": "BooleanVariable"
           },
           "parameters": [
-            "Player",
             "knifeOut",
             "True",
-            ""
+            "True"
           ]
         },
         {

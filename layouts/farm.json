@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5079575118131873,
+    "zoomFactor": 0.7817486425451983,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1355,22 +1355,6 @@
       "keepRatio": true,
       "layer": "",
       "name": "VineGrow",
-      "persistentUuid": "8ce59949-ac49-45f5-9dec-661ad7811868",
-      "width": 0,
-      "x": 1920,
-      "y": -1536,
-      "zOrder": 34,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "VineGrow",
       "persistentUuid": "54989e8f-2e93-45da-8da0-55fceaa0f4e4",
       "width": 0,
       "x": 1408,
@@ -1522,6 +1506,23 @@
       "x": 768,
       "y": -1920,
       "zOrder": 104,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 320,
+      "customSize": true,
+      "depth": 2,
+      "height": 65,
+      "keepRatio": true,
+      "layer": "",
+      "name": "IronKnife6",
+      "persistentUuid": "19c78280-b631-4735-b8df-e6b9346fe615",
+      "width": 65,
+      "x": 550,
+      "y": -1896,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2607,6 +2608,67 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "1c398749cb397d2993ee2109fe604751d0c3cd4800c4e55ab94a1aa5f8a37abc",
+      "name": "IronKnife6",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Iron Knife 6",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Iron Knife 6",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 11
+                      },
+                      {
+                        "x": 3,
+                        "y": 11
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2659,6 +2721,9 @@
       },
       {
         "objectName": "doorTrigger"
+      },
+      {
+        "objectName": "IronKnife6"
       }
     ]
   },
@@ -3971,13 +4036,12 @@
         },
         {
           "type": {
-            "value": "BooleanObjectVariable"
+            "value": "BooleanVariable"
           },
           "parameters": [
-            "Player",
             "knifeOut",
             "True",
-            ""
+            "True"
           ]
         }
       ],
@@ -4009,13 +4073,12 @@
         },
         {
           "type": {
-            "value": "BooleanObjectVariable"
+            "value": "BooleanVariable"
           },
           "parameters": [
-            "Player",
             "knifeOut",
             "True",
-            ""
+            "True"
           ]
         }
       ],
@@ -4029,6 +4092,65 @@
             "Animation",
             "=",
             "3"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "get knife"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "IronKnife6",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "e"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "IronKnife6",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "knifeOut",
+            "True",
+            ""
           ]
         }
       ]

@@ -372,6 +372,16 @@
             "=",
             "1"
           ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "knifeOut",
+            "False",
+            ""
+          ]
         }
       ]
     },

@@ -889,6 +889,28 @@
         "name": "splatL",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Iron Knife 6.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Iron Knife 6.png\",\"extension\":\".png\"}",
+        "name": "Iron Knife 6.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Weapons/Iron Weapon/Knife/bc2ea42a114944ec54fdb7909f9cd3e7de61f315e0aa952088b0d6d498cfaf79_Iron Knife 6.png",
+          "name": "Iron Knife 6.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Iron Knife7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Iron Knife 6",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -910,7 +932,7 @@
         {
           "name": "knifeOut",
           "type": "boolean",
-          "value": true
+          "value": false
         }
       ],
       "effects": [],
@@ -1932,6 +1954,11 @@
       "name": "day",
       "type": "number",
       "value": 1
+    },
+    {
+      "name": "knifeOut",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
