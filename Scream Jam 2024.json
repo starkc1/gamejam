@@ -1626,6 +1626,7 @@
         }
       },
       {
+        "alwaysLoaded": false,
         "file": "BUILD6.png",
         "kind": "image",
         "metadata": "",
@@ -1643,6 +1644,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "assets/Devout 4_Down_1.png",
         "kind": "image",
         "metadata": "",
@@ -2198,10 +2200,10 @@
           "Topdown": "TopDownMovement"
         },
         {
-          "ignoreDefaultControls": false,
           "name": "TopDownMovement",
-          "rotateObject": false,
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "ignoreDefaultControls": false,
+          "rotateObject": false,
           "acceleration": 4000,
           "allowDiagonals": true,
           "angleOffset": 0,

@@ -6211,6 +6211,8 @@
       "initialVariables": []
     },
     {
+      "angle": 0,
+      "customSize": false,
       "height": 775,
       "keepRatio": true,
       "layer": "",
@@ -6225,6 +6227,7 @@
       "initialVariables": []
     },
     {
+      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
@@ -7985,6 +7988,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -8519,6 +8523,7 @@
       "comment": "murder"
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -8557,7 +8562,7 @@
       "events": [
         {
           "type": "BuiltinCommonInstructions::Repeat",
-          "repeatExpression": "3",
+          "repeatExpression": "RandomFloat(3)",
           "conditions": [
             {
               "type": {
@@ -8611,7 +8616,7 @@
         },
         {
           "type": "BuiltinCommonInstructions::Repeat",
-          "repeatExpression": "3",
+          "repeatExpression": "Random(3)",
           "conditions": [
             {
               "type": {
@@ -8673,6 +8678,168 @@
               },
               "parameters": [
                 "Citizen",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "knifeOut",
+            "True",
+            "True"
+          ]
+        },
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "Citizens",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "e"
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Repeat",
+          "repeatExpression": "RandomFloat(3)",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Index"
+              },
+              "parameters": [
+                "Player",
+                "Animation",
+                "=",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Flesh",
+                "worth",
+                "=",
+                "RandomInRange(50,150)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Flesh",
+                "Player.X()+RandomInRange(100,120)",
+                "Player.Y()+ RandomInRange( -40, 40)",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "splatR",
+                "Citizens.X()",
+                "Citizens.Y()",
+                "\"Tileset\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Repeat",
+          "repeatExpression": "Random(3)",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Index"
+              },
+              "parameters": [
+                "Player",
+                "Animation",
+                "=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Flesh",
+                "worth",
+                "=",
+                "RandomInRange(50,150)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Flesh",
+                "Player.X()+RandomInRange(-100,-120)",
+                "Player.Y()+ RandomInRange( -40, 40)",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "splatL",
+                "Citizens.X() - 64",
+                "Citizens.Y()",
+                "\"Tileset\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Citizens",
                 ""
               ]
             }
