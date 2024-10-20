@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.3192894589690252,
+    "zoomFactor": 0.5079575118131873,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1496,14 +1496,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 84,
+      "height": 128,
       "keepRatio": true,
       "layer": "",
       "name": "needToFeed",
       "persistentUuid": "f26149f3-84b3-4c59-a337-0d2f9dffd179",
-      "width": 256,
-      "x": 770,
-      "y": -821,
+      "width": 512,
+      "x": 640,
+      "y": -832,
       "zOrder": 103,
       "numberProperties": [],
       "stringProperties": [],
@@ -2453,6 +2453,8 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 0,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
@@ -2465,9 +2467,7 @@
           "ladderClimbingSpeed": 0,
           "maxFallingSpeed": 0,
           "maxSpeed": 0,
-          "name": "PlatformerObject",
           "slopeMaxAngle": 0,
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "useLegacyTrajectory": false,
           "xGrabTolerance": 0,
           "yGrabOffset": 0
@@ -2538,7 +2538,7 @@
       "string": "Text",
       "font": "1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
       "textAlignment": "center",
-      "characterSize": 40,
+      "characterSize": 30,
       "color": {
         "b": 98,
         "g": 67,
@@ -2561,8 +2561,8 @@
         "text": "Text",
         "font": "1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
         "textAlignment": "center",
-        "verticalTextAlignment": "top",
-        "characterSize": 40,
+        "verticalTextAlignment": "center",
+        "characterSize": 30,
         "color": "240;67;98"
       }
     },
@@ -3576,7 +3576,7 @@
           "parameters": [
             "flesh",
             ">",
-            "0"
+            "day"
           ]
         }
       ],
@@ -3588,7 +3588,7 @@
           "parameters": [
             "flesh",
             "-",
-            "1"
+            "day"
           ]
         },
         {
@@ -3599,7 +3599,7 @@
             "MoundOfFlesh",
             "Total_Amount_Fed",
             "+",
-            "1"
+            "day"
           ]
         },
         {
@@ -3625,9 +3625,10 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "ending the day, advancing needed flesh amount"
+      "comment": "ending day, game over"
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -3690,6 +3691,18 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "ending the day, advancing needed flesh amount"
+    },
+    {
       "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -3721,7 +3734,7 @@
           "parameters": [
             "MoundOfFlesh",
             "Total_Amount_Fed",
-            "=",
+            ">=",
             "MoundOfFlesh.Flesh_Needed"
           ]
         },
@@ -3867,9 +3880,158 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "facing direction while moving"
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "a"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "d"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "facing direction while moving with knife"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "a"
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "Player",
+            "knifeOut",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "d"
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "Player",
+            "knifeOut",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "3"
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -4020,6 +4182,10 @@
     {
       "name": "PlatformerObject",
       "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
+      "name": "RemapForTopdown",
+      "type": "BehaviorRemapper::RemapForTopdown"
     },
     {
       "name": "Resizable",
