@@ -916,10 +916,32 @@
         "alwaysLoaded": false,
         "file": "assets/farmera1r2.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/farmera1r2.png\"}",
         "name": "farmera1r2",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/kenvector_future.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "09884c158c08409269c534b1e1e64a36a21f087bd06f66cff077a91788a4ec9a_kenvector_future.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter/09884c158c08409269c534b1e1e64a36a21f087bd06f66cff077a91788a4ec9a_kenvector_future.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Silkscreen-Bold.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "ecf7f6cb89e16c44e3b5a9c8abb703ba6cbc52eb8529353125f4f5caed404144_Silkscreen-Bold.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/ecf7f6cb89e16c44e3b5a9c8abb703ba6cbc52eb8529353125f4f5caed404144_Silkscreen-Bold.ttf",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []

@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5800155239905038,
+    "zoomFactor": 0.7315786463753228,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1446,38 +1446,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "GUI",
-      "name": "VineSeed",
-      "persistentUuid": "b998ce59-f9e3-40f2-a81d-adb63d49786d",
-      "width": 0,
-      "x": 1856,
-      "y": 7,
-      "zOrder": 101,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "GUI",
-      "name": "vineSeedCount",
-      "persistentUuid": "9f6bd37b-a271-4e3b-a97e-6227947cdcb8",
-      "width": 0,
-      "x": 1792,
-      "y": 13,
-      "zOrder": 102,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 1,
       "height": 128,
@@ -1540,6 +1508,54 @@
       "x": -465,
       "y": -3328,
       "zOrder": 28,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "knifeInteract",
+      "persistentUuid": "051018bd-6e50-48c6-99ce-b020b8c14af6",
+      "width": 0,
+      "x": 2048,
+      "y": -1152,
+      "zOrder": 105,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "knifeInteract",
+      "persistentUuid": "f5c21967-29c9-410f-9b3a-06bbd81b90d8",
+      "width": 0,
+      "x": 519,
+      "y": -1945,
+      "zOrder": 106,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "doorInteract",
+      "persistentUuid": "0f0a664f-68e0-429f-b10c-e64ca0c74931",
+      "width": 0,
+      "x": 768,
+      "y": -1958,
+      "zOrder": 107,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2764,6 +2780,132 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "knifeInteract",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "[E] Take",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 30,
+      "color": {
+        "b": 28,
+        "g": 231,
+        "r": 248
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "[E] Take",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 30,
+        "color": "248;231;28"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "doorInteract",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "[E] End the Day",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 30,
+      "color": {
+        "b": 28,
+        "g": 231,
+        "r": 248
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "[E] End the Day",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 30,
+        "color": "248;231;28"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": true,
+      "name": "moundInteract",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "[Hold F] Feed",
+      "font": "ecf7f6cb89e16c44e3b5a9c8abb703ba6cbc52eb8529353125f4f5caed404144_Silkscreen-Bold.ttf",
+      "textAlignment": "center",
+      "characterSize": 30,
+      "color": {
+        "b": 27,
+        "g": 2,
+        "r": 208
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": true,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "[Hold F] Feed",
+        "font": "ecf7f6cb89e16c44e3b5a9c8abb703ba6cbc52eb8529353125f4f5caed404144_Silkscreen-Bold.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 30,
+        "color": "208;2;27"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2816,6 +2958,15 @@
       },
       {
         "objectName": "IronKnife6"
+      },
+      {
+        "objectName": "knifeInteract"
+      },
+      {
+        "objectName": "doorInteract"
+      },
+      {
+        "objectName": "moundInteract"
       }
     ]
   },
@@ -3077,6 +3228,22 @@
             "Text",
             "=",
             "fleshFed+\"/\"+fleshNeeded"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "knifeInteract"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "doorInteract"
           ]
         }
       ]
@@ -4337,6 +4504,148 @@
           },
           "parameters": [
             "IronKnife6"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "knifeInteract"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "make text float for interactions"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "IronKnife6",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "knifeInteract",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "doorTrigger",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "doorInteract",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "MoundOfFlesh",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "moundInteract",
+            "Player.X() - 120",
+            "Player.Y() -96",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "MoundOfFlesh",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "moundInteract",
+            ""
           ]
         }
       ]

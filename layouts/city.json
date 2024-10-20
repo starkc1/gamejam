@@ -8103,6 +8103,42 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "knifeOut",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
       "type": "BuiltinCommonInstructions::Comment",
       "color": {
         "b": 109,
