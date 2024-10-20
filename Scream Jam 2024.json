@@ -512,7 +512,7 @@
         "alwaysLoaded": false,
         "file": "assets/Flesh.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Flesh.png\",\"extension\":\".png\"}",
         "name": "assets\\Flesh.png",
         "smoothed": true,
         "userAdded": false
@@ -1626,7 +1626,6 @@
         }
       },
       {
-        "alwaysLoaded": false,
         "file": "BUILD6.png",
         "kind": "image",
         "metadata": "",
@@ -1636,6 +1635,14 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "assets/farmera1r.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/farmera1r.png\"}",
+        "name": "farmera1r",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
         "file": "assets/Devout 4_Down_1.png",
         "kind": "image",
         "metadata": "",
@@ -1645,6 +1652,64 @@
         "origin": {
           "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/8ebf6672135ac44ec713f4fa2b50fee4d4406f7960764a3cb47221549a6ba4b3_Devout 4_Down_1.png",
           "name": "Devout 4_Down_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/farmera1lk.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/farmera1lk.png\"}",
+        "name": "farmera1lk",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/farmera1lk.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\farmera1lk.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_farmera1lk.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\farmera1lk",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite6.png\"}",
+        "name": "NewSprite6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/splatL.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "splatL",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Iron Knife 6.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Iron Knife 6.png\",\"extension\":\".png\"}",
+        "name": "Iron Knife 6.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Weapons/Iron Weapon/Knife/bc2ea42a114944ec54fdb7909f9cd3e7de61f315e0aa952088b0d6d498cfaf79_Iron Knife 6.png",
+          "name": "Iron Knife 6.png"
         }
       },
       {
@@ -2036,6 +2101,15 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Western FPS 2D/Character/ed48743a3b0876cc4b03e0580ccdfc1ec9d030b1d2d27855edf8b8bdef19a6e3_Policeman_Walk_3.png",
           "name": "Policeman_Walk_3.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Iron Knife7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Iron Knife 6",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2053,6 +2127,11 @@
           "name": "Disfigurement",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "knifeOut",
+          "type": "boolean",
+          "value": false
         }
       ],
       "effects": [],
@@ -2079,8 +2158,18 @@
           "yGrabOffset": 0
         },
         {
-          "isFolded": true,
+          "name": "RemapForTopdown",
+          "type": "BehaviorRemapper::RemapForTopdown",
+          "Up": "w",
+          "Left": "a",
+          "Right": "d",
+          "Down": "s",
+          "Topdown": "TopDownMovement"
+        },
+        {
+          "ignoreDefaultControls": false,
           "name": "TopDownMovement",
+          "rotateObject": false,
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 4000,
           "allowDiagonals": true,
@@ -2088,10 +2177,8 @@
           "angularMaxSpeed": 180,
           "customIsometryAngle": 30,
           "deceleration": 4000,
-          "ignoreDefaultControls": false,
           "maxSpeed": 200,
           "movementAngleOffset": -45,
-          "rotateObject": false,
           "viewpoint": "TrueIsometry"
         }
       ],
@@ -2108,6 +2195,165 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "farmera1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 15.5,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 8
+                      },
+                      {
+                        "x": 26,
+                        "y": 8
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 18
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 32
+                      },
+                      {
+                        "x": 5,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "farmera1r",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "farmera1r",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 15.5,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 8
+                      },
+                      {
+                        "x": 26,
+                        "y": 8
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 18
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 32
+                      },
+                      {
+                        "x": 5,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "farmera1lk",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "farmera1lk",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 15.5,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 8
+                      },
+                      {
+                        "x": 26,
+                        "y": 8
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 18
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 32
+                      },
+                      {
+                        "x": 5,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "assets\\farmera1lk",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\farmera1lk",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2567,17 +2813,79 @@
       "name": "Flesh",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "worth",
+          "type": "number",
+          "value": 100
+        }
+      ],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "canBeGrabbed": false,
+          "name": "Platform",
+          "platformType": "NormalPlatform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
+        }
+      ],
       "animations": [
         {
-          "name": "Flesh",
+          "name": "spawn",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
               "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Flesh.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 58,
+                        "y": 1
+                      },
+                      {
+                        "x": 58,
+                        "y": 54
+                      },
+                      {
+                        "x": 0,
+                        "y": 54
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pickup",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
@@ -6147,6 +6455,11 @@
       "name": "day",
       "type": "number",
       "value": 1
+    },
+    {
+      "name": "knifeOut",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
@@ -6173,6 +6486,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/behaviorremapper"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/snaptogrid"

@@ -17,8 +17,8 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.2550455473354418,
+    "snap": true,
+    "zoomFactor": 0.4194339782759185,
     "windowMask": false
   },
   "objectsGroups": [
@@ -2995,7 +2995,7 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "Dialog",
+      "layer": "GUI",
       "name": "Flesh",
       "persistentUuid": "c6028c9e-be3f-42eb-a775-778cc9f4fab8",
       "width": 0,
@@ -3043,7 +3043,7 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "Dialog",
       "name": "Flesh",
       "persistentUuid": "c6f398ae-cd10-4cbb-a67a-a51d1897d876",
       "width": 0,
@@ -6213,6 +6213,20 @@
       "angle": 0,
       "customSize": true,
       "depth": 0,
+      "height": 50,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Citizen",
+      "persistentUuid": "f62a9bc2-c1f1-49bb-82a5-7ed5b6cc0766",
+      "width": 50,
+      "x": -1016,
+      "y": -826,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
       "height": 775,
       "keepRatio": true,
       "layer": "",
@@ -6227,7 +6241,6 @@
       "initialVariables": []
     },
     {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
@@ -6238,6 +6251,57 @@
       "x": -670,
       "y": -939,
       "zOrder": 500,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 50,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Citizen",
+      "persistentUuid": "53347674-3a5b-4769-95c3-5699f2577af4",
+      "width": 50,
+      "x": -885,
+      "y": -764,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 50,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Citizen",
+      "persistentUuid": "4f3de9eb-1b85-42b5-b47b-f54503898e39",
+      "width": 50,
+      "x": -1086,
+      "y": -696,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 50,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Citizen",
+      "persistentUuid": "3ae74442-cb35-4f60-9179-60a035c79a2f",
+      "width": 50,
+      "x": -1145,
+      "y": -888,
+      "zOrder": 30,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -7116,8 +7180,65 @@
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "CoinAmount",
+            "Text",
+            "=",
+            "coins"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "FleshAmount",
+            "Text",
+            "=",
+            "flesh"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Water"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
+        {
+          "type": {
+            "value": "SetCameraCenterY"
+          },
+          "parameters": [
+            "",
+            "=",
+            "lerp(CameraY(), Player.Y(), 0.5)",
+            "\"Tileset\"",
+            ""
+          ]
+        },
         {
           "type": {
             "value": "SetCameraCenterX"
@@ -7176,48 +7297,6 @@
             "lerp(CameraX(), Player.X(), 0.5)",
             "\"Tileset\"",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetCameraCenterY"
-          },
-          "parameters": [
-            "",
-            "=",
-            "lerp(CameraY(), Player.Y(), 0.5)",
-            "\"Tileset\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "CoinAmount",
-            "Text",
-            "=",
-            "coins"
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "FleshAmount",
-            "Text",
-            "=",
-            "flesh"
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "Water"
           ]
         }
       ]
@@ -7378,6 +7457,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::ForEach",
       "object": "Hoe",
       "conditions": [],
@@ -7556,9 +7636,437 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "facing direction while moving"
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "a"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "d"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "facing direction while moving with knife"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "a"
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "knifeOut",
+            "True",
+            "True"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "d"
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "knifeOut",
+            "True",
+            "True"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "3"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "murder"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "knifeOut",
+            "True",
+            "True"
+          ]
+        },
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "Citizen",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "e"
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Repeat",
+          "repeatExpression": "3",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Index"
+              },
+              "parameters": [
+                "Player",
+                "Animation",
+                "=",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Flesh",
+                "worth",
+                "=",
+                "RandomInRange(50,150)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Flesh",
+                "Player.X()+RandomInRange(80,120)",
+                "Player.Y()+ RandomInRange( -40, 40)",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "splatR",
+                "Citizen.X()",
+                "Citizen.Y()",
+                "\"Tileset\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Repeat",
+          "repeatExpression": "3",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Index"
+              },
+              "parameters": [
+                "Player",
+                "Animation",
+                "=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Flesh",
+                "worth",
+                "=",
+                "RandomInRange(50,150)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Flesh",
+                "Player.X()+RandomInRange(-80,-120)",
+                "Player.Y()+ RandomInRange( -40, 40)",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "splatL",
+                "Citizen.X()",
+                "Citizen.Y()",
+                "\"Tileset\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Citizen",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "flesh drop scattering"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::Name"
+          },
+          "parameters": [
+            "Flesh",
+            "Animation",
+            "=",
+            "\"spawn\""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+              },
+              "parameters": [
+                "Flesh",
+                "Animation"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Flesh",
+                "Animation",
+                "=",
+                "\"pickup\""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "Flesh",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Flesh",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "flesh",
+            "+",
+            "Flesh.worth"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "FleshAmount",
+            "Text",
+            "=",
+            "flesh"
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -7771,6 +8279,10 @@
     {
       "name": "PlatformerObject",
       "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
+      "name": "RemapForTopdown",
+      "type": "BehaviorRemapper::RemapForTopdown"
     },
     {
       "name": "Resizable",

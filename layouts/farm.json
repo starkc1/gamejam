@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.3192894589690252,
+    "zoomFactor": 0.7817486425451983,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1355,22 +1355,6 @@
       "keepRatio": true,
       "layer": "",
       "name": "VineGrow",
-      "persistentUuid": "8ce59949-ac49-45f5-9dec-661ad7811868",
-      "width": 0,
-      "x": 1920,
-      "y": -1536,
-      "zOrder": 34,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "VineGrow",
       "persistentUuid": "54989e8f-2e93-45da-8da0-55fceaa0f4e4",
       "width": 0,
       "x": 1408,
@@ -1496,14 +1480,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 84,
+      "height": 128,
       "keepRatio": true,
       "layer": "",
       "name": "needToFeed",
       "persistentUuid": "f26149f3-84b3-4c59-a337-0d2f9dffd179",
-      "width": 256,
-      "x": 770,
-      "y": -821,
+      "width": 512,
+      "x": 640,
+      "y": -832,
       "zOrder": 103,
       "numberProperties": [],
       "stringProperties": [],
@@ -1522,6 +1506,23 @@
       "x": 768,
       "y": -1920,
       "zOrder": 104,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 320,
+      "customSize": true,
+      "depth": 2,
+      "height": 65,
+      "keepRatio": true,
+      "layer": "",
+      "name": "IronKnife6",
+      "persistentUuid": "19c78280-b631-4735-b8df-e6b9346fe615",
+      "width": 65,
+      "x": 550,
+      "y": -1896,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2538,7 +2539,7 @@
       "string": "Text",
       "font": "1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
       "textAlignment": "center",
-      "characterSize": 40,
+      "characterSize": 30,
       "color": {
         "b": 98,
         "g": 67,
@@ -2561,8 +2562,8 @@
         "text": "Text",
         "font": "1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
         "textAlignment": "center",
-        "verticalTextAlignment": "top",
-        "characterSize": 40,
+        "verticalTextAlignment": "center",
+        "characterSize": 30,
         "color": "240;67;98"
       }
     },
@@ -2601,6 +2602,67 @@
                     "y": 0
                   },
                   "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "1c398749cb397d2993ee2109fe604751d0c3cd4800c4e55ab94a1aa5f8a37abc",
+      "name": "IronKnife6",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Iron Knife 6",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Iron Knife 6",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 11
+                      },
+                      {
+                        "x": 3,
+                        "y": 11
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -2659,6 +2721,9 @@
       },
       {
         "objectName": "doorTrigger"
+      },
+      {
+        "objectName": "IronKnife6"
       }
     ]
   },
@@ -3576,7 +3641,7 @@
           "parameters": [
             "flesh",
             ">",
-            "0"
+            "day"
           ]
         }
       ],
@@ -3588,7 +3653,7 @@
           "parameters": [
             "flesh",
             "-",
-            "1"
+            "day"
           ]
         },
         {
@@ -3599,7 +3664,7 @@
             "MoundOfFlesh",
             "Total_Amount_Fed",
             "+",
-            "1"
+            "day"
           ]
         },
         {
@@ -3625,9 +3690,10 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "ending the day, advancing needed flesh amount"
+      "comment": "ending day, game over"
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -3690,6 +3756,18 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "ending the day, advancing needed flesh amount"
+    },
+    {
       "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -3721,7 +3799,7 @@
           "parameters": [
             "MoundOfFlesh",
             "Total_Amount_Fed",
-            "=",
+            ">=",
             "MoundOfFlesh.Flesh_Needed"
           ]
         },
@@ -3867,9 +3945,215 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "facing direction while moving"
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "a"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "d"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "facing direction while moving with knife"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "a"
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "knifeOut",
+            "True",
+            "True"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "d"
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "knifeOut",
+            "True",
+            "True"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "3"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "get knife"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "IronKnife6",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "e"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "IronKnife6",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "knifeOut",
+            "True",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -4020,6 +4304,10 @@
     {
       "name": "PlatformerObject",
       "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
+      "name": "RemapForTopdown",
+      "type": "BehaviorRemapper::RemapForTopdown"
     },
     {
       "name": "Resizable",
