@@ -343,7 +343,7 @@
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
-            "const max = 10",
+            "",
             "function getRandom(min, max) {",
             "    const floatRandom = Math.random()",
             "",
@@ -360,12 +360,11 @@
             "    var rand = getRandom(1, 10)",
             "",
             "    if (i == 0) {",
-            "        seed = rand",
+            "        seed = rand.toString()",
             "    } else {",
-            "        seed += rand",
+            "        seed += rand.toString()",
             "    }",
             "}",
-            "",
             "runtimeScene.getGame().getVariables().get(\"seed\").setString(seed)",
             "",
             "",

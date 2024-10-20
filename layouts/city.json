@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.18305734955560554,
+    "zoomFactor": 0.2550455473354418,
     "windowMask": false
   },
   "objectsGroups": [
@@ -44,6 +44,15 @@
         },
         {
           "name": "FemaleAdult"
+        },
+        {
+          "name": "MalePriest"
+        },
+        {
+          "name": "FemalePriest"
+        },
+        {
+          "name": "Policeman"
         }
       ]
     }
@@ -1388,74 +1397,6 @@
       "width": 757,
       "x": 457,
       "y": 1918,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 180,
-      "customSize": true,
-      "depth": 2,
-      "height": 37,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "897444ec-728f-4275-a681-ba94b9cc5981",
-      "width": 177,
-      "x": -653,
-      "y": -789,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 180,
-      "customSize": true,
-      "depth": 2,
-      "height": 37,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "0a437332-9147-4ad6-b0c7-778a4cf89747",
-      "width": 177,
-      "x": -651,
-      "y": -265,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 90,
-      "customSize": true,
-      "depth": 2,
-      "height": 14,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "e0996a56-f5de-49c9-a282-0a5b4d657e16",
-      "width": 561,
-      "x": -751,
-      "y": -515,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 90,
-      "customSize": true,
-      "depth": 2,
-      "height": 14,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "a91f0bae-0d1a-427b-abb6-0cafee979573",
-      "width": 561,
-      "x": -927,
-      "y": -516,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -3126,22 +3067,6 @@
       "x": -1313,
       "y": -826,
       "zOrder": 99,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "3113f10c-771b-4e15-ab84-8cc4ba81fb0a",
-      "width": 0,
-      "x": -628,
-      "y": -686,
-      "zOrder": 10009,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -6300,6 +6225,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Church",
+      "persistentUuid": "57c84152-77f9-4d9e-91e1-c1485dd2e28d",
+      "width": 0,
+      "x": -670,
+      "y": -939,
+      "zOrder": 500,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -6591,12 +6532,25 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "BUILD1.png"
+                  "image": "BUILD1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
                 }
               ]
             }
           ]
-        },    
+        },
         {
           "name": "",
           "useMultipleDirections": false,
@@ -6670,6 +6624,432 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "a87a51af13d315ce8e67d6c8cb4ac45d0174c3d2d9461de201cddb65f48a5ad4",
+      "name": "GreenSmallTree1",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "NormalPlatform",
+          "yGrabOffset": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Green Small tree 1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 40,
+                        "y": 0
+                      },
+                      {
+                        "x": 40,
+                        "y": 86
+                      },
+                      {
+                        "x": 0,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "a87a51af13d315ce8e67d6c8cb4ac45d0174c3d2d9461de201cddb65f48a5ad4",
+      "name": "GreenSmallTree2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "NormalPlatform",
+          "yGrabOffset": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Green Small tree 1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 46.5
+                      },
+                      {
+                        "x": 40,
+                        "y": 46.5
+                      },
+                      {
+                        "x": 40,
+                        "y": 86
+                      },
+                      {
+                        "x": 0,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "3ee3a793953b7172157fb8fe898fc26a387689feb50ed02be93a48b411fd0cd6",
+      "height": 128,
+      "name": "Sea",
+      "texture": "tiled_sea.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 128,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "3298c6d2b4a7a1a92a28559c757d77706ce81c53f7157de0334b4e88f5cb381f",
+      "name": "VendorTruck",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Vendor Truck.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 38,
+                        "y": 0
+                      },
+                      {
+                        "x": 38,
+                        "y": 22
+                      },
+                      {
+                        "x": 0,
+                        "y": 22
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "7c717842a366e762c4d07baefe1ad4dd48aa569145e43be23a05f071861f8e2e",
+      "name": "RpgUrbanMap16x17",
+      "type": "TileMap::SimpleTileMap",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "atlasImage": "tilemap_packed7.png",
+        "rowCount": 18,
+        "columnCount": 27,
+        "tileSize": 16,
+        "tilesWithHitBox": ""
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "splatR",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "splatR",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite6",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 0
+                      },
+                      {
+                        "x": 126,
+                        "y": 0
+                      },
+                      {
+                        "x": 126,
+                        "y": 63
+                      },
+                      {
+                        "x": 3,
+                        "y": 63
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "splatL",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "splatL",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "splatL",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 0
+                      },
+                      {
+                        "x": 125,
+                        "y": 0
+                      },
+                      {
+                        "x": 125,
+                        "y": 63
+                      },
+                      {
+                        "x": 2,
+                        "y": 63
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Church",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "BUILD6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 61,
+                        "y": 2
+                      },
+                      {
+                        "x": 737,
+                        "y": 2
+                      },
+                      {
+                        "x": 737,
+                        "y": 752
+                      },
+                      {
+                        "x": 61,
+                        "y": 752
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
     }
   ],
   "objectsFolderStructure": {
@@ -6680,6 +7060,12 @@
         "children": [
           {
             "objectName": "School"
+          },
+          {
+            "objectName": "Church"
+          },
+          {
+            "objectName": "NewSprite"
           }
         ]
       },
@@ -6696,13 +7082,10 @@
         "objectName": "Transporter"
       },
       {
-        "objectName": "NewSprite"
-      },
-      {
         "objectName": "RpgUrbanMap16x16"
       },
       {
-        "objectName": "RpgUrbanMap16x17"
+        "objectName": "RpgUrbanMap16x16"
       },
       {
         "objectName": "GreenSmallTree1"
@@ -6715,6 +7098,18 @@
       },
       {
         "objectName": "VendorTruck"
+      },
+      {
+        "objectName": "NewSprite2"
+      },
+      {
+        "objectName": "splatR"
+      },
+      {
+        "objectName": "splatL"
+      },
+      {
+        "objectName": "RpgUrbanMap16x17"
       }
     ]
   },
@@ -6844,7 +7239,6 @@
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
-            "",
             "const minX = -1000",
             "const minY = -900",
             "const maxX = 3000",
@@ -6861,74 +7255,90 @@
             "    return randomWithinRange",
             "}",
             "",
+            "function objectCreationAndSpawning(objectName, iteratee, size, origin, xRange, yRange) {",
+            "",
+            "    const [originX, originY] = origin",
+            "    const [x, xMax] = xRange",
+            "    const [y, yMax] = yRange",
+            "",
+            "",
+            "    for (var i = 0; i < iteratee; i++) {",
+            "        const obj = runtimeScene.createObject(objectName)",
+            "        obj.setPosition(originX + getRandom(x, xMax), originY + getRandom(y, yMax))",
+            "        obj.setHeight(size)",
+            "        obj.setWidth(size)",
+            "    }",
+            "",
+            "}",
+            "",
             "",
             "function performSeed_0(seedValue) {",
-            "    const firstHalf = seedValue / 2",
-            "    const secondHalf = seedValue - firstHalf",
+            "    const maleCount = seedValue / 2",
+            "    const femaleCount = seedValue - maleCount",
             "",
-            "    for (var i = 0; i < firstHalf; i++) {",
-            "        const maleAdult = runtimeScene.createObject(\"MaleAdult\")",
-            "        maleAdult.setPosition(getRandom(minX, maxX), getRandom(minY, maxY))",
-            "        maleAdult.setWidth(65)",
-            "        maleAdult.setHeight(65)",
-            "    }",
-            "",
-            "    for (var i = 0; i < secondHalf; i++) {",
-            "        const femaleAdult = runtimeScene.createObject(\"FemaleAdult\")",
-            "        femaleAdult.setPosition(getRandom(minX, maxX), getRandom(minY, maxY))",
-            "        femaleAdult.setWidth(65)",
-            "        femaleAdult.setHeight(65)",
-            "    }",
+            "    objectCreationAndSpawning(\"MaleAdult\", maleCount, 65, [0, 0], [minX, maxX], [minY, maxY])",
+            "    objectCreationAndSpawning(\"FemaleAdult\", femaleCount, 65, [0, 0], [minX, maxX], [minY, maxY])",
             "}",
             "",
             "function performSeed_1(seedValue) {",
-            "    const firstHalf = seedValue / 2",
-            "    const secondHalf = seedValue - firstHalf",
+            "    const maleCount = seedValue / 2",
+            "    const femaleCount = seedValue - maleCount",
             "",
             "    const school = runtimeScene.getScene().getInstancesOf(\"School\")[0]",
             "",
-            "    for (var i = 0; i < firstHalf; i++) {",
-            "        const maleChild = runtimeScene.createObject(\"MaleChild\")",
-            "        maleChild.setPosition(school.x + getRandom(5, 15), school.y + getRandom(5, 15))",
-            "        maleChild.setWidth(45)",
-            "        maleChild.setHeight(45)",
-            "    }",
+            "    objectCreationAndSpawning(\"MaleChild\", maleCount, 45, [school.x, school.y], [-25, 15], [-25, 15])",
+            "    objectCreationAndSpawning(\"FemaleChild\", femaleCount, 45, [school.x, school.y], [-25, 15], [-25, 15])",
+            "}",
             "",
-            "    for (var i = 0; i < secondHalf; i++) {",
-            "        const femaleChild = runtimeScene.createObject(\"FemaleChild\")",
-            "        femaleChild.setPosition(school.x + getRandom(5, 15), school.y + getRandom(5, 15))",
-            "        femaleChild.setWidth(45)",
-            "        femaleChild.setHeight(45)",
-            "    }",
+            "function performSeed_2(seedValue) {",
+            "    const maleCount = seedValue / 2",
+            "    const femaleCount = seedValue - maleCount",
             "",
+            "    const church = runtimeScene.getScene().getInstancesOf(\"Church\")[0]",
+            "",
+            "    objectCreationAndSpawning(\"MalePriest\", maleCount, 65, [church.x, church.y], [-30, 30], [-30, 30])",
+            "    objectCreationAndSpawning(\"FemalePriest\", femaleCount, 65, [church.x, church.y], [-30, 30], [-30, 30])",
+            "}",
+            "",
+            "function performSeed_3(seedValue) {",
+            "    objectCreationAndSpawning(\"Policeman\", seedValue, 65, [0, 0], [minX, maxX], [minY, maxY])",
             "}",
             "",
             "const seed = runtimeScene.getGame().getVariables().get(\"seed\").getAsString()",
+            "if (seed == 0) {",
+            "    return;",
+            "}",
+            "",
+            "const seeds = seed.split(\"\");",
             "",
             "// seed breakdown",
             "// divide by 2",
             "// left is male count",
             "// right is female count",
             "",
-            "// index 1 - adult citizens",
-            "// index 2 - child citizens",
-            "// index 3 - church citizens",
-            "// index 4 - police officers",
-            "",
-            "// const school = runtimeScene.getScene().getInstancesOf(\"School\")[0]",
-            "",
-            "// const maleChild = runtimeScene.createObject(\"MaleChild\")",
-            "// maleChild.setPosition(school.x + 20, school.y + 20)",
-            "// maleChild.setWidth(45)",
-            "// maleChild.setHeight(45)",
-            "",
-            "const seeds = seed.split(\"\");",
-            "",
+            "// index 0 - adult citizens",
             "performSeed_0(seeds[0])",
+            "",
+            "// index 1 - child citizens",
             "performSeed_1(seeds[1])",
             "",
+            "// index 2 - church citizens",
+            "performSeed_2(seeds[2])",
             "",
+            "// index 3 - police officers",
+            "performSeed_3(seeds[3])",
             "",
+            "// index 4 -",
+            "",
+            "// index 5 -",
+            "",
+            "// index 6 -",
+            "",
+            "// index 7 -",
+            "",
+            "// index 8 -",
+            "",
+            "// index 9 -",
             "",
             ""
           ],

@@ -536,6 +536,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "assets/groundMarker.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -557,7 +558,8 @@
         }
       },
       {
-      "file": "assets/BasicGrowth.png",
+        "alwaysLoaded": false,
+        "file": "assets/BasicGrowth.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "BasicGrowth",
@@ -762,6 +764,7 @@
         }
       },
       {
+        "alwaysLoaded": false,
         "file": "assets/tiled_sea.png",
         "kind": "image",
         "metadata": "",
@@ -787,6 +790,7 @@
         }
       },
       {
+        "alwaysLoaded": false,
         "file": "assets/water flatfriz bright surface.png",
         "kind": "image",
         "metadata": "",
@@ -812,6 +816,7 @@
         }
       },
       {
+        "alwaysLoaded": false,
         "file": "assets/Vendor Truck.png",
         "kind": "image",
         "metadata": "",
@@ -837,42 +842,43 @@
         }
       },
       {
-      "file": "TX Tileset Grass.png",
-      "kind": "image",
-      "metadata": "",
-      "name": "TX Tileset Grass.png",
-      "smoothed": true,
-      "userAdded": false
-    },
-    {
-      "alwaysLoaded": false,
-      "file": "assets/donkey-1295054_1280.png",
-      "kind": "image",
-      "metadata": "",
-      "name": "assets\\donkey-1295054_1280.png",
-      "smoothed": true,
-      "userAdded": true
-    },
-    {
-      "alwaysLoaded": false,
-      "file": "assets/vineSeed.png",
-      "kind": "image",
-      "metadata": "{\"extension\":\".png\"}",
-      "name": "vineSeed",
-      "smoothed": true,
-      "userAdded": false
-    },
-    {
-      "file": "assets/Nosifer-Regular.ttf",
-      "kind": "font",
-      "metadata": "",
-      "name": "1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
-      "userAdded": false,
-      "origin": {
-        "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
-        "name": "gdevelop-asset-store"
-      }
-    },
+        "alwaysLoaded": false,
+        "file": "TX Tileset Grass.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TX Tileset Grass.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/donkey-1295054_1280.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\donkey-1295054_1280.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/vineSeed.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "vineSeed",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Nosifer-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
       {
         "alwaysLoaded": false,
         "file": "assets/Generic Character 1_Left_3.png",
@@ -1589,7 +1595,8 @@
         }
       },
       {
-      "file": "assets/doorTrigger.png",
+        "alwaysLoaded": false,
+        "file": "assets/doorTrigger.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "doorTrigger",
@@ -1616,6 +1623,418 @@
         "origin": {
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/11ed64262caf521cd24c19af2a005d28c4618e6a36c62ae3fc25353d157feeaf_MetalMania-Regular.ttf",
           "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BUILD6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BUILD6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 4_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 4_Down_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/8ebf6672135ac44ec713f4fa2b50fee4d4406f7960764a3cb47221549a6ba4b3_Devout 4_Down_1.png",
+          "name": "Devout 4_Down_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 4_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 4_Down_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/51bd09c499200065db1c99946085d36d3a3299cb6687dee0579529d8d1edac99_Devout 4_Down_2.png",
+          "name": "Devout 4_Down_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 4_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 4_Down_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/6efa1d9660feaa0b3af974c713936da1e3923594a7ee16599f06e403e69e54f3_Devout 4_Down_3.png",
+          "name": "Devout 4_Down_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 4_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 4_Left_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/0b8b184b11de878f2b52252ffc62d37f40852736c9c090f9a7eb45fd43ebd17e_Devout 4_Left_1.png",
+          "name": "Devout 4_Left_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 4_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 4_Left_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/a20ed580fde3c4615b53e5b9d139df5defbee2fae99ca72df26a6cc0c0f39a47_Devout 4_Left_2.png",
+          "name": "Devout 4_Left_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 4_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 4_Left_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/db07cf3c6dfb8fcbc885eabde77b50f43bc60e5f5c90a7f296ce3f4e168c28ac_Devout 4_Left_3.png",
+          "name": "Devout 4_Left_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 4_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 4_Right_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/ad29e27c1992567d066a1301c4918ccf01d74fa42a976cec0d3acd9517d8acae_Devout 4_Right_1.png",
+          "name": "Devout 4_Right_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 4_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 4_Right_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/3e1cbf9316c2116213a13bc2073c766d497ffde82411a713bfdcc9f8ceab2f00_Devout 4_Right_2.png",
+          "name": "Devout 4_Right_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 4_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 4_Right_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/57049dd1fca6a7164e89dc694e75482714d309046c1faa0b5a0f3e82e61bd07b_Devout 4_Right_3.png",
+          "name": "Devout 4_Right_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 4_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 4_Up_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/5b62bdc022d0acea1c2cba9a1029464cf57afa4e7c7cc1ecd8321a8f4dee3e4d_Devout 4_Up_1.png",
+          "name": "Devout 4_Up_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 4_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 4_Up_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/75209850ae84163303244d0c60b2e66b297cef061b5c3d92f9aedd1f04b6df53_Devout 4_Up_2.png",
+          "name": "Devout 4_Up_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 4_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 4_Up_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/5fcfed0570ce392efc6867586440fe20bba6ca708efbbd5a524f747a930191fb_Devout 4_Up_3.png",
+          "name": "Devout 4_Up_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 1_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 1_Down_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/85881ecb3ec42072b085f93ddc36993575f4f9945618101c314f0026c177c7b0_Devout 1_Down_1.png",
+          "name": "Devout 1_Down_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 1_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 1_Down_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/a017f6436e38e79348169954af4b1c635152cd65c2bbb86f0229a2603de27cf6_Devout 1_Down_2.png",
+          "name": "Devout 1_Down_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 1_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 1_Down_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/c9bc825676c2fa39cc5a1292128692a3127e9c16933edff185194ec086362576_Devout 1_Down_3.png",
+          "name": "Devout 1_Down_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 1_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 1_Left_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/4103462ad091d9557371b496db80b35f145b0ecb7aaa725fc9d8caee9525bf68_Devout 1_Left_1.png",
+          "name": "Devout 1_Left_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 1_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 1_Left_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/479c97817eb09c2208bbf4f74b9384889d046dbfa059dab1a8f8762720cfe431_Devout 1_Left_2.png",
+          "name": "Devout 1_Left_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 1_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 1_Left_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/14b5040e7c7cbdae11b189e1630ccea03eeebf9ef975e1700c609a4d03b29dc1_Devout 1_Left_3.png",
+          "name": "Devout 1_Left_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 1_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 1_Right_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/24326ad913cc5cdd6ac331c6e9088c436cb9e94679a160ee7d9f5bad31071e5f_Devout 1_Right_1.png",
+          "name": "Devout 1_Right_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 1_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 1_Right_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/24802c97147e837d92bbe2680bf46176397b9873397e725e7196ea9ce73f87ae_Devout 1_Right_2.png",
+          "name": "Devout 1_Right_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 1_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 1_Right_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/3c0ca1e696335e606ee93405dd80b5a1b833d6c824c093f8e713a6358b0ada4e_Devout 1_Right_3.png",
+          "name": "Devout 1_Right_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 1_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 1_Up_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/3613d7512ee4b5a0f46059be2c7698ea8c4794909ccefcc03c9218cc76808262_Devout 1_Up_1.png",
+          "name": "Devout 1_Up_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 1_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 1_Up_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/48fab2a15b82b93f3ca7960a2025b652229949e8e7ed3918fe830e4989d9b958_Devout 1_Up_2.png",
+          "name": "Devout 1_Up_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Devout 1_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Devout 1_Up_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Characters/Retro/Devouts/2cfe55369f1ac454afa8517458baca56a2aaec32246d5c2fe20cacf989687fb8_Devout 1_Up_3.png",
+          "name": "Devout 1_Up_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Policeman_Attack.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Policeman_Attack.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Western FPS 2D/Character/fb35690daeb3518e315ea581919dec0fd61aacbdc733d24783c39875fdb5364f_Policeman_Attack.png",
+          "name": "Policeman_Attack.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Policeman_Dead.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Policeman_Dead.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Western FPS 2D/Character/79f2b35e15e79cb845ef21fb461cfe39b2000618560102689987c23119fc233d_Policeman_Dead.png",
+          "name": "Policeman_Dead.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Policeman_Hit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Policeman_Hit.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Western FPS 2D/Character/4b90b21a5991508037674a66416a583275455de39d25a6c6427767dd91b2f4e9_Policeman_Hit.png",
+          "name": "Policeman_Hit.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Policeman_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Policeman_Idle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Western FPS 2D/Character/fbe01b3bd16de1275869795b259276a1cdc21089dc363fdc463ddbf30f140273_Policeman_Idle.png",
+          "name": "Policeman_Idle.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Policeman_Walk_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Policeman_Walk_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Western FPS 2D/Character/5ee2b6aaa9ecde758819bfd740b95ac60ac1765f83508faa3a515e9fab768086_Policeman_Walk_1.png",
+          "name": "Policeman_Walk_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Policeman_Walk_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Policeman_Walk_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Western FPS 2D/Character/fbe01b3bd16de1275869795b259276a1cdc21089dc363fdc463ddbf30f140273_Policeman_Walk_2.png",
+          "name": "Policeman_Walk_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Policeman_Walk_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Policeman_Walk_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Western FPS 2D/Character/ed48743a3b0876cc4b03e0580ccdfc1ec9d030b1d2d27855edf8b8bdef19a6e3_Policeman_Walk_3.png",
+          "name": "Policeman_Walk_3.png"
         }
       }
     ],
@@ -4315,6 +4734,1314 @@
         "characterSize": 40,
         "color": "92;173;3"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "1e1702bf9167fbf69428060dc3938f42f1b5e2d98c22e089e4c0e7ad5edc6e67",
+      "name": "MalePriest",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Down",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1667,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 4_Down_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 4_Down_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 4_Down_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Left",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1667,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 4_Left_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 4_Left_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 4_Left_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Right",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1667,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 4_Right_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 4_Right_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 4_Right_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Up",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1667,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 4_Up_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 4_Up_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 4_Up_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "2fa958d12805ef664d27b4395460a3a76c89743553d69e4c29daa1ede5f0a1ad",
+      "name": "FemalePriest",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Down",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1667,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 1_Down_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 1_Down_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 1_Down_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Left",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1667,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 1_Left_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 1_Left_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 1_Left_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Right",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1667,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 1_Right_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 1_Right_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 1_Right_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Up",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1667,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 1_Up_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 1_Up_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Devout 1_Up_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 3,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "3434e22c3b48fff2f3611f8e127036896e2f220b169409b3971848750b9e5617",
+      "name": "Policeman",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Policeman_Idle.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 10
+                      },
+                      {
+                        "x": 45,
+                        "y": 10
+                      },
+                      {
+                        "x": 45,
+                        "y": 61
+                      },
+                      {
+                        "x": 11,
+                        "y": 61
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Walk",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1667,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Policeman_Walk_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 10
+                      },
+                      {
+                        "x": 45,
+                        "y": 10
+                      },
+                      {
+                        "x": 45,
+                        "y": 61
+                      },
+                      {
+                        "x": 11,
+                        "y": 61
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Policeman_Walk_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 10
+                      },
+                      {
+                        "x": 45,
+                        "y": 10
+                      },
+                      {
+                        "x": 45,
+                        "y": 61
+                      },
+                      {
+                        "x": 11,
+                        "y": 61
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Policeman_Walk_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 10
+                      },
+                      {
+                        "x": 45,
+                        "y": 10
+                      },
+                      {
+                        "x": 45,
+                        "y": 61
+                      },
+                      {
+                        "x": 11,
+                        "y": 61
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hit",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Policeman_Hit.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 10
+                      },
+                      {
+                        "x": 45,
+                        "y": 10
+                      },
+                      {
+                        "x": 45,
+                        "y": 61
+                      },
+                      {
+                        "x": 11,
+                        "y": 61
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Attack",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Policeman_Attack.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 10
+                      },
+                      {
+                        "x": 45,
+                        "y": 10
+                      },
+                      {
+                        "x": 45,
+                        "y": 61
+                      },
+                      {
+                        "x": 11,
+                        "y": 61
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dead",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Policeman_Dead.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 10
+                      },
+                      {
+                        "x": 45,
+                        "y": 10
+                      },
+                      {
+                        "x": 45,
+                        "y": 61
+                      },
+                      {
+                        "x": 11,
+                        "y": 61
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -4337,6 +6064,15 @@
       },
       {
         "objectName": "FemaleAdult"
+      },
+      {
+        "objectName": "MalePriest"
+      },
+      {
+        "objectName": "FemalePriest"
+      },
+      {
+        "objectName": "Policeman"
       },
       {
         "objectName": "InventoryBar"
