@@ -22,7 +22,13 @@
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "child",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -331,6 +337,32 @@
             "",
             "\"City\""
           ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "const max = 10",
+            "function getRandomInt() {",
+            "    return Math.floor(Math.random() * max)",
+            "}",
+            "",
+            "var seed = runtimeScene.getGame().getVariables().get(\"seed\").getAsString()",
+            "for (var i = 0; i < 10; i++) {",
+            "    var rand = getRandomInt()",
+            "    seed += rand",
+            "}",
+            "",
+            "runtimeScene.getGame().getVariables().get(\"seed\").setString(seed)",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
         }
       ]
     },

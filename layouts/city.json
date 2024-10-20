@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5843784410741049,
+    "zoomFactor": 0.27253598967729864,
     "windowMask": false
   },
   "objectsGroups": [
@@ -27,6 +27,17 @@
       "objects": [
         {
           "name": "Hoe"
+        }
+      ]
+    },
+    {
+      "name": "Citizens",
+      "objects": [
+        {
+          "name": "MaleChild"
+        },
+        {
+          "name": "FemaleChild"
         }
       ]
     }
@@ -2693,74 +2704,6 @@
       "keepRatio": true,
       "layer": "",
       "name": "Wall",
-      "persistentUuid": "2fe73307-d758-4139-a6e4-9916b673f088",
-      "width": 639,
-      "x": 1835,
-      "y": -395,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 90,
-      "customSize": true,
-      "depth": 2,
-      "height": 17,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "782de09c-b21c-48a8-b677-9520956a0d4d",
-      "width": 630,
-      "x": 2730,
-      "y": -391,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 360,
-      "customSize": true,
-      "depth": 2,
-      "height": 17,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "456b3fb6-5e2b-4ea7-8904-85162e8c783a",
-      "width": 898,
-      "x": 2150,
-      "y": -705,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 360,
-      "customSize": true,
-      "depth": 2,
-      "height": 17,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "bec6a88b-0d5b-415c-bbdf-0ed35a994334",
-      "width": 906,
-      "x": 2147,
-      "y": -83,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 90,
-      "customSize": true,
-      "depth": 2,
-      "height": 17,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
       "persistentUuid": "a47e491a-edd1-4444-a6e5-cb580b48edb5",
       "width": 213,
       "x": 1768,
@@ -3265,6 +3208,23 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 775,
+      "keepRatio": true,
+      "layer": "",
+      "name": "School",
+      "persistentUuid": "45a10383-0d26-42a8-b701-5473ed1e510e",
+      "width": 826,
+      "x": 2038,
+      "y": -684,
+      "zOrder": 500,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -3535,11 +3495,103 @@
         "tileSize": 16,
         "tilesWithHitBox": ""
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "School",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "BUILD1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 477,
+                        "y": 713
+                      },
+                      {
+                        "x": 72,
+                        "y": 726
+                      },
+                      {
+                        "x": 11.5,
+                        "y": 553.5
+                      },
+                      {
+                        "x": 52.5,
+                        "y": 272.5
+                      },
+                      {
+                        "x": 333.5,
+                        "y": 14
+                      },
+                      {
+                        "x": 694,
+                        "y": 116
+                      },
+                      {
+                        "x": 815.5,
+                        "y": 288.5
+                      },
+                      {
+                        "x": 793,
+                        "y": 483
+                      },
+                      {
+                        "x": 767.5,
+                        "y": 598
+                      },
+                      {
+                        "x": 624,
+                        "y": 671.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
+      {
+        "folderName": "Buildings",
+        "children": [
+          {
+            "objectName": "School"
+          }
+        ]
+      },
       {
         "objectName": "Wall"
       },
@@ -3655,6 +3707,56 @@
             "=",
             "flesh"
           ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "",
+            "const seed = runtimeScene.getGame().getVariables().get(\"seed\").getAsString()",
+            "",
+            "// seed breakdown",
+            "// divide by 2",
+            "// left is male count",
+            "// right is female count",
+            "",
+            "// index 1 - adult citizens",
+            "// index 2 - child citizens",
+            "// index 3 - church citizens",
+            "// index 4 - ",
+            "",
+            "objects[0].x",
+            "const school = runtimeScene.getScene().getInstancesOf(\"School\")[0]",
+            "",
+            "const maleChild = runtimeScene.createObject(\"MaleChild\")",
+            "maleChild.setPosition(school.x + 20, school.y + 20)",
+            "maleChild.setWidth(45)",
+            "maleChild.setHeight(45)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
         }
       ]
     },
@@ -4063,10 +4165,6 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "SmoothCamera",
-      "type": "SmoothCamera::SmoothCamera"
     },
     {
       "name": "Sticker",
