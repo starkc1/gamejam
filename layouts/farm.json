@@ -2955,16 +2955,6 @@
           "parameters": [
             "Wall"
           ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "fleshNeeded",
-            "=",
-            "((day * Random(500)) + fleshNeeded)"
-          ]
         }
       ]
     },

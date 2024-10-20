@@ -192,6 +192,16 @@
         },
         {
           "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "fleshNeeded",
+            "=",
+            "((day * Random(500)) + fleshNeeded)"
+          ]
+        },
+        {
+          "type": {
             "value": "Wait"
           },
           "parameters": [

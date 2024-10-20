@@ -1933,12 +1933,12 @@
     {
       "name": "coins",
       "type": "number",
-      "value": 69
+      "value": 300
     },
     {
       "name": "flesh",
       "type": "number",
-      "value": 1000000
+      "value": 0
     },
     {
       "name": "seeds",
@@ -1954,7 +1954,7 @@
     {
       "name": "day",
       "type": "number",
-      "value": 8
+      "value": 1
     },
     {
       "name": "knifeOut",
@@ -1973,6 +1973,11 @@
     },
     {
       "name": "knifeTaken",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "dayHasChanged",
       "type": "boolean",
       "value": false
     }
