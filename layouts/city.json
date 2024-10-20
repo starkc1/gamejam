@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.4194339782759185,
+    "zoomFactor": 1.212164197217403,
     "windowMask": false
   },
   "objectsGroups": [
@@ -88,14 +88,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 666,
+      "height": 688,
       "keepRatio": true,
       "layer": "",
       "name": "Water",
       "persistentUuid": "3fc8c751-8a8f-4375-baf4-3648358d7672",
       "width": 64,
-      "x": 643,
-      "y": -176,
+      "x": 641,
+      "y": -204,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -3096,22 +3096,6 @@
       "x": 83,
       "y": 20,
       "zOrder": 10001,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "GUI",
-      "name": "Flesh",
-      "persistentUuid": "c6028c9e-be3f-42eb-a775-778cc9f4fab8",
-      "width": 0,
-      "x": 15,
-      "y": 90,
-      "zOrder": 10002,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -7655,7 +7639,7 @@
               "parameters": [
                 "",
                 "Flesh",
-                "Player.X()+RandomInRange(80,120)",
+                "Player.X()+RandomInRange(100,120)",
                 "Player.Y()+ RandomInRange( -40, 40)",
                 ""
               ]
@@ -7709,7 +7693,7 @@
               "parameters": [
                 "",
                 "Flesh",
-                "Player.X()+RandomInRange(-80,-120)",
+                "Player.X()+RandomInRange(-100,-120)",
                 "Player.Y()+ RandomInRange( -40, 40)",
                 ""
               ]
@@ -7721,7 +7705,7 @@
               "parameters": [
                 "",
                 "splatL",
-                "Citizen.X()",
+                "Citizen.X() - 64",
                 "Citizen.Y()",
                 "\"Tileset\""
               ]

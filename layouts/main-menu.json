@@ -33,8 +33,8 @@
       "name": "GameTitle",
       "persistentUuid": "cdc6c8e8-1bb2-48fc-92d9-33135e457fae",
       "width": 0,
-      "x": 677,
-      "y": 148,
+      "x": 770,
+      "y": 142,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -49,8 +49,8 @@
       "name": "Play",
       "persistentUuid": "bf99f599-6624-4280-9766-cbf3e7966070",
       "width": 0,
-      "x": 725,
-      "y": 359,
+      "x": 818,
+      "y": 354,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -65,8 +65,8 @@
       "name": "Exit",
       "persistentUuid": "152c9ee4-d40f-4d13-8d2f-aefcd0fdff7f",
       "width": 0,
-      "x": 724,
-      "y": 524,
+      "x": 818,
+      "y": 516,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -370,7 +370,7 @@
           "parameters": [
             "day",
             "=",
-            "1"
+            "9"
           ]
         },
         {
@@ -379,6 +379,36 @@
           },
           "parameters": [
             "knifeOut",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "fleshFed",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "fleshNeeded",
+            "=",
+            "500"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "knifeTaken",
             "False",
             ""
           ]

@@ -867,7 +867,7 @@
         "alwaysLoaded": false,
         "file": "assets/assets_farmera1lk.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_farmera1lk.png\"}",
         "name": "assets\\farmera1lk",
         "smoothed": true,
         "userAdded": false
@@ -909,6 +909,15 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Iron Knife 6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/farmera1r2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "farmera1r2",
         "smoothed": true,
         "userAdded": false
       }
@@ -1048,7 +1057,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "farmera1r",
+                  "image": "farmera1r2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1622,15 +1631,7 @@
         }
       ],
       "effects": [],
-      "behaviors": [
-        {
-          "canBeGrabbed": false,
-          "name": "Platform",
-          "platformType": "NormalPlatform",
-          "type": "PlatformBehavior::PlatformBehavior",
-          "yGrabOffset": 0
-        }
-      ],
+      "behaviors": [],
       "animations": [
         {
           "name": "spawn",
@@ -1937,7 +1938,7 @@
     {
       "name": "flesh",
       "type": "number",
-      "value": 666
+      "value": 1000000
     },
     {
       "name": "seeds",
@@ -1953,10 +1954,25 @@
     {
       "name": "day",
       "type": "number",
-      "value": 1
+      "value": 8
     },
     {
       "name": "knifeOut",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "fleshNeeded",
+      "type": "number",
+      "value": 500
+    },
+    {
+      "name": "fleshFed",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "knifeTaken",
       "type": "boolean",
       "value": false
     }
