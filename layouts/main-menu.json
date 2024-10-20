@@ -22,7 +22,13 @@
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "child",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -446,6 +452,43 @@
             "",
             "\"Farm\""
           ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "",
+            "function getRandom(min, max) {",
+            "    const floatRandom = Math.random()",
+            "",
+            "    const difference = max - min",
+            "    const random = Math.round(difference * floatRandom)",
+            "",
+            "    const randomWithinRange = random + min",
+            "",
+            "    return randomWithinRange",
+            "}",
+            "",
+            "var seed = runtimeScene.getGame().getVariables().get(\"seed\").getAsString()",
+            "for (var i = 0; i < 10; i++) {",
+            "    var rand = getRandom(1, 10)",
+            "",
+            "    if (i == 0) {",
+            "        seed = rand.toString()",
+            "    } else {",
+            "        seed += rand.toString()",
+            "    }",
+            "}",
+            "runtimeScene.getGame().getVariables().get(\"seed\").setString(seed)",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
         }
       ]
     },
