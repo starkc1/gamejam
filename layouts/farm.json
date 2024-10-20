@@ -1152,6 +1152,57 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 128,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Donkey",
+      "persistentUuid": "325506c2-79c8-4aa6-b9c4-2c13909503ba",
+      "width": 128,
+      "x": -640,
+      "y": -1024,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 128,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Donkey",
+      "persistentUuid": "a16abb01-615b-470c-92c4-b845ffdb7efc",
+      "width": 128,
+      "x": 1152,
+      "y": 128,
+      "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 128,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Donkey",
+      "persistentUuid": "cc6bcb2b-1e8f-41d9-ba9d-c4c1463a00f6",
+      "width": 128,
+      "x": 1152,
+      "y": -1536,
+      "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1165,9 +1216,9 @@
       "effects": [],
       "behaviors": [
         {
+          "cost": 2,
           "name": "PathfindingObstacle",
           "type": "PathfindingBehavior::PathfindingObstacleBehavior",
-          "cost": 2,
           "impassable": true
         },
         {
@@ -1784,81 +1835,6 @@
         "width": 429,
         "animations": []
       }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "3c94e3874e394cf9325781e6dec629d5f1ee936aedf1e7b264c2ac729ef822cd",
-      "name": "WaterFlatfrizBrightSurface",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "water flatfriz bright surface.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 288,
-                        "y": 0
-                      },
-                      {
-                        "x": 288,
-                        "y": 288
-                      },
-                      {
-                        "x": 0,
-                        "y": 288
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
-      "name": "NewTileMap",
-      "type": "TileMap::SimpleTileMap",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "atlasImage": "TX Tileset Grass.png",
-        "rowCount": 2,
-        "columnCount": 2,
-        "tileSize": 128,
-        "tilesWithHitBox": ""
-      }
     }
   ],
   "objectsFolderStructure": {
@@ -1896,12 +1872,6 @@
       },
       {
         "objectName": "MountainGroup2"
-      },
-      {
-        "objectName": "WaterFlatfrizBrightSurface"
-      },
-      {
-        "objectName": "NewTileMap"
       }
     ]
   },
@@ -2057,6 +2027,18 @@
             "lerp(CameraY(), Player.Y(), 0.5)",
             "\"Tileset\"",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AddForceVersPos"
+          },
+          "parameters": [
+            "Donkey",
+            "Random(2000)",
+            "Random(2000)",
+            "20",
+            "0"
           ]
         }
       ]
