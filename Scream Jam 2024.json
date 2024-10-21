@@ -2153,6 +2153,16 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "A new horror2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "A new horror2.wav",
+        "preloadAsMusic": true,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
