@@ -157,14 +157,35 @@
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
       "actions": [
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "Game over.wav",
+            "",
+            "40",
+            "1"
+          ]
+        },
         {
           "type": {
             "value": "Wait"
           },
           "parameters": [
-            "4"
+            "30"
           ]
         },
         {

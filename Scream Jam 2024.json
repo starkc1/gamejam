@@ -2143,6 +2143,16 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/ecf7f6cb89e16c44e3b5a9c8abb703ba6cbc52eb8529353125f4f5caed404144_Silkscreen-Bold.ttf",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "file": "Game over.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Game over.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
