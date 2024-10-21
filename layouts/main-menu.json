@@ -418,6 +418,18 @@
             "False",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "tension-0.1.wav",
+            "yes",
+            "50",
+            ""
+          ]
         }
       ]
     },

@@ -2155,6 +2155,16 @@
         "userAdded": false
       },
       {
+        "file": "tension-0.1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "tension-0.1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
         "file": "A new horror2.wav",
         "kind": "audio",
         "metadata": "",
