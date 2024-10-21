@@ -8558,7 +8558,20 @@
           ]
         }
       ],
-      "actions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "dead2.wav",
+            "",
+            "10",
+            ""
+          ]
+        }
+      ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Repeat",
@@ -8721,7 +8734,20 @@
           ]
         }
       ],
-      "actions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "dead2.wav",
+            "",
+            "10",
+            ""
+          ]
+        }
+      ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Repeat",
@@ -8952,6 +8978,18 @@
             "Text",
             "=",
             "flesh"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "pick-up-meat.wav",
+            "",
+            "2",
+            ""
           ]
         }
       ]
