@@ -4480,6 +4480,18 @@
             "True",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "pickup.wav",
+            "",
+            "50",
+            ""
+          ]
         }
       ]
     },

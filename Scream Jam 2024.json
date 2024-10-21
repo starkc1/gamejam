@@ -2163,6 +2163,36 @@
         "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "pickup.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "pickup.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "pick-up-meat.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "pick-up-meat.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "dead2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "dead2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
