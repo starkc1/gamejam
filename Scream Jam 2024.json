@@ -2153,6 +2153,16 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "tension-0.1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "tension-0.1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
