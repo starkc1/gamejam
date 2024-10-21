@@ -1,13 +1,13 @@
 {
-  "b": 1,
+  "b": 0,
   "disableInputWhenNotFocused": true,
   "mangledName": "Game_32Over",
   "name": "Game Over",
-  "r": 48,
+  "r": 102,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 1,
+  "v": 0,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3645833333333333,
+    "zoomFactor": 0.4163025217733326,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -52,6 +52,56 @@
       "x": 147,
       "y": 256,
       "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 178,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewSprite",
+      "persistentUuid": "84a13e51-2d83-4451-8e8a-4dfa16613c74",
+      "width": 546,
+      "x": 1324,
+      "y": 863,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 1,
+      "customSize": true,
+      "depth": 1,
+      "height": 372,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewSprite2",
+      "persistentUuid": "bcb036c6-3f9d-4e4e-b1f2-7335f79be67c",
+      "width": 282,
+      "x": 323,
+      "y": 745,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 51,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewSprite3",
+      "persistentUuid": "25d8aad2-cca9-4ee8-be52-b6e448719951",
+      "width": 0,
+      "x": -196,
+      "y": 359,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -141,6 +191,201 @@
         "characterSize": 80,
         "color": "102;0;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "isFolded": true,
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "animations": [
+        {
+          "name": "tobecontinued",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tobecontinued",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12,
+                        "y": 23
+                      },
+                      {
+                        "x": 434,
+                        "y": 23
+                      },
+                      {
+                        "x": 434,
+                        "y": 106
+                      },
+                      {
+                        "x": 12,
+                        "y": 106
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "dio",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "dio2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 252
+                      },
+                      {
+                        "x": 0,
+                        "y": 252
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "png-clipart-jotaro-kujo-joseph-joestar-rohan-kishibe-jojo-s-bizarre-adventure-battle-tendency-others-jotaro-kujo-joseph-joestar-thumbnail",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "png-clipart-jotaro-kujo-joseph-joestar-rohan-kishibe-jojo-s-bizarre-adventure-battle-tendency-others-jotaro-kujo-joseph-joestar-thumbnail",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 20,
+                        "y": 9
+                      },
+                      {
+                        "x": 322,
+                        "y": 9
+                      },
+                      {
+                        "x": 322,
+                        "y": 827
+                      },
+                      {
+                        "x": 20,
+                        "y": 827
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -151,6 +396,15 @@
       },
       {
         "objectName": "NewText"
+      },
+      {
+        "objectName": "NewSprite"
+      },
+      {
+        "objectName": "NewSprite2"
+      },
+      {
+        "objectName": "NewSprite3"
       }
     ]
   },
@@ -182,12 +436,132 @@
         },
         {
           "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "NewSprite"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "NewSprite2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "NewSprite3"
+          ]
+        },
+        {
+          "type": {
             "value": "Wait"
           },
           "parameters": [
             "30"
           ]
         },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Main Menu\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "13\n"
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "NewSprite",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "17"
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "NewSprite3",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "21"
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "NewSprite2",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "ButtonStates::ButtonFSM::IsClicked"
+          },
+          "parameters": [
+            "NewSprite",
+            "ButtonFSM",
+            ""
+          ]
+        }
+      ],
+      "actions": [
         {
           "type": {
             "value": "Scene"
@@ -251,6 +625,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "ButtonFSM",
+      "type": "ButtonStates::ButtonFSM"
     },
     {
       "name": "Effect",

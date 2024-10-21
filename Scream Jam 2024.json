@@ -2155,6 +2155,78 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
+        "file": "assets/Mound4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Mound4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tobecontinued.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"tobecontinued.png\",\"extension\":\".png\"}",
+        "name": "tobecontinued.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tobecontinued.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/tobecontinued.png\"}",
+        "name": "tobecontinued",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "dio.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "dio.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/dio.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "dio",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/dio2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "dio2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "png-clipart-jotaro-kujo-joseph-joestar-rohan-kishibe-jojo-s-bizarre-adventure-battle-tendency-others-jotaro-kujo-joseph-joestar-thumbnail.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "png-clipart-jotaro-kujo-joseph-joestar-rohan-kishibe-jojo-s-bizarre-adventure-battle-tendency-others-jotaro-kujo-joseph-joestar-thumbnail.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/png-clipart-jotaro-kujo-joseph-joestar-rohan-kishibe-jojo-s-bizarre-adventure-battle-tendency-others-jotaro-kujo-joseph-joestar-thumbnail.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "png-clipart-jotaro-kujo-joseph-joestar-rohan-kishibe-jojo-s-bizarre-adventure-battle-tendency-others-jotaro-kujo-joseph-joestar-thumbnail",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
         "file": "tension-0.1.wav",
         "kind": "audio",
         "metadata": "",
@@ -6589,7 +6661,7 @@
     {
       "name": "day",
       "type": "number",
-      "value": 1
+      "value": 11
     },
     {
       "name": "knifeOut",
@@ -6641,6 +6713,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/buttonstates"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/behaviorremapper"
