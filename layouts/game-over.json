@@ -256,6 +256,10 @@
       "type": "PlatformBehavior::PlatformerObjectBehavior"
     },
     {
+      "name": "RemapForTopdown",
+      "type": "BehaviorRemapper::RemapForTopdown"
+    },
+    {
       "name": "Resizable",
       "type": "ResizableCapability::ResizableBehavior"
     },

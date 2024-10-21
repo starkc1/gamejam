@@ -1626,6 +1626,7 @@
         }
       },
       {
+        "alwaysLoaded": false,
         "file": "BUILD6.png",
         "kind": "image",
         "metadata": "",
@@ -1643,6 +1644,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "assets/Devout 4_Down_1.png",
         "kind": "image",
         "metadata": "",
@@ -1676,7 +1678,7 @@
         "alwaysLoaded": false,
         "file": "assets/assets_farmera1lk.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_farmera1lk.png\"}",
         "name": "assets\\farmera1lk",
         "smoothed": true,
         "userAdded": false
@@ -2110,6 +2112,37 @@
         "name": "Iron Knife 6",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/farmera1r2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/farmera1r2.png\"}",
+        "name": "farmera1r2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/kenvector_future.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "09884c158c08409269c534b1e1e64a36a21f087bd06f66cff077a91788a4ec9a_kenvector_future.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter/09884c158c08409269c534b1e1e64a36a21f087bd06f66cff077a91788a4ec9a_kenvector_future.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Silkscreen-Bold.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "ecf7f6cb89e16c44e3b5a9c8abb703ba6cbc52eb8529353125f4f5caed404144_Silkscreen-Bold.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/ecf7f6cb89e16c44e3b5a9c8abb703ba6cbc52eb8529353125f4f5caed404144_Silkscreen-Bold.ttf",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
@@ -2167,10 +2200,10 @@
           "Topdown": "TopDownMovement"
         },
         {
-          "ignoreDefaultControls": false,
           "name": "TopDownMovement",
-          "rotateObject": false,
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "ignoreDefaultControls": false,
+          "rotateObject": false,
           "acceleration": 4000,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -2247,7 +2280,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "farmera1r",
+                  "image": "farmera1r2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2821,15 +2854,7 @@
         }
       ],
       "effects": [],
-      "behaviors": [
-        {
-          "canBeGrabbed": false,
-          "name": "Platform",
-          "platformType": "NormalPlatform",
-          "type": "PlatformBehavior::PlatformBehavior",
-          "yGrabOffset": 0
-        }
-      ],
+      "behaviors": [],
       "animations": [
         {
           "name": "spawn",
@@ -5044,6 +5069,48 @@
       }
     },
     {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "needToFeed",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 30,
+      "color": {
+        "b": 98,
+        "g": 67,
+        "r": 240
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "102;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "1629c2a4e484eaa68d5a0072488006012b72c539d11429b015f7382e7ecfd633_Nosifer-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 30,
+        "color": "240;67;98"
+      }
+    },
+    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "1e1702bf9167fbf69428060dc3938f42f1b5e2d98c22e089e4c0e7ad5edc6e67",
       "name": "MalePriest",
@@ -6408,6 +6475,9 @@
       },
       {
         "objectName": "vineSeedCount"
+      },
+      {
+        "objectName": "needToFeed"
       }
     ]
   },
@@ -6428,12 +6498,17 @@
     {
       "name": "coins",
       "type": "number",
-      "value": 69
+      "value": 300
     },
     {
       "name": "flesh",
       "type": "number",
-      "value": 666
+      "value": 0
+    },
+    {
+      "name": "Seed",
+      "type": "string",
+      "value": ""
     },
     {
       "name": "Seed",
@@ -6458,6 +6533,26 @@
     },
     {
       "name": "knifeOut",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "fleshNeeded",
+      "type": "number",
+      "value": 500
+    },
+    {
+      "name": "fleshFed",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "knifeTaken",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "dayHasChanged",
       "type": "boolean",
       "value": false
     }
