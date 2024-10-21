@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.7315786463753228,
+    "zoomFactor": 0.2705012603962634,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -2792,7 +2792,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "[E] Take",
+      "string": "[E] Take It",
       "font": "",
       "textAlignment": "center",
       "characterSize": 30,
@@ -2815,7 +2815,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "[E] Take",
+        "text": "[E] Take It",
         "font": "",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
@@ -4540,6 +4540,16 @@
             "IronKnife6",
             "",
             "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "knifeTaken",
+            "=",
             ""
           ]
         }
