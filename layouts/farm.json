@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.2705012603962634,
+    "zoomFactor": 0.25314140012987013,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1688,7 +1688,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Mound3",
+                  "image": "Mound4",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -3697,6 +3697,7 @@
       "comment": "plant growth and planting "
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -3834,6 +3835,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
