@@ -2275,6 +2275,37 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Energy Bar.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Energy Bar.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Energy Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter by Pixel boy/Hud/Bar/5e8415764fad4e64bf3d6eb76c48ee5a89901545b96795315ec70b17fb0e1f7f_Energy Bar.png",
+          "name": "Energy Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Energy Bar.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Energy Bar.png2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/drain.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "drain",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -6661,7 +6692,7 @@
     {
       "name": "day",
       "type": "number",
-      "value": 11
+      "value": 1
     },
     {
       "name": "knifeOut",

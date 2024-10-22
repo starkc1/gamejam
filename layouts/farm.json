@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.25314140012987013,
+    "zoomFactor": 1.5686691119148262,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1559,6 +1559,39 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 270,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "EnergyBar",
+      "persistentUuid": "4951167c-9063-410f-b3c5-eb27c6b804de",
+      "width": 256,
+      "x": -79,
+      "y": 254,
+      "zOrder": 108,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 240,
+      "layer": "GUI",
+      "name": "drain",
+      "persistentUuid": "3fe221d5-cfe4-4867-a58d-6ed3aa0527e5",
+      "width": 50,
+      "x": 24,
+      "y": 165,
+      "zOrder": 9999,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -2906,6 +2939,83 @@
         "characterSize": 30,
         "color": "208;2;27"
       }
+    },
+    {
+      "assetStoreId": "603d81772c22a6401f0bb19588cb7bb6f384ae840c9e03391874c15a049ade25",
+      "bottomMargin": 12,
+      "height": 26,
+      "leftMargin": 10,
+      "name": "EnergyBar",
+      "rightMargin": 10,
+      "texture": "Energy Bar.png",
+      "tiled": false,
+      "topMargin": 13,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 78,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "drain",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "drain",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "drain",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2967,6 +3077,12 @@
       },
       {
         "objectName": "moundInteract"
+      },
+      {
+        "objectName": "EnergyBar"
+      },
+      {
+        "objectName": "drain"
       }
     ]
   },
@@ -3068,6 +3184,17 @@
           },
           "parameters": [
             "Wall"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetHeight"
+          },
+          "parameters": [
+            "drain",
+            "Resizable",
+            "=",
+            "0"
           ]
         }
       ]
@@ -4669,6 +4796,75 @@
           },
           "parameters": [
             "moundInteract",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::Height"
+          },
+          "parameters": [
+            "drain",
+            "Resizable",
+            "!=",
+            "240"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetHeight"
+          },
+          "parameters": [
+            "drain",
+            "Resizable",
+            "+",
+            "0.013"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Out of energy game over"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::Height"
+          },
+          "parameters": [
+            "drain",
+            "Resizable",
+            "=",
+            "240"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Game Over\"",
             ""
           ]
         }
