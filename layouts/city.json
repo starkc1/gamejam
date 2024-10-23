@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6040838749989068,
+    "zoomFactor": 1.4307927813134744,
     "windowMask": false
   },
   "objectsGroups": [
@@ -7041,6 +7041,72 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 80,
+      "keepRatio": true,
+      "layer": "Dialog",
+      "name": "shift_key",
+      "persistentUuid": "4afb599a-0404-4768-b7b7-4bdd376adeeb",
+      "width": 160,
+      "x": 0,
+      "y": 1010,
+      "zOrder": 100008,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 80,
+      "keepRatio": true,
+      "layer": "Dialog",
+      "name": "e_key",
+      "persistentUuid": "175b6b6b-eaad-4d03-aa6f-323d9a10697e",
+      "width": 80,
+      "x": 0,
+      "y": 944,
+      "zOrder": 100010,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Dialog",
+      "name": "E_key_text",
+      "persistentUuid": "ce460554-ce9f-4f99-8ad5-2d01e2b8d6fb",
+      "width": 0,
+      "x": 80,
+      "y": 960,
+      "zOrder": 100011,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Dialog",
+      "name": "shift_key_text",
+      "persistentUuid": "e1c06e13-d6ea-4878-a718-26c337c85286",
+      "width": 0,
+      "x": 150,
+      "y": 1030,
+      "zOrder": 100013,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -8045,6 +8111,33 @@
             "50",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "E_key_text",
+            "Text",
+            "=",
+            "\"To Kill\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "e_key"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "E_key_text"
+          ]
         }
       ]
     },
@@ -8271,6 +8364,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [],
@@ -9279,6 +9373,24 @@
             "Policeman",
             "Aggressive",
             "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "e_key",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "E_key_text",
             ""
           ]
         }
