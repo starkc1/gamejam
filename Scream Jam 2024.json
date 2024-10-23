@@ -1,8 +1,7 @@
 {
   "firstLayout": "Main Menu",
   "gdVersion": {
-    "build": 216,
-    "build": 216,
+    "build": 217,
     "major": 5,
     "minor": 4,
     "revision": 0
@@ -2319,12 +2318,23 @@
         "origin": {
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Projectile/Trunk/d59a4a2574e9ef32be875a0b354505bf6376ed249bb868a9f9add1d48950dbdb_Bullet.png",
           "name": "Bullet.png"
-        }},
+        }
+      },
       {
         "file": "City vibes.wav",
         "kind": "audio",
         "metadata": "",
         "name": "City vibes.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "gunshot.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "gunshot.wav",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
