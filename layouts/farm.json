@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.8635277700824237,
+    "zoomFactor": 0.6406912462476699,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -4173,7 +4173,7 @@
           "parameters": [
             "state.player.energy",
             "+",
-            "0.013"
+            "0.003"
           ]
         }
       ]
