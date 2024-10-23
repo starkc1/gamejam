@@ -7871,21 +7871,10 @@
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
-            "CoinAmount",
-            "Text",
-            "=",
-            "coins"
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
             "FleshAmount",
             "Text",
             "=",
-            "flesh"
+            "state.player.fleshCarrying"
           ]
         },
         {
@@ -7904,7 +7893,7 @@
             "needToFeed",
             "Text",
             "=",
-            "fleshFed+\"/\"+fleshNeeded"
+            "state.player.fleshGiven+\"/\"+state.player.fleshCarrying"
           ]
         }
       ]
@@ -8338,7 +8327,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "knifeOut",
+            "state.player.knifeOut",
             "True",
             ""
           ]
@@ -8453,7 +8442,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "knifeOut",
+            "state.player.knifeOut",
             "True",
             "True"
           ]
@@ -8490,7 +8479,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "knifeOut",
+            "state.player.knifeOut",
             "True",
             "True"
           ]
@@ -8531,7 +8520,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "knifeOut",
+            "state.player.knifeOut",
             "True",
             "True"
           ]
@@ -8707,7 +8696,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "knifeOut",
+            "state.player.knifeOut",
             "True",
             "True"
           ]
@@ -8964,7 +8953,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "flesh",
+            "state.player.fleshCarrying",
             "+",
             "Flesh.worth"
           ]
@@ -8977,7 +8966,7 @@
             "FleshAmount",
             "Text",
             "=",
-            "flesh"
+            "state.player.fleshCarrying"
           ]
         },
         {
