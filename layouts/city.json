@@ -8170,6 +8170,76 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "const minX = -1000",
+            "const minY = -900",
+            "const maxX = 3000",
+            "const maxY = 2000",
+            "",
+            "function getRandom(min, max) {",
+            "    const floatRandom = Math.random()",
+            "",
+            "    const difference = max - min",
+            "    const random = Math.round(difference * floatRandom)",
+            "",
+            "    const randomWithinRange = random + min",
+            "",
+            "    return randomWithinRange",
+            "}",
+            "",
+            "function moveCitizens(citizens) {",
+            "    for (var citizen of citizens) {",
+            "",
+            "        const x = getRandom(minX / 2, maxX / 2)",
+            "        const y = getRandom(minY / 2, maxY / 2)",
+            "",
+            "        const speed = getRandom(-1.2, 1.2)",
+            "",
+            "        if (citizen.isCollidingWithPoint) {",
+            "            citizen.addForceTowardPosition(-x, -y, 30, speed)",
+            "        } else {",
+            "            citizen.addForceTowardPosition(x, y, 30, speed)",
+            "        }        ",
+            "",
+            "    }",
+            "}",
+            "",
+            "let frame = runtimeScene.getScene().getVariables().get('frame').getAsNumber()",
+            "",
+            "if (frame == 0 || frame % 180 == 0) {",
+            "",
+            "    moveCitizens(runtimeScene.getScene().getInstancesOf('MalePriest'))",
+            "    moveCitizens(runtimeScene.getScene().getInstancesOf('FemalePriest'))",
+            "    moveCitizens(runtimeScene.getScene().getInstancesOf('FemaleAdult'))",
+            "    moveCitizens(runtimeScene.getScene().getInstancesOf('MaleAdult'))",
+            "    moveCitizens(runtimeScene.getScene().getInstancesOf('FemaleChild'))",
+            "    moveCitizens(runtimeScene.getScene().getInstancesOf('MaleChild'))",
+            "    ",
+            "}",
+            "",
+            "runtimeScene.getScene().getVariables().get('frame').setNumber(frame + 1) ",
+            ""
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
+        }
+      ],
+      "variables": [
+        {
+          "name": "frame",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
