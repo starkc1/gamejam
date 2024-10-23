@@ -324,7 +324,17 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "state.player.fleshCarrying",
+            "coins",
+            "=",
+            "300"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "dialogState",
             "=",
             "0"
           ]
@@ -334,7 +344,37 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "state.world.day",
+            "textScrollSpeed",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "flesh",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "seeds.vine",
+            "=",
+            "6"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "day",
             "=",
             "1"
           ]
@@ -344,7 +384,7 @@
             "value": "SetBooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "False",
             ""
           ]
@@ -354,7 +394,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "state.player.fleshGiven",
+            "fleshFed",
             "=",
             "0"
           ]
@@ -364,7 +404,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "state.world.fleshOwed",
+            "fleshNeeded",
             "=",
             "500"
           ]
@@ -374,7 +414,7 @@
             "value": "SetBooleanVariable"
           },
           "parameters": [
-            "state.world.knifeTaken",
+            "knifeTaken",
             "False",
             ""
           ]
@@ -394,7 +434,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -442,7 +481,7 @@
             "    return randomWithinRange",
             "}",
             "",
-            "var seed = runtimeScene.getGame().getVariables().get(\"state.world.seed\").getAsString()",
+            "var seed = runtimeScene.getGame().getVariables().get(\"seed\").getAsString()",
             "for (var i = 0; i < 10; i++) {",
             "    var rand = getRandom(1, 10)",
             "",
@@ -452,7 +491,7 @@
             "        seed += rand.toString()",
             "    }",
             "}",
-            "runtimeScene.getGame().getVariables().get(\"state.world.seed\").setString(seed)",
+            "runtimeScene.getGame().getVariables().get(\"seed\").setString(seed)",
             "",
             "",
             "",
@@ -545,6 +584,10 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
+    },
+    {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
     },
@@ -575,10 +618,6 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "SmoothCamera",
-      "type": "SmoothCamera::SmoothCamera"
     },
     {
       "name": "Sticker",

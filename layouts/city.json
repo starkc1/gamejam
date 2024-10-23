@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.7619362677197854,
+    "zoomFactor": 0.30104611971825523,
     "windowMask": false
   },
   "objectsGroups": [
@@ -57,7 +57,18 @@
       ]
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "name": "X",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Y",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 90,
@@ -6994,10 +7005,10 @@
       "effects": [],
       "behaviors": [
         {
+          "cost": 99999,
+          "impassable": false,
           "name": "PathfindingObstacle",
-          "type": "PathfindingBehavior::PathfindingObstacleBehavior",
-          "cost": 2,
-          "impassable": true
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
         },
         {
           "name": "Platform",
@@ -7790,142 +7801,6 @@
       "effects": [],
       "behaviors": [],
       "animations": []
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "NewSprite3",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Energy Bar.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 78,
-                        "y": 0
-                      },
-                      {
-                        "x": 78,
-                        "y": 26
-                      },
-                      {
-                        "x": 0,
-                        "y": 26
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "drain",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\drain.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 64
-                      },
-                      {
-                        "x": 0,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "603d81772c22a6401f0bb19588cb7bb6f384ae840c9e03391874c15a049ade25",
-      "bottomMargin": 12,
-      "height": 26,
-      "leftMargin": 10,
-      "name": "EnergyBar",
-      "rightMargin": 10,
-      "texture": "Energy Bar.png",
-      "tiled": true,
-      "topMargin": 13,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 78,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -7986,15 +7861,6 @@
       },
       {
         "objectName": "RpgUrbanMap16x17"
-      },
-      {
-        "objectName": "NewSprite3"
-      },
-      {
-        "objectName": "drain"
-      },
-      {
-        "objectName": "EnergyBar"
       }
     ]
   },
@@ -8017,10 +7883,21 @@
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
+            "CoinAmount",
+            "Text",
+            "=",
+            "coins"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
             "FleshAmount",
             "Text",
             "=",
-            "state.player.fleshCarrying"
+            "flesh"
           ]
         },
         {
@@ -8039,7 +7916,7 @@
             "needToFeed",
             "Text",
             "=",
-            "state.player.fleshGiven+\"/\"+state.world.fleshOwed"
+            "state.player.fleshGiven+\"/\"+state.player.fleshCarrying"
           ]
         },
         {
@@ -8050,7 +7927,7 @@
             "",
             "City vibes.wav",
             "yes",
-            "25",
+            "50",
             ""
           ]
         }
@@ -8485,7 +8362,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             ""
           ]
@@ -8600,7 +8477,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             "True"
           ]
@@ -8637,7 +8514,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             "True"
           ]
@@ -8678,7 +8555,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             "True"
           ]
@@ -8854,7 +8731,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             "True"
           ]
@@ -9111,7 +8988,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "state.player.fleshCarrying",
+            "flesh",
             "+",
             "Flesh.worth"
           ]
@@ -9124,7 +9001,7 @@
             "FleshAmount",
             "Text",
             "=",
-            "state.player.fleshCarrying"
+            "flesh"
           ]
         },
         {
@@ -9140,88 +9017,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Energy"
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"Game Over\"",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "state.player.energy",
-            "<",
-            "240"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "ResizableCapability::ResizableBehavior::SetHeight"
-          },
-          "parameters": [
-            "drain",
-            "Resizable",
-            "=",
-            "state.player.energy"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "state.player.energy",
-            "+",
-            "0.013"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "state.player.energy",
-            ">=",
-            "240"
-          ]
-        }
-      ],
-      "actions": []
     }
   ],
   "layers": [
@@ -9412,6 +9207,10 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
+    },
+    {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
     },
@@ -9458,6 +9257,10 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }

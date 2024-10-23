@@ -18,22 +18,11 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.8635277700824239,
+    "zoomFactor": 0.2987985363607005,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [
-    {
-      "name": "textScrollSpeed",
-      "type": "number",
-      "value": 10
-    },
-    {
-      "name": "seeds",
-      "type": "number",
-      "value": 5
-    }
-  ],
+  "variables": [],
   "instances": [
     {
       "angle": 0,
@@ -3140,10 +3129,21 @@
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
+            "CoinAmount",
+            "Text",
+            "=",
+            "coins"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
             "FleshAmount",
             "Text",
             "=",
-            "state.player.fleshCarrying"
+            "flesh"
           ]
         },
         {
@@ -3198,7 +3198,7 @@
             "MoundOfFlesh",
             "Scale",
             "+",
-            "(state.world.day * .5)"
+            "(day * .5)"
           ]
         }
       ]
@@ -3308,10 +3308,21 @@
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
+            "vineSeedCount",
+            "Text",
+            "=",
+            "seeds.vine"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
             "needToFeed",
             "Text",
             "=",
-            "state.player.fleshGiven+\"/\"+state.world.fleshOwed"
+            "fleshFed+\"/\"+fleshNeeded"
           ]
         },
         {
@@ -3526,6 +3537,16 @@
         },
         {
           "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "dialogState",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
             "inverted": true,
             "value": "DialogueTree::IsDialogueRunning"
           },
@@ -3560,6 +3581,16 @@
           },
           "parameters": [
             "\"FeedMe\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "dialogState",
+            "=",
+            "0"
           ]
         }
       ]
@@ -4016,9 +4047,9 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "state.player.fleshGiven",
+            "fleshFed",
             ">=",
-            "state.world.fleshOwed"
+            "fleshNeeded"
           ]
         },
         {
@@ -4026,9 +4057,9 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "state.player.fleshCarrying",
+            "state.player.fleshGiven",
             ">",
-            "state.world.day"
+            "day"
           ]
         }
       ],
@@ -4038,9 +4069,9 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "state.player.fleshCarrying",
+            "state.player.fleshGiven",
             "-",
-            "state.world.day"
+            "day"
           ]
         },
         {
@@ -4048,9 +4079,9 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "state.player.fleshGiven",
+            "fleshFed",
             "+",
-            "state.world.day"
+            "day"
           ]
         },
         {
@@ -4061,7 +4092,7 @@
             "FleshAmount",
             "Text",
             "=",
-            "state.player.fleshCarrying"
+            "state.world.fleshOwed"
           ]
         }
       ]
@@ -4108,9 +4139,9 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "state.player.fleshGiven",
+            "state.world.fleshOwed",
             "<",
-            "state.world.fleshOwed"
+            "fleshNeeded"
           ]
         },
         {
@@ -4182,9 +4213,9 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "state.player.fleshGiven",
+            "fleshFed",
             ">=",
-            "state.world.fleshOwed"
+            "fleshNeeded"
           ]
         },
         {
@@ -4423,7 +4454,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             "True"
           ]
@@ -4460,7 +4491,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             "True"
           ]
@@ -4532,7 +4563,7 @@
             "value": "SetBooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             ""
           ]
@@ -4542,7 +4573,7 @@
             "value": "SetBooleanVariable"
           },
           "parameters": [
-            "state.world.knifeTaken",
+            "knifeTaken",
             "True",
             ""
           ]
@@ -4569,7 +4600,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.world.knifeTaken",
+            "knifeTaken",
             "True",
             ""
           ]
@@ -4626,7 +4657,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.world.knifeTaken",
+            "knifeTaken",
             "=",
             ""
           ]
