@@ -3069,7 +3069,7 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "day",
+            "state.world.day",
             ">",
             "1"
           ]
@@ -3105,7 +3105,7 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "day",
+            "state.world.day",
             ">=",
             "12"
           ]

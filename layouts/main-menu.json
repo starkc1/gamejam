@@ -444,7 +444,7 @@
             "",
             "var seed = runtimeScene.getGame().getVariables().get(\"state.world.seed\").getAsString()",
             "for (var i = 0; i < 10; i++) {",
-            "    var rand = getRandom(1, 10)",
+            "    var rand = getRandom(4, 15)",
             "",
             "    if (i == 0) {",
             "        seed = rand.toString()",
