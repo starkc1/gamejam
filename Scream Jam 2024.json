@@ -6397,10 +6397,9 @@
           "Index": 2.0247e-320
         },
         {
-          "isFolded": true,
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
-          "FireCooldown": 0.3,
+          "FireCooldown": 1,
           "HasJustFired": false,
           "RotateBullet": true,
           "FiringArc": 45,
