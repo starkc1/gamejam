@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5079575118131906,
+    "zoomFactor": 0.6406912462476699,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1308,6 +1308,23 @@
       "angle": 0,
       "customSize": true,
       "depth": 0,
+      "height": 80,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "e_key",
+      "persistentUuid": "7e55c469-2c0a-4c67-86b0-79b841bf66fd",
+      "width": 80,
+      "x": -2,
+      "y": 901,
+      "zOrder": 99,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
       "height": 252,
       "layer": "GUI",
       "name": "EnergyBar",
@@ -1347,23 +1364,6 @@
       "width": 50,
       "x": 24,
       "y": 431,
-      "zOrder": 10000,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 80,
-      "keepRatio": true,
-      "layer": "GUI",
-      "name": "e_key",
-      "persistentUuid": "7e55c469-2c0a-4c67-86b0-79b841bf66fd",
-      "width": 80,
-      "x": -2,
-      "y": 901,
       "zOrder": 10000,
       "numberProperties": [],
       "stringProperties": [],
@@ -4539,6 +4539,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "ButtonFSM",
+      "type": "ButtonStates::ButtonFSM"
     },
     {
       "name": "Effect",
