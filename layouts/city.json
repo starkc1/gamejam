@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.1726229638177996,
+    "zoomFactor": 0.30104611971825523,
     "windowMask": false
   },
   "objectsGroups": [
@@ -57,7 +57,18 @@
       ]
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "name": "X",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Y",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 90,
@@ -6993,10 +7004,10 @@
       "effects": [],
       "behaviors": [
         {
+          "cost": 99999,
+          "impassable": false,
           "name": "PathfindingObstacle",
-          "type": "PathfindingBehavior::PathfindingObstacleBehavior",
-          "cost": 2,
-          "impassable": true
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
         },
         {
           "name": "Platform",
@@ -7789,6 +7800,71 @@
       "effects": [],
       "behaviors": [],
       "animations": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "24933b11fbadd435c498875a2218d1618549b8b17db715796c607db69f60c382",
+      "name": "Bullet",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bullet.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 5
+                      },
+                      {
+                        "x": 13,
+                        "y": 5
+                      },
+                      {
+                        "x": 13,
+                        "y": 12
+                      },
+                      {
+                        "x": 2,
+                        "y": 12
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -7849,6 +7925,9 @@
       },
       {
         "objectName": "RpgUrbanMap16x17"
+      },
+      {
+        "objectName": "Bullet"
       }
     ]
   },
@@ -8982,6 +9061,394 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Police aggressive"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "knifeOut",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "Aggressive",
+            "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "Aggressive",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Raycast"
+          },
+          "parameters": [
+            "Player",
+            "Policeman.X()",
+            "Policeman.Y()",
+            "Random(360)",
+            "500",
+            "X",
+            "Y",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::FireTowardObject"
+          },
+          "parameters": [
+            "Policeman",
+            "FireBullet",
+            "Policeman.X()",
+            "Policeman.Y()",
+            "Bullet",
+            "Player",
+            "300",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "CanSeePlayer",
+            "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "Aggressive",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Raycast"
+          },
+          "parameters": [
+            "Player",
+            "Policeman.X()",
+            "Policeman.Y()",
+            "Random(360)",
+            "500",
+            "X",
+            "Y",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::FireTowardObject"
+          },
+          "parameters": [
+            "Policeman",
+            "FireBullet",
+            "Policeman.X()",
+            "Policeman.Y()",
+            "Bullet",
+            "Player",
+            "300",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "CanSeePlayer",
+            "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "Aggressive",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Raycast"
+          },
+          "parameters": [
+            "Player",
+            "Policeman.X()",
+            "Policeman.Y()",
+            "Random(360)",
+            "500",
+            "X",
+            "Y",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::FireTowardObject"
+          },
+          "parameters": [
+            "Policeman",
+            "FireBullet",
+            "Policeman.X()",
+            "Policeman.Y()",
+            "Bullet",
+            "Player",
+            "300",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "CanSeePlayer",
+            "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "Raycast"
+          },
+          "parameters": [
+            "Player",
+            "Policeman.X()",
+            "Policeman.Y()",
+            "Random(360)",
+            "500",
+            "X",
+            "Y",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "CanSeePlayer",
+            "False",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "Raycast"
+          },
+          "parameters": [
+            "Player",
+            "Policeman.X()",
+            "Policeman.Y()",
+            "Random(360)",
+            "500",
+            "X",
+            "Y",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "CanSeePlayer",
+            "False",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "Raycast"
+          },
+          "parameters": [
+            "Player",
+            "Policeman.X()",
+            "Policeman.Y()",
+            "Random(360)",
+            "500",
+            "X",
+            "Y",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "CanSeePlayer",
+            "False",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "Aggressive",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "CanSeePlayer",
+            "=",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PathfindingBehavior::SetDestination"
+          },
+          "parameters": [
+            "Policeman",
+            "Pathfinding",
+            "",
+            "Player.X()",
+            "Player.Y()"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Bullet",
+            "Wall",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Bullet",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -9172,6 +9639,10 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
+    },
+    {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
     },
@@ -9218,6 +9689,10 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }

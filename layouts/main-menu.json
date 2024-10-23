@@ -545,6 +545,10 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
+    },
+    {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
     },
@@ -575,10 +579,6 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
-    },
-    {
-      "name": "SmoothCamera",
-      "type": "SmoothCamera::SmoothCamera"
     },
     {
       "name": "Sticker",
