@@ -29,32 +29,6 @@
           "name": "Hoe"
         }
       ]
-    },
-    {
-      "name": "Citizens",
-      "objects": [
-        {
-          "name": "MaleChild"
-        },
-        {
-          "name": "FemaleChild"
-        },
-        {
-          "name": "MaleAdult"
-        },
-        {
-          "name": "FemaleAdult"
-        },
-        {
-          "name": "MalePriest"
-        },
-        {
-          "name": "FemalePriest"
-        },
-        {
-          "name": "Policeman"
-        }
-      ]
     }
   ],
   "variables": [
@@ -7661,14 +7635,28 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Church",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "cost": 99999,
+          "impassable": true,
+          "name": "PathfindingObstacle",
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+        },
+        {
+          "canBeGrabbed": false,
+          "name": "Platform",
+          "platformType": "NormalPlatform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -7696,20 +7684,28 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 61,
-                        "y": 2
+                        "x": 64.5,
+                        "y": 496
+                      },
+                      {
+                        "x": 362.5,
+                        "y": 0
                       },
                       {
                         "x": 737,
                         "y": 2
                       },
                       {
-                        "x": 737,
-                        "y": 752
+                        "x": 678.5,
+                        "y": 566
                       },
                       {
-                        "x": 61,
-                        "y": 752
+                        "x": 274,
+                        "y": 754.5
+                      },
+                      {
+                        "x": 92,
+                        "y": 712
                       }
                     ]
                   ]
@@ -8028,6 +8024,8 @@
             "",
             "function objectCreationAndSpawning(objectName, iteratee, size, origin, xRange, yRange) {",
             "",
+            "    const citizens = runtimeScene.getGame().getVariables().get('state.world.citizens').getAllChildrenArray()",
+            "",
             "    const [originX, originY] = origin",
             "    const [x, xMax] = xRange",
             "    const [y, yMax] = yRange",
@@ -8035,10 +8033,12 @@
             "",
             "    for (var i = 0; i < iteratee; i++) {",
             "        const obj = runtimeScene.createObject(objectName)",
+            "        citizens.push(obj.id)",
             "        obj.setPosition(originX + getRandom(x, xMax), originY + getRandom(y, yMax))",
             "        obj.setHeight(size)",
             "        obj.setWidth(size)",
             "    }",
+            "    runtimeScene.getGame().getVariables().get('state.world.citizens').pushValue(citizens)",
             "",
             "}",
             "",
@@ -8075,13 +8075,7 @@
             "    objectCreationAndSpawning(\"Policeman\", seedValue, 65, [0, 0], [minX, maxX], [minY, maxY])",
             "}",
             "",
-            "// const seed = runtimeScene.getGame().getVariables().get(\"seed\").getAsString()",
-            "// if (seed == 0) {",
-            "//     return;",
-            "// }",
-            "",
             "var seed = runtimeScene.getGame().getVariables().get(\"state.world.seed\").getAsString()",
-            "runtimeScene.getGame().getVariables().get('state.world.citizens').setValue([])",
             "if (seed == 0) {",
             "    ",
             "    for (var i = 0; i < 10; i++) {",
@@ -8133,6 +8127,76 @@
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": true
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "const minX = -1000",
+            "const minY = -900",
+            "const maxX = 3000",
+            "const maxY = 2000",
+            "",
+            "function getRandom(min, max) {",
+            "    const floatRandom = Math.random()",
+            "",
+            "    const difference = max - min",
+            "    const random = Math.round(difference * floatRandom)",
+            "",
+            "    const randomWithinRange = random + min",
+            "",
+            "    return randomWithinRange",
+            "}",
+            "",
+            "function moveCitizens(citizens) {",
+            "    for (var citizen of citizens) {",
+            "",
+            "        const x = getRandom(minX / 2, maxX / 2)",
+            "        const y = getRandom(minY / 2, maxY / 2)",
+            "",
+            "        const speed = getRandom(-1.2, 1.2)",
+            "",
+            "        if (citizen.isCollidingWithPoint) {",
+            "            citizen.addForceTowardPosition(-x, -y, 30, speed)",
+            "        } else {",
+            "            citizen.addForceTowardPosition(x, y, 30, speed)",
+            "        }        ",
+            "",
+            "    }",
+            "}",
+            "",
+            "let frame = runtimeScene.getScene().getVariables().get('frame').getAsNumber()",
+            "",
+            "if (frame == 0 || frame % 180 == 0) {",
+            "",
+            "    moveCitizens(runtimeScene.getScene().getInstancesOf('MalePriest'))",
+            "    moveCitizens(runtimeScene.getScene().getInstancesOf('FemalePriest'))",
+            "    moveCitizens(runtimeScene.getScene().getInstancesOf('FemaleAdult'))",
+            "    moveCitizens(runtimeScene.getScene().getInstancesOf('MaleAdult'))",
+            "    moveCitizens(runtimeScene.getScene().getInstancesOf('FemaleChild'))",
+            "    moveCitizens(runtimeScene.getScene().getInstancesOf('MaleChild'))",
+            "    ",
+            "}",
+            "",
+            "runtimeScene.getScene().getVariables().get('frame').setNumber(frame + 1) ",
+            ""
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
+        }
+      ],
+      "variables": [
+        {
+          "name": "frame",
+          "type": "number",
+          "value": 0
         }
       ]
     },
@@ -8568,7 +8632,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -8756,7 +8819,6 @@
       "comment": "flesh drop scattering"
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
