@@ -18,22 +18,11 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5800155239905055,
+    "zoomFactor": 0.2987985363607005,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [
-    {
-      "name": "textScrollSpeed",
-      "type": "number",
-      "value": 10
-    },
-    {
-      "name": "seeds",
-      "type": "number",
-      "value": 5
-    }
-  ],
+  "variables": [],
   "instances": [
     {
       "angle": 0,
@@ -1072,43 +1061,11 @@
       "height": 0,
       "keepRatio": true,
       "layer": "GUI",
-      "name": "CoinAmount",
-      "persistentUuid": "54977dbd-6422-4f17-8a58-d9e1b4099b54",
-      "width": 0,
-      "x": 83,
-      "y": 20,
-      "zOrder": 29,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "GUI",
-      "name": "Coin",
-      "persistentUuid": "7e1fc52e-5a4f-428e-bbbb-6ad91ba561a3",
-      "width": 0,
-      "x": 7,
-      "y": 8,
-      "zOrder": 30,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "GUI",
       "name": "Flesh",
       "persistentUuid": "6c2ad544-c0f0-4773-99ad-98d41c7e8cf1",
       "width": 0,
       "x": 15,
-      "y": 90,
+      "y": 18,
       "zOrder": 31,
       "numberProperties": [],
       "stringProperties": [],
@@ -1123,8 +1080,8 @@
       "name": "FleshAmount",
       "persistentUuid": "0a6ea8aa-dd24-4d5f-afee-db6f5fe8d296",
       "width": 0,
-      "x": 83,
-      "y": 96,
+      "x": 90,
+      "y": 22,
       "zOrder": 32,
       "numberProperties": [],
       "stringProperties": [],
@@ -3172,10 +3129,21 @@
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
+            "CoinAmount",
+            "Text",
+            "=",
+            "coins"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
             "FleshAmount",
             "Text",
             "=",
-            "state.player.fleshCarrying"
+            "flesh"
           ]
         },
         {
@@ -3230,7 +3198,7 @@
             "MoundOfFlesh",
             "Scale",
             "+",
-            "(state.world.day * .5)"
+            "(day * .5)"
           ]
         }
       ]
@@ -3340,10 +3308,21 @@
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
+            "vineSeedCount",
+            "Text",
+            "=",
+            "seeds.vine"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
             "needToFeed",
             "Text",
             "=",
-            "state.player.fleshGiven+\"/\"+state.world.fleshOwed"
+            "fleshFed+\"/\"+fleshNeeded"
           ]
         },
         {
@@ -3558,6 +3537,16 @@
         },
         {
           "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "dialogState",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
             "inverted": true,
             "value": "DialogueTree::IsDialogueRunning"
           },
@@ -3592,6 +3581,16 @@
           },
           "parameters": [
             "\"FeedMe\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "dialogState",
+            "=",
+            "0"
           ]
         }
       ]
@@ -4048,9 +4047,9 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "state.player.fleshGiven",
+            "fleshFed",
             ">=",
-            "state.world.fleshOwed"
+            "fleshNeeded"
           ]
         },
         {
@@ -4060,7 +4059,7 @@
           "parameters": [
             "state.player.fleshGiven",
             ">",
-            "state.world.day"
+            "day"
           ]
         }
       ],
@@ -4072,7 +4071,7 @@
           "parameters": [
             "state.player.fleshGiven",
             "-",
-            "state.world.day"
+            "day"
           ]
         },
         {
@@ -4080,9 +4079,9 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "state.player.fleshGiven",
+            "fleshFed",
             "+",
-            "state.world.day"
+            "day"
           ]
         },
         {
@@ -4142,7 +4141,7 @@
           "parameters": [
             "state.world.fleshOwed",
             "<",
-            "state.world.fleshOwed"
+            "fleshNeeded"
           ]
         },
         {
@@ -4214,9 +4213,9 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "state.player.fleshGiven",
+            "fleshFed",
             ">=",
-            "state.world.fleshOwed"
+            "fleshNeeded"
           ]
         },
         {
@@ -4455,7 +4454,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             "True"
           ]
@@ -4492,7 +4491,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             "True"
           ]
@@ -4564,7 +4563,7 @@
             "value": "SetBooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             ""
           ]
@@ -4574,7 +4573,7 @@
             "value": "SetBooleanVariable"
           },
           "parameters": [
-            "state.world.knifeTaken",
+            "knifeTaken",
             "True",
             ""
           ]
@@ -4601,7 +4600,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.world.knifeTaken",
+            "knifeTaken",
             "True",
             ""
           ]
@@ -4658,7 +4657,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.world.knifeTaken",
+            "knifeTaken",
             "=",
             ""
           ]
@@ -4771,16 +4770,27 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Energy"
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "value": "ResizableCapability::ResizableBehavior::Height"
+            "value": "NumberVariable"
           },
           "parameters": [
-            "drain",
-            "Resizable",
-            "!=",
+            "state.player.energy",
+            "<",
             "240"
           ]
         }
@@ -4793,6 +4803,16 @@
           "parameters": [
             "drain",
             "Resizable",
+            "=",
+            "state.player.energy"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "state.player.energy",
             "+",
             "0.013"
           ]
@@ -4816,12 +4836,11 @@
       "conditions": [
         {
           "type": {
-            "value": "ResizableCapability::ResizableBehavior::Height"
+            "value": "NumberVariable"
           },
           "parameters": [
-            "drain",
-            "Resizable",
-            "=",
+            "state.player.energy",
+            ">=",
             "240"
           ]
         }
@@ -4838,6 +4857,11 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
