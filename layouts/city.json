@@ -7005,10 +7005,10 @@
       "effects": [],
       "behaviors": [
         {
-          "cost": 99999,
-          "impassable": false,
           "name": "PathfindingObstacle",
-          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+          "cost": 99999,
+          "impassable": false
         },
         {
           "name": "Platform",
@@ -7801,6 +7801,66 @@
       "effects": [],
       "behaviors": [],
       "animations": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "24933b11fbadd435c498875a2218d1618549b8b17db715796c607db69f60c382",
+      "name": "Bullet",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bullet.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 5
+                      },
+                      {
+                        "x": 13,
+                        "y": 5
+                      },
+                      {
+                        "x": 13,
+                        "y": 12
+                      },
+                      {
+                        "x": 2,
+                        "y": 12
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -7861,6 +7921,9 @@
       },
       {
         "objectName": "RpgUrbanMap16x17"
+      },
+      {
+        "objectName": "Bullet"
       }
     ]
   },
@@ -7883,21 +7946,10 @@
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
-            "CoinAmount",
-            "Text",
-            "=",
-            "coins"
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
             "FleshAmount",
             "Text",
             "=",
-            "flesh"
+            "state.player.fleshCarrying"
           ]
         },
         {
@@ -8012,7 +8064,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -8094,9 +8145,26 @@
             "    objectCreationAndSpawning(\"Policeman\", seedValue, 65, [0, 0], [minX, maxX], [minY, maxY])",
             "}",
             "",
-            "const seed = runtimeScene.getGame().getVariables().get(\"seed\").getAsString()",
+            "// const seed = runtimeScene.getGame().getVariables().get(\"seed\").getAsString()",
+            "// if (seed == 0) {",
+            "//     return;",
+            "// }",
+            "",
+            "var seed = runtimeScene.getGame().getVariables().get(\"state.world.seed\").getAsString()",
+            "runtimeScene.getGame().getVariables().get('state.world.citizens').setValue([])",
             "if (seed == 0) {",
-            "    return;",
+            "    ",
+            "    for (var i = 0; i < 10; i++) {",
+            "        var rand = getRandom(4, 15)",
+            "",
+            "        if (i == 0) {",
+            "            seed = rand.toString()",
+            "        } else {",
+            "            seed += rand.toString()",
+            "        }",
+            "    }",
+            "    runtimeScene.getGame().getVariables().get(\"state.world.seed\").setString(seed)",
+            "    seed = runtimeScene.getGame().getVariables().get(\"state.world.seed\").getAsString()",
             "}",
             "",
             "const seeds = seed.split(\"\");",
@@ -8988,7 +9056,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "flesh",
+            "state.player.fleshCarrying",
             "+",
             "Flesh.worth"
           ]
@@ -9001,7 +9069,7 @@
             "FleshAmount",
             "Text",
             "=",
-            "flesh"
+            "state.player.fleshCarrying"
           ]
         },
         {
@@ -9014,6 +9082,286 @@
             "",
             "2",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Police aggressive"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "knifeOut",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "Aggressive",
+            "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "Aggressive",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Raycast"
+          },
+          "parameters": [
+            "Player",
+            "Policeman.X()",
+            "Policeman.Y()",
+            "Random(360)",
+            "500",
+            "X",
+            "Y",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::FireTowardObject"
+          },
+          "parameters": [
+            "Policeman",
+            "FireBullet",
+            "Policeman.X()",
+            "Policeman.Y()",
+            "Bullet",
+            "Player",
+            "300",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "CanSeePlayer",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "gunshot.wav",
+            "",
+            "100",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "Raycast"
+          },
+          "parameters": [
+            "Player",
+            "Policeman.X()",
+            "Policeman.Y()",
+            "Random(360)",
+            "500",
+            "X",
+            "Y",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "CanSeePlayer",
+            "False",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "Aggressive",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "CanSeePlayer",
+            "=",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PathfindingBehavior::SetDestination"
+          },
+          "parameters": [
+            "Policeman",
+            "Pathfinding",
+            "",
+            "Player.X()",
+            "Player.Y()"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Bullet",
+            "Wall",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Bullet",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Player run events\n"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "LShift"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "=",
+            "750"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyReleased"
+          },
+          "parameters": [
+            "",
+            "LShift"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "=",
+            "375"
           ]
         }
       ]
