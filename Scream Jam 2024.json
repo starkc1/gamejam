@@ -2342,6 +2342,42 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "e-key.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "e-key.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "f-key.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "f-key.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "shift-key.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "shift-key.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "spacebar-next.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "spacebar-next.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
         "file": "assets/HpBar.png.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
@@ -6778,227 +6814,6 @@
           ]
         }
       ]
-    },
-    {
-      "assetStoreId": "603d81772c22a6401f0bb19588cb7bb6f384ae840c9e03391874c15a049ade25",
-      "bottomMargin": 12,
-      "height": 26,
-      "leftMargin": 10,
-      "name": "EnergyBar",
-      "rightMargin": 10,
-      "texture": "Energy Bar.png",
-      "tiled": true,
-      "topMargin": 13,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 78,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "drain",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "drain",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "drain",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 64
-                      },
-                      {
-                        "x": 0,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "603d81772c22a6401f0bb19588cb7bb6f384ae840c9e03391874c15a049ade25",
-      "bottomMargin": 12,
-      "height": 26,
-      "leftMargin": 10,
-      "name": "HpBar",
-      "rightMargin": 10,
-      "texture": "HpBar.png",
-      "tiled": true,
-      "topMargin": 13,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 78,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "hpDrain",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "drain",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "drain",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 64
-                      },
-                      {
-                        "x": 0,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "FleshIcon",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "worth",
-          "type": "number",
-          "value": 100
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "spawn",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Flesh.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 1
-                      },
-                      {
-                        "x": 58,
-                        "y": 1
-                      },
-                      {
-                        "x": 58,
-                        "y": 54
-                      },
-                      {
-                        "x": 0,
-                        "y": 54
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "objectsFolderStructure": {
@@ -7063,6 +6878,24 @@
       },
       {
         "objectName": "needToFeed"
+      },
+      {
+        "objectName": "e_key"
+      },
+      {
+        "objectName": "f_key"
+      },
+      {
+        "objectName": "shift_key"
+      },
+      {
+        "objectName": "E_key_text"
+      },
+      {
+        "objectName": "f_key_text"
+      },
+      {
+        "objectName": "shift_key_text"
       },
       {
         "objectName": "EnergyBar"
