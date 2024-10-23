@@ -1,7 +1,7 @@
 {
   "firstLayout": "Main Menu",
   "gdVersion": {
-    "build": 217,
+    "build": 216,
     "major": 5,
     "minor": 4,
     "revision": 0
@@ -2315,6 +2315,24 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Energy Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Energy Bar.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/drain.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\drain.png",
+        "smoothed": true,
         "userAdded": false
       }
     ],
@@ -6677,7 +6695,7 @@
             {
               "name": "fleshCarrying",
               "type": "number",
-              "value": 0
+              "value": 99999999
             },
             {
               "name": "fleshGiven",

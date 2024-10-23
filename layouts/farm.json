@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5800155239905055,
+    "zoomFactor": 0.8635277700824239,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1072,43 +1072,11 @@
       "height": 0,
       "keepRatio": true,
       "layer": "GUI",
-      "name": "CoinAmount",
-      "persistentUuid": "54977dbd-6422-4f17-8a58-d9e1b4099b54",
-      "width": 0,
-      "x": 83,
-      "y": 20,
-      "zOrder": 29,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "GUI",
-      "name": "Coin",
-      "persistentUuid": "7e1fc52e-5a4f-428e-bbbb-6ad91ba561a3",
-      "width": 0,
-      "x": 7,
-      "y": 8,
-      "zOrder": 30,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "GUI",
       "name": "Flesh",
       "persistentUuid": "6c2ad544-c0f0-4773-99ad-98d41c7e8cf1",
       "width": 0,
       "x": 15,
-      "y": 90,
+      "y": 18,
       "zOrder": 31,
       "numberProperties": [],
       "stringProperties": [],
@@ -1123,8 +1091,8 @@
       "name": "FleshAmount",
       "persistentUuid": "0a6ea8aa-dd24-4d5f-afee-db6f5fe8d296",
       "width": 0,
-      "x": 83,
-      "y": 96,
+      "x": 90,
+      "y": 22,
       "zOrder": 32,
       "numberProperties": [],
       "stringProperties": [],
@@ -4058,7 +4026,7 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "state.player.fleshGiven",
+            "state.player.fleshCarrying",
             ">",
             "state.world.day"
           ]
@@ -4070,7 +4038,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "state.player.fleshGiven",
+            "state.player.fleshCarrying",
             "-",
             "state.world.day"
           ]
@@ -4093,7 +4061,7 @@
             "FleshAmount",
             "Text",
             "=",
-            "state.world.fleshOwed"
+            "state.player.fleshCarrying"
           ]
         }
       ]
@@ -4140,7 +4108,7 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "state.world.fleshOwed",
+            "state.player.fleshGiven",
             "<",
             "state.world.fleshOwed"
           ]
@@ -4771,16 +4739,27 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Energy"
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "value": "ResizableCapability::ResizableBehavior::Height"
+            "value": "NumberVariable"
           },
           "parameters": [
-            "drain",
-            "Resizable",
-            "!=",
+            "state.player.energy",
+            "<",
             "240"
           ]
         }
@@ -4793,6 +4772,16 @@
           "parameters": [
             "drain",
             "Resizable",
+            "=",
+            "state.player.energy"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "state.player.energy",
             "+",
             "0.013"
           ]
@@ -4816,12 +4805,11 @@
       "conditions": [
         {
           "type": {
-            "value": "ResizableCapability::ResizableBehavior::Height"
+            "value": "NumberVariable"
           },
           "parameters": [
-            "drain",
-            "Resizable",
-            "=",
+            "state.player.energy",
+            ">=",
             "240"
           ]
         }
@@ -4838,6 +4826,11 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [

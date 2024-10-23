@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.1726229638177996,
+    "zoomFactor": 0.7619362677197854,
     "windowMask": false
   },
   "objectsGroups": [
@@ -2964,60 +2964,12 @@
       "height": 0,
       "keepRatio": true,
       "layer": "Dialog",
-      "name": "Coin",
-      "persistentUuid": "ee78a09c-8f15-483a-bfdb-51d7563c2f35",
-      "width": 0,
-      "x": 7,
-      "y": 8,
-      "zOrder": 10000,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "Dialog",
-      "name": "CoinAmount",
-      "persistentUuid": "d437bcfd-bbc4-4ff1-bb51-e000f052484a",
-      "width": 0,
-      "x": 83,
-      "y": 20,
-      "zOrder": 10001,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "Dialog",
       "name": "FleshAmount",
       "persistentUuid": "e28b3258-665f-4426-bd1c-b1eb99466c01",
       "width": 0,
-      "x": 83,
-      "y": 96,
+      "x": 90,
+      "y": 22,
       "zOrder": 10003,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "Dialog",
-      "name": "Coin",
-      "persistentUuid": "2b891158-7dc7-41cb-8bd9-24de9fa4d2e7",
-      "width": 0,
-      "x": 7,
-      "y": 8,
-      "zOrder": 10004,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3032,7 +2984,7 @@
       "persistentUuid": "c6f398ae-cd10-4cbb-a67a-a51d1897d876",
       "width": 0,
       "x": 15,
-      "y": 90,
+      "y": 18,
       "zOrder": 10005,
       "numberProperties": [],
       "stringProperties": [],
@@ -6980,6 +6932,55 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 270,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "EnergyBar",
+      "persistentUuid": "b6a120a3-2e94-4b70-8983-d6366ca58690",
+      "width": 256,
+      "x": -64,
+      "y": 192,
+      "zOrder": 108,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 240,
+      "layer": "Dialog",
+      "name": "drain",
+      "persistentUuid": "805ded02-775d-4ba4-bcc3-2084413290f9",
+      "width": 50,
+      "x": 24,
+      "y": 165,
+      "zOrder": 99999,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 270,
+      "customSize": true,
+      "depth": 0,
+      "height": 64,
+      "layer": "Dialog",
+      "name": "EnergyBar",
+      "persistentUuid": "59782f45-06b1-4f2f-b0eb-65e4e3d2b50b",
+      "width": 256,
+      "x": -79,
+      "y": 254,
+      "zOrder": 999,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -7789,6 +7790,142 @@
       "effects": [],
       "behaviors": [],
       "animations": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Energy Bar.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 78,
+                        "y": 0
+                      },
+                      {
+                        "x": 78,
+                        "y": 26
+                      },
+                      {
+                        "x": 0,
+                        "y": 26
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "drain",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\drain.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "603d81772c22a6401f0bb19588cb7bb6f384ae840c9e03391874c15a049ade25",
+      "bottomMargin": 12,
+      "height": 26,
+      "leftMargin": 10,
+      "name": "EnergyBar",
+      "rightMargin": 10,
+      "texture": "Energy Bar.png",
+      "tiled": true,
+      "topMargin": 13,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 78,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -7849,6 +7986,15 @@
       },
       {
         "objectName": "RpgUrbanMap16x17"
+      },
+      {
+        "objectName": "NewSprite3"
+      },
+      {
+        "objectName": "drain"
+      },
+      {
+        "objectName": "EnergyBar"
       }
     ]
   },
@@ -7893,7 +8039,7 @@
             "needToFeed",
             "Text",
             "=",
-            "state.player.fleshGiven+\"/\"+state.player.fleshCarrying"
+            "state.player.fleshGiven+\"/\"+state.world.fleshOwed"
           ]
         },
         {
@@ -7904,7 +8050,7 @@
             "",
             "City vibes.wav",
             "yes",
-            "50",
+            "25",
             ""
           ]
         }
@@ -8994,6 +9140,88 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Energy"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Game Over\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "state.player.energy",
+            "<",
+            "240"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetHeight"
+          },
+          "parameters": [
+            "drain",
+            "Resizable",
+            "=",
+            "state.player.energy"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "state.player.energy",
+            "+",
+            "0.013"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "state.player.energy",
+            ">=",
+            "240"
+          ]
+        }
+      ],
+      "actions": []
     }
   ],
   "layers": [
@@ -9007,7 +9235,7 @@
       "cameraType": "perspective",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
+      "isLocked": true,
       "name": "Tileset",
       "renderingType": "",
       "visibility": true,

@@ -209,7 +209,7 @@
           "parameters": [
             "state.player.fleshGiven",
             "=",
-            "state.player.fleshGivenh- state.world.fleshOwed"
+            "state.player.fleshGiven- state.world.fleshOwed"
           ]
         },
         {
