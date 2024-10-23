@@ -1,7 +1,7 @@
 {
   "firstLayout": "Main Menu",
   "gdVersion": {
-    "build": 217,
+    "build": 216,
     "major": 5,
     "minor": 4,
     "revision": 0
@@ -2307,6 +2307,18 @@
         "smoothed": true,
         "userAdded": false
       },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bullet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bullet.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Projectile/Trunk/d59a4a2574e9ef32be875a0b354505bf6376ed249bb868a9f9add1d48950dbdb_Bullet.png",
+          "name": "Bullet.png"
+        }},
       {
         "file": "City vibes.wav",
         "kind": "audio",
@@ -6749,6 +6761,7 @@
           ]
         }
       ]
+<<<<<<<<< Temporary merge branch 1
     },
     {
       "name": "day",
