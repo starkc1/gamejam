@@ -2306,6 +2306,16 @@
         "name": "drain",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "City vibes.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "City vibes.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -6647,45 +6657,96 @@
   "objectsGroups": [],
   "variables": [
     {
-      "folded": true,
-      "name": "dialogState",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "folded": true,
-      "name": "textScrollSpeed",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "coins",
-      "type": "number",
-      "value": 300
-    },
-    {
-      "name": "flesh",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "Seed",
-      "type": "string",
-      "value": ""
-    },
-    {
-      "name": "Seed",
-      "type": "string",
-      "value": ""
-    },
-    {
-      "name": "seeds",
+      "name": "state",
       "type": "structure",
       "children": [
         {
-          "name": "vine",
-          "type": "number",
-          "value": 6
+          "name": "player",
+          "type": "structure",
+          "children": [
+            {
+              "name": "energy",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "equippedTool",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "fleshCarrying",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "fleshGiven",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "followers",
+              "type": "array",
+              "children": []
+            },
+            {
+              "name": "inventory",
+              "type": "array",
+              "children": []
+            },
+            {
+              "name": "knifeOut",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "world",
+          "type": "structure",
+          "children": [
+            {
+              "name": "day",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "fleshOwed",
+              "type": "number",
+              "value": 500
+            },
+            {
+              "name": "knifeTaken",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "plants",
+              "type": "array",
+              "children": [
+                {
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "harvestable",
+                      "type": "boolean",
+                      "value": false
+                    },
+                    {
+                      "name": "isWatered",
+                      "type": "boolean",
+                      "value": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "seed",
+              "type": "string",
+              "value": ""
+            }
+          ]
         }
       ]
     },
