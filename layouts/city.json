@@ -7974,6 +7974,18 @@
             "=",
             "state.player.fleshGiven+\"/\"+state.player.fleshCarrying"
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "City vibes.wav",
+            "yes",
+            "50",
+            ""
+          ]
         }
       ]
     },

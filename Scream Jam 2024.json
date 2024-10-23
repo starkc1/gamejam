@@ -2308,6 +2308,16 @@
         "userAdded": false
       },
       {
+        "file": "City vibes.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "City vibes.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
         "alwaysLoaded": false,
         "file": "assets/Bullet.png",
         "kind": "image",
@@ -6832,6 +6842,39 @@
           ]
         }
       ]
+<<<<<<<<< Temporary merge branch 1
+    },
+    {
+      "name": "day",
+      "type": "number",
+      "value": 1
+    },
+    {
+      "name": "knifeOut",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "fleshNeeded",
+      "type": "number",
+      "value": 500
+    },
+    {
+      "name": "fleshFed",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "knifeTaken",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "dayHasChanged",
+      "type": "boolean",
+      "value": false
+=========
+>>>>>>>>> Temporary merge branch 2
     }
   ],
   "layouts": [

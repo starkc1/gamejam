@@ -18,11 +18,22 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.2987985363607005,
+    "zoomFactor": 0.5800155239905055,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "textScrollSpeed",
+      "type": "number",
+      "value": 10
+    },
+    {
+      "name": "seeds",
+      "type": "number",
+      "value": 5
+    }
+  ],
   "instances": [
     {
       "angle": 0,
