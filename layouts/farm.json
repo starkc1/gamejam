@@ -1314,8 +1314,8 @@
       "name": "e_key",
       "persistentUuid": "7e55c469-2c0a-4c67-86b0-79b841bf66fd",
       "width": 80,
-      "x": -2,
-      "y": 901,
+      "x": 0,
+      "y": 900,
       "zOrder": 99,
       "numberProperties": [],
       "stringProperties": [],
@@ -1378,8 +1378,8 @@
       "name": "E_key_text",
       "persistentUuid": "0b1d3a34-08ca-42c2-8001-2ce81c3a19b8",
       "width": 303,
-      "x": 81,
-      "y": 926,
+      "x": 80,
+      "y": 920,
       "zOrder": 10001,
       "numberProperties": [],
       "stringProperties": [],
@@ -1396,7 +1396,7 @@
       "persistentUuid": "a6129e35-e346-41e5-9e38-7878bef745a9",
       "width": 80,
       "x": 0,
-      "y": 959,
+      "y": 960,
       "zOrder": 10002,
       "numberProperties": [],
       "stringProperties": [],
@@ -1411,8 +1411,8 @@
       "name": "f_key_text",
       "persistentUuid": "63e3fe7a-17ba-48b2-b837-b2793bb19a50",
       "width": 0,
-      "x": 83,
-      "y": 977,
+      "x": 80,
+      "y": 980,
       "zOrder": 10003,
       "numberProperties": [],
       "stringProperties": [],
@@ -1428,8 +1428,8 @@
       "name": "shift_key",
       "persistentUuid": "50e3d98f-7090-49d8-a11a-695eb38ba21c",
       "width": 160,
-      "x": -5,
-      "y": 1009,
+      "x": 0,
+      "y": 1010,
       "zOrder": 10004,
       "numberProperties": [],
       "stringProperties": [],
@@ -1444,8 +1444,8 @@
       "name": "shift_key_text",
       "persistentUuid": "af6469c7-7d62-4fd9-89f0-53c202f3e5fa",
       "width": 0,
-      "x": 138,
-      "y": 1029,
+      "x": 150,
+      "y": 1030,
       "zOrder": 10005,
       "numberProperties": [],
       "stringProperties": [],
@@ -2959,6 +2959,17 @@
             "Resizable",
             "=",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "E_key_text",
+            "Text",
+            "=",
+            "\"To Interact\""
           ]
         }
       ]
