@@ -6332,6 +6332,9 @@
           "RandomizedAngle": 0
         },
         {
+          "isFolded": true,
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -6341,14 +6344,13 @@
           "extraBorder": 0,
           "gridOffsetX": 0,
           "gridOffsetY": 0,
-          "isFolded": true,
           "maxSpeed": 200,
-          "name": "Pathfinding",
           "rotateObject": false,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
         },
         {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 1500,
           "canGoDownFromJumpthru": false,
           "canGrabPlatforms": false,
@@ -6361,9 +6363,7 @@
           "ladderClimbingSpeed": 150,
           "maxFallingSpeed": 0,
           "maxSpeed": 250,
-          "name": "PlatformerObject",
           "slopeMaxAngle": 60,
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "useLegacyTrajectory": false,
           "xGrabTolerance": 10,
           "yGrabOffset": 0
@@ -6842,7 +6842,6 @@
           ]
         }
       ]
-<<<<<<<<< Temporary merge branch 1
     },
     {
       "name": "day",
@@ -6873,8 +6872,6 @@
       "name": "dayHasChanged",
       "type": "boolean",
       "value": false
-=========
->>>>>>>>> Temporary merge branch 2
     }
   ],
   "layouts": [

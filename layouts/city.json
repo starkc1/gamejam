@@ -7004,10 +7004,10 @@
       "effects": [],
       "behaviors": [
         {
-          "cost": 99999,
-          "impassable": false,
           "name": "PathfindingObstacle",
-          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+          "cost": 99999,
+          "impassable": false
         },
         {
           "name": "Platform",
@@ -8150,9 +8150,26 @@
             "    objectCreationAndSpawning(\"Policeman\", seedValue, 65, [0, 0], [minX, maxX], [minY, maxY])",
             "}",
             "",
-            "const seed = runtimeScene.getGame().getVariables().get(\"seed\").getAsString()",
+            "// const seed = runtimeScene.getGame().getVariables().get(\"seed\").getAsString()",
+            "// if (seed == 0) {",
+            "//     return;",
+            "// }",
+            "",
+            "var seed = runtimeScene.getGame().getVariables().get(\"state.world.seed\").getAsString()",
+            "runtimeScene.getGame().getVariables().get('state.world.citizens').setValue([])",
             "if (seed == 0) {",
-            "    return;",
+            "    ",
+            "    for (var i = 0; i < 10; i++) {",
+            "        var rand = getRandom(4, 15)",
+            "",
+            "        if (i == 0) {",
+            "            seed = rand.toString()",
+            "        } else {",
+            "            seed += rand.toString()",
+            "        }",
+            "    }",
+            "    runtimeScene.getGame().getVariables().get(\"state.world.seed\").setString(seed)",
+            "    seed = runtimeScene.getGame().getVariables().get(\"state.world.seed\").getAsString()",
             "}",
             "",
             "const seeds = seed.split(\"\");",
@@ -9458,6 +9475,72 @@
           "parameters": [
             "Bullet",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Player run events\n"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "LShift"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "=",
+            "750"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyReleased"
+          },
+          "parameters": [
+            "",
+            "LShift"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "=",
+            "375"
           ]
         }
       ]
