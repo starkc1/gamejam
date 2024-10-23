@@ -72,39 +72,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 1,
-      "customSize": true,
-      "depth": 1,
-      "height": 372,
-      "keepRatio": true,
-      "layer": "",
-      "name": "NewSprite2",
-      "persistentUuid": "bcb036c6-3f9d-4e4e-b1f2-7335f79be67c",
-      "width": 282,
-      "x": 323,
-      "y": 745,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 51,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "NewSprite3",
-      "persistentUuid": "25d8aad2-cca9-4ee8-be52-b6e448719951",
-      "width": 0,
-      "x": -196,
-      "y": 359,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
     }
   ],
   "objects": [
@@ -633,6 +600,10 @@
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
     },
     {
       "name": "Flippable",

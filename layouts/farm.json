@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.25314140012987013,
+    "zoomFactor": 0.2987985363607005,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1061,43 +1061,11 @@
       "height": 0,
       "keepRatio": true,
       "layer": "GUI",
-      "name": "CoinAmount",
-      "persistentUuid": "54977dbd-6422-4f17-8a58-d9e1b4099b54",
-      "width": 0,
-      "x": 83,
-      "y": 20,
-      "zOrder": 29,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "GUI",
-      "name": "Coin",
-      "persistentUuid": "7e1fc52e-5a4f-428e-bbbb-6ad91ba561a3",
-      "width": 0,
-      "x": 7,
-      "y": 8,
-      "zOrder": 30,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "GUI",
       "name": "Flesh",
       "persistentUuid": "6c2ad544-c0f0-4773-99ad-98d41c7e8cf1",
       "width": 0,
       "x": 15,
-      "y": 90,
+      "y": 18,
       "zOrder": 31,
       "numberProperties": [],
       "stringProperties": [],
@@ -1112,8 +1080,8 @@
       "name": "FleshAmount",
       "persistentUuid": "0a6ea8aa-dd24-4d5f-afee-db6f5fe8d296",
       "width": 0,
-      "x": 83,
-      "y": 96,
+      "x": 90,
+      "y": 22,
       "zOrder": 32,
       "numberProperties": [],
       "stringProperties": [],
@@ -1556,6 +1524,39 @@
       "x": 768,
       "y": -1958,
       "zOrder": 107,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 270,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "EnergyBar",
+      "persistentUuid": "4951167c-9063-410f-b3c5-eb27c6b804de",
+      "width": 256,
+      "x": -79,
+      "y": 254,
+      "zOrder": 108,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 240,
+      "layer": "GUI",
+      "name": "drain",
+      "persistentUuid": "3fe221d5-cfe4-4867-a58d-6ed3aa0527e5",
+      "width": 50,
+      "x": 24,
+      "y": 165,
+      "zOrder": 9999,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2906,6 +2907,83 @@
         "characterSize": 30,
         "color": "208;2;27"
       }
+    },
+    {
+      "assetStoreId": "603d81772c22a6401f0bb19588cb7bb6f384ae840c9e03391874c15a049ade25",
+      "bottomMargin": 12,
+      "height": 26,
+      "leftMargin": 10,
+      "name": "EnergyBar",
+      "rightMargin": 10,
+      "texture": "Energy Bar.png",
+      "tiled": false,
+      "topMargin": 13,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 78,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "drain",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "drain",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "drain",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2967,6 +3045,12 @@
       },
       {
         "objectName": "moundInteract"
+      },
+      {
+        "objectName": "EnergyBar"
+      },
+      {
+        "objectName": "drain"
       }
     ]
   },
@@ -3045,10 +3129,21 @@
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
+            "CoinAmount",
+            "Text",
+            "=",
+            "coins"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
             "FleshAmount",
             "Text",
             "=",
-            "state.player.fleshCarrying"
+            "flesh"
           ]
         },
         {
@@ -3057,6 +3152,17 @@
           },
           "parameters": [
             "Wall"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetHeight"
+          },
+          "parameters": [
+            "drain",
+            "Resizable",
+            "=",
+            "0"
           ]
         }
       ]
@@ -3092,7 +3198,7 @@
             "MoundOfFlesh",
             "Scale",
             "+",
-            "(state.world.day * .5)"
+            "(day * .5)"
           ]
         }
       ]
@@ -3202,10 +3308,21 @@
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
+            "vineSeedCount",
+            "Text",
+            "=",
+            "seeds.vine"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
             "needToFeed",
             "Text",
             "=",
-            "state.player.fleshGiven+\"/\"+state.world.fleshOwed"
+            "fleshFed+\"/\"+fleshNeeded"
           ]
         },
         {
@@ -3420,6 +3537,16 @@
         },
         {
           "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "dialogState",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
             "inverted": true,
             "value": "DialogueTree::IsDialogueRunning"
           },
@@ -3454,6 +3581,16 @@
           },
           "parameters": [
             "\"FeedMe\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "dialogState",
+            "=",
+            "0"
           ]
         }
       ]
@@ -3910,9 +4047,9 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "state.player.fleshGiven",
+            "fleshFed",
             ">=",
-            "state.world.fleshOwed"
+            "fleshNeeded"
           ]
         },
         {
@@ -3922,7 +4059,7 @@
           "parameters": [
             "state.player.fleshGiven",
             ">",
-            "state.world.day"
+            "day"
           ]
         }
       ],
@@ -3934,7 +4071,7 @@
           "parameters": [
             "state.player.fleshGiven",
             "-",
-            "state.world.day"
+            "day"
           ]
         },
         {
@@ -3942,9 +4079,9 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "state.player.fleshGiven",
+            "fleshFed",
             "+",
-            "state.world.day"
+            "day"
           ]
         },
         {
@@ -4004,7 +4141,7 @@
           "parameters": [
             "state.world.fleshOwed",
             "<",
-            "state.world.fleshOwed"
+            "fleshNeeded"
           ]
         },
         {
@@ -4076,9 +4213,9 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "state.player.fleshGiven",
+            "fleshFed",
             ">=",
-            "state.world.fleshOwed"
+            "fleshNeeded"
           ]
         },
         {
@@ -4317,7 +4454,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             "True"
           ]
@@ -4354,7 +4491,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             "True"
           ]
@@ -4426,7 +4563,7 @@
             "value": "SetBooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             ""
           ]
@@ -4436,7 +4573,7 @@
             "value": "SetBooleanVariable"
           },
           "parameters": [
-            "state.world.knifeTaken",
+            "knifeTaken",
             "True",
             ""
           ]
@@ -4463,7 +4600,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.world.knifeTaken",
+            "knifeTaken",
             "True",
             ""
           ]
@@ -4520,7 +4657,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.world.knifeTaken",
+            "knifeTaken",
             "=",
             ""
           ]
@@ -4631,6 +4768,166 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Energy"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "state.player.energy",
+            "<",
+            "240"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetHeight"
+          },
+          "parameters": [
+            "drain",
+            "Resizable",
+            "=",
+            "state.player.energy"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "state.player.energy",
+            "+",
+            "0.013"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Out of energy game over"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "state.player.energy",
+            ">=",
+            "240"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Game Over\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Play run events"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "LShift"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "=",
+            "1000"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyReleased"
+          },
+          "parameters": [
+            "",
+            "LShift"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "=",
+            "500"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
@@ -4753,6 +5050,10 @@
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
     },
     {
       "name": "Flippable",

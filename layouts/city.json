@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5117784035210335,
+    "zoomFactor": 0.30104611971825523,
     "windowMask": false
   },
   "objectsGroups": [
@@ -31,7 +31,18 @@
       ]
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "name": "X",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Y",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 90,
@@ -2941,8 +2952,8 @@
       "name": "FleshAmount",
       "persistentUuid": "e28b3258-665f-4426-bd1c-b1eb99466c01",
       "width": 0,
-      "x": 83,
-      "y": 96,
+      "x": 90,
+      "y": 22,
       "zOrder": 10003,
       "numberProperties": [],
       "stringProperties": [],
@@ -2958,7 +2969,7 @@
       "persistentUuid": "c6f398ae-cd10-4cbb-a67a-a51d1897d876",
       "width": 0,
       "x": 15,
-      "y": 90,
+      "y": 18,
       "zOrder": 10005,
       "numberProperties": [],
       "stringProperties": [],
@@ -6838,6 +6849,55 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 270,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "GUI",
+      "name": "EnergyBar",
+      "persistentUuid": "b6a120a3-2e94-4b70-8983-d6366ca58690",
+      "width": 256,
+      "x": -64,
+      "y": 192,
+      "zOrder": 108,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 240,
+      "layer": "Dialog",
+      "name": "drain",
+      "persistentUuid": "805ded02-775d-4ba4-bcc3-2084413290f9",
+      "width": 50,
+      "x": 24,
+      "y": 165,
+      "zOrder": 99999,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 270,
+      "customSize": true,
+      "depth": 0,
+      "height": 64,
+      "layer": "Dialog",
+      "name": "EnergyBar",
+      "persistentUuid": "59782f45-06b1-4f2f-b0eb-65e4e3d2b50b",
+      "width": 256,
+      "x": -79,
+      "y": 254,
+      "zOrder": 999,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -6853,8 +6913,8 @@
         {
           "name": "PathfindingObstacle",
           "type": "PathfindingBehavior::PathfindingObstacleBehavior",
-          "cost": 2,
-          "impassable": true
+          "cost": 99999,
+          "impassable": false
         },
         {
           "name": "Platform",
@@ -7669,6 +7729,66 @@
       "effects": [],
       "behaviors": [],
       "animations": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "24933b11fbadd435c498875a2218d1618549b8b17db715796c607db69f60c382",
+      "name": "Bullet",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bullet.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 5
+                      },
+                      {
+                        "x": 13,
+                        "y": 5
+                      },
+                      {
+                        "x": 13,
+                        "y": 12
+                      },
+                      {
+                        "x": 2,
+                        "y": 12
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -7729,6 +7849,9 @@
       },
       {
         "objectName": "RpgUrbanMap16x17"
+      },
+      {
+        "objectName": "Bullet"
       }
     ]
   },
@@ -7774,6 +7897,18 @@
             "Text",
             "=",
             "state.player.fleshGiven+\"/\"+state.player.fleshCarrying"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "City vibes.wav",
+            "yes",
+            "50",
+            ""
           ]
         }
       ]
@@ -8291,7 +8426,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             ""
           ]
@@ -8406,7 +8541,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             "True"
           ]
@@ -8443,7 +8578,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             "True"
           ]
@@ -8484,7 +8619,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             "True"
           ]
@@ -8659,7 +8794,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "state.player.knifeOut",
+            "knifeOut",
             "True",
             "True"
           ]
@@ -8944,6 +9079,286 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Police aggressive"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "knifeOut",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "Aggressive",
+            "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "Aggressive",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Raycast"
+          },
+          "parameters": [
+            "Player",
+            "Policeman.X()",
+            "Policeman.Y()",
+            "Random(360)",
+            "500",
+            "X",
+            "Y",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::FireTowardObject"
+          },
+          "parameters": [
+            "Policeman",
+            "FireBullet",
+            "Policeman.X()",
+            "Policeman.Y()",
+            "Bullet",
+            "Player",
+            "300",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "CanSeePlayer",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "gunshot.wav",
+            "",
+            "100",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "Raycast"
+          },
+          "parameters": [
+            "Player",
+            "Policeman.X()",
+            "Policeman.Y()",
+            "Random(360)",
+            "500",
+            "X",
+            "Y",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "CanSeePlayer",
+            "False",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "Aggressive",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "Policeman",
+            "CanSeePlayer",
+            "=",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PathfindingBehavior::SetDestination"
+          },
+          "parameters": [
+            "Policeman",
+            "Pathfinding",
+            "",
+            "Player.X()",
+            "Player.Y()"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Bullet",
+            "Wall",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Bullet",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Player run events\n"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "LShift"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "=",
+            "750"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyReleased"
+          },
+          "parameters": [
+            "",
+            "LShift"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "=",
+            "375"
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -8957,7 +9372,7 @@
       "cameraType": "perspective",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
+      "isLocked": true,
       "name": "Tileset",
       "renderingType": "",
       "visibility": true,
@@ -9134,6 +9549,10 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
+    },
+    {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
     },
@@ -9180,6 +9599,10 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }
