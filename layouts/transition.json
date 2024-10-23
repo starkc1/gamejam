@@ -186,9 +186,9 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "state.world.day",
+            "day",
             "=",
-            "state.world.day + 1"
+            "day + 1"
           ]
         },
         {
@@ -199,7 +199,7 @@
             "NewDay",
             "Text",
             "=",
-            "\"Day \" + state.world.day"
+            "\"Day \" + day"
           ]
         },
         {
@@ -207,9 +207,9 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "state.player.fleshGiven",
+            "fleshFed",
             "=",
-            "state.player.fleshGivenh- state.world.fleshOwed"
+            "state.player.fleshGiven- state.world.fleshOwed"
           ]
         },
         {
@@ -217,9 +217,9 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "state.world.fleshOwed",
+            "fleshNeeded",
             "=",
-            "((state.world.day* Random(500)) + state.world.fleshOwed)"
+            "((day * Random(500)) + fleshNeeded)"
           ]
         },
         {
