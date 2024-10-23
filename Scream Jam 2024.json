@@ -3210,44 +3210,7 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [
-        {
-          "acceleration": 400,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "maxSpeed": 200,
-          "name": "Pathfinding",
-          "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
-        },
-        {
-          "acceleration": 1500,
-          "canGoDownFromJumpthru": false,
-          "canGrabPlatforms": false,
-          "canGrabWithoutMoving": false,
-          "deceleration": 1500,
-          "gravity": 0,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 0,
-          "jumpSustainTime": 0,
-          "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 0,
-          "maxSpeed": 150,
-          "name": "PlatformerObject",
-          "slopeMaxAngle": 60,
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
-          "yGrabOffset": 0
-        }
-      ],
+      "behaviors": [],
       "animations": [
         {
           "name": "Down",
@@ -3739,44 +3702,7 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [
-        {
-          "acceleration": 400,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "maxSpeed": 100,
-          "name": "Pathfinding",
-          "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
-        },
-        {
-          "acceleration": 1500,
-          "canGoDownFromJumpthru": false,
-          "canGrabPlatforms": false,
-          "canGrabWithoutMoving": false,
-          "deceleration": 1500,
-          "gravity": 0,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 0,
-          "jumpSustainTime": 0,
-          "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 0,
-          "maxSpeed": 100,
-          "name": "PlatformerObject",
-          "slopeMaxAngle": 60,
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
-          "yGrabOffset": 0
-        }
-      ],
+      "behaviors": [],
       "animations": [
         {
           "name": "Down",
@@ -4268,44 +4194,7 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 200,
-          "maxSpeed": 100,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "rotateObject": true,
-          "smoothingMaxCellGap": 1
-        },
-        {
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "acceleration": 100,
-          "canGoDownFromJumpthru": false,
-          "canGrabPlatforms": false,
-          "canGrabWithoutMoving": false,
-          "deceleration": 100,
-          "gravity": 0,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 0,
-          "jumpSustainTime": 0,
-          "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 0,
-          "maxSpeed": 100,
-          "slopeMaxAngle": 60,
-          "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
-          "yGrabOffset": 0
-        }
-      ],
+      "behaviors": [],
       "animations": [
         {
           "name": "Walking Down",
@@ -4797,44 +4686,7 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 200,
-          "maxSpeed": 100,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "rotateObject": true,
-          "smoothingMaxCellGap": 1
-        },
-        {
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "acceleration": 100,
-          "canGoDownFromJumpthru": false,
-          "canGrabPlatforms": false,
-          "canGrabWithoutMoving": false,
-          "deceleration": 100,
-          "gravity": 0,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 0,
-          "jumpSustainTime": 0,
-          "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 0,
-          "maxSpeed": 100,
-          "slopeMaxAngle": 60,
-          "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
-          "yGrabOffset": 0
-        }
-      ],
+      "behaviors": [],
       "animations": [
         {
           "name": "Walking Down",
@@ -5471,44 +5323,7 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [
-        {
-          "acceleration": 100,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "maxSpeed": 100,
-          "name": "Pathfinding",
-          "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
-        },
-        {
-          "acceleration": 100,
-          "canGoDownFromJumpthru": false,
-          "canGrabPlatforms": false,
-          "canGrabWithoutMoving": false,
-          "deceleration": 100,
-          "gravity": 0,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 0,
-          "jumpSustainTime": 0,
-          "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 0,
-          "maxSpeed": 100,
-          "name": "PlatformerObject",
-          "slopeMaxAngle": 60,
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
-          "yGrabOffset": 0
-        }
-      ],
+      "behaviors": [],
       "animations": [
         {
           "name": "Down",
@@ -6000,44 +5815,7 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [
-        {
-          "acceleration": 200,
-          "maxSpeed": 100,
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "rotateObject": true,
-          "smoothingMaxCellGap": 1
-        },
-        {
-          "acceleration": 200,
-          "maxSpeed": 50,
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "canGoDownFromJumpthru": false,
-          "canGrabPlatforms": false,
-          "canGrabWithoutMoving": false,
-          "deceleration": 100,
-          "gravity": 0,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 0,
-          "jumpSustainTime": 0,
-          "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 0,
-          "slopeMaxAngle": 60,
-          "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
-          "yGrabOffset": 0
-        }
-      ],
+      "behaviors": [],
       "animations": [
         {
           "name": "Down",
@@ -7154,34 +6932,7 @@
       }
     ]
   },
-  "objectsGroups": [
-    {
-      "name": "Citizens",
-      "objects": [
-        {
-          "name": "MaleChild"
-        },
-        {
-          "name": "FemaleChild"
-        },
-        {
-          "name": "MaleAdult"
-        },
-        {
-          "name": "MalePriest"
-        },
-        {
-          "name": "FemalePriest"
-        },
-        {
-          "name": "Policeman"
-        },
-        {
-          "name": "FemaleAdult"
-        }
-      ]
-    }
-  ],
+  "objectsGroups": [],
   "variables": [
     {
       "name": "state",
@@ -7238,11 +6989,6 @@
           "type": "structure",
           "children": [
             {
-              "name": "citizens",
-              "type": "array",
-              "children": []
-            },
-            {
               "name": "day",
               "type": "number",
               "value": 1
@@ -7258,7 +7004,6 @@
               "value": false
             },
             {
-              "folded": true,
               "name": "plants",
               "type": "array",
               "children": [
@@ -7311,12 +7056,7 @@
       "referenceTo": "/layouts/game-over"
     }
   ],
-  "externalEvents": [
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/untitled-external-events"
-    }
-  ],
+  "externalEvents": [],
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

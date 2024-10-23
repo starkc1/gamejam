@@ -454,7 +454,7 @@
             "",
             "var seed = runtimeScene.getGame().getVariables().get(\"seed\").getAsString()",
             "for (var i = 0; i < 10; i++) {",
-            "    var rand = getRandom(4, 15)",
+            "    var rand = getRandom(1, 10)",
             "",
             "    if (i == 0) {",
             "        seed = rand.toString()",
