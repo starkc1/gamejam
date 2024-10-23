@@ -2757,23 +2757,6 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Hoe",
-      "persistentUuid": "6e5fd44b-f114-4747-875f-f913d9eb7cfd",
-      "width": 64,
-      "x": -1153,
-      "y": -706,
-      "zOrder": 100,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
@@ -6158,23 +6141,6 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 50,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Citizen",
-      "persistentUuid": "f62a9bc2-c1f1-49bb-82a5-7ed5b6cc0766",
-      "width": 50,
-      "x": -1016,
-      "y": -826,
-      "zOrder": 30,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 775,
       "keepRatio": true,
@@ -6201,57 +6167,6 @@
       "x": -670,
       "y": -939,
       "zOrder": 500,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 50,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Citizen",
-      "persistentUuid": "53347674-3a5b-4769-95c3-5699f2577af4",
-      "width": 50,
-      "x": -885,
-      "y": -764,
-      "zOrder": 30,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 50,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Citizen",
-      "persistentUuid": "4f3de9eb-1b85-42b5-b47b-f54503898e39",
-      "width": 50,
-      "x": -1086,
-      "y": -696,
-      "zOrder": 30,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 50,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Citizen",
-      "persistentUuid": "3ae74442-cb35-4f60-9179-60a035c79a2f",
-      "width": 50,
-      "x": -1145,
-      "y": -888,
-      "zOrder": 30,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -7271,7 +7186,21 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "cost": 99999,
+          "impassable": true,
+          "name": "PathfindingObstacle",
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+        },
+        {
+          "canBeGrabbed": false,
+          "name": "Platform",
+          "platformType": "NormalPlatform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -7968,7 +7897,7 @@
             "needToFeed",
             "Text",
             "=",
-            "state.player.fleshGiven+\"/\"+state.player.fleshCarrying"
+            "state.player.fleshGiven+\"/\"+state.world.fleshOwed"
           ]
         },
         {
@@ -8064,6 +7993,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -8236,159 +8166,6 @@
       ]
     },
     {
-      "folded": true,
-      "type": "BuiltinCommonInstructions::ForEach",
-      "object": "Hoe",
-      "conditions": [],
-      "actions": [],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "e"
-              ]
-            },
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Player",
-                "Hoe",
-                "4",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanObjectVariable"
-              },
-              "parameters": [
-                "Hoe",
-                "Collected",
-                "False",
-                ""
-              ]
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "InventorySlot",
-                    "HasItem",
-                    "=",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PickNearest"
-                  },
-                  "parameters": [
-                    "InventorySlot",
-                    "0",
-                    "720",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ChangeLayer"
-                  },
-                  "parameters": [
-                    "Hoe",
-                    "\"GUI\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "Hoe",
-                    "=",
-                    "InventorySlot.X()",
-                    "=",
-                    "InventorySlot.Y()\n"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Sticker::Sticker::Stick"
-                  },
-                  "parameters": [
-                    "Hoe",
-                    "Sticker",
-                    "InventorySlot",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "Hoe",
-                    "=",
-                    "InventorySlot.ZOrder()+1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ResizableCapability::ResizableBehavior::SetSize"
-                  },
-                  "parameters": [
-                    "Hoe",
-                    "Resizable",
-                    "60",
-                    "60"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetStringObjectVariable"
-                  },
-                  "parameters": [
-                    "InventorySlot",
-                    "Item",
-                    "=",
-                    "Collectibles.ObjectName()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "InventorySlot",
-                    "HasItem",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -8430,7 +8207,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "knifeOut",
+            "state.player.knifeOut",
             "True",
             ""
           ]
@@ -8545,7 +8322,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "knifeOut",
+            "state.player.knifeOut",
             "True",
             "True"
           ]
@@ -8582,7 +8359,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "knifeOut",
+            "state.player.knifeOut",
             "True",
             "True"
           ]
@@ -8623,7 +8400,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "knifeOut",
+            "state.player.knifeOut",
             "True",
             "True"
           ]
@@ -8799,7 +8576,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "knifeOut",
+            "state.player.knifeOut",
             "True",
             "True"
           ]
@@ -9106,7 +8883,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "knifeOut",
+            "state.player.knifeOut",
             "True",
             ""
           ]
@@ -9191,7 +8968,7 @@
             "",
             "gunshot.wav",
             "",
-            "100",
+            "25",
             ""
           ]
         }
@@ -9336,6 +9113,16 @@
             "=",
             "750"
           ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "state.player.energy",
+            "+",
+            ".1"
+          ]
         }
       ]
     },
@@ -9362,6 +9149,109 @@
             "TopDownMovement",
             "=",
             "375"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "state.player.energy",
+            ">=",
+            "240"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Game Over\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "state.player.energy",
+            "<",
+            "240"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetHeight"
+          },
+          "parameters": [
+            "drain",
+            "Resizable",
+            "=",
+            "state.player.energy"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "state.player.energy",
+            "+",
+            "0.013"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Bullet",
+            "Player",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Bullet",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "state.player.health",
+            "+",
+            "20 + state.world.day"
           ]
         }
       ]
@@ -9605,10 +9495,6 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-    },
-    {
-      "name": "Tween",
-      "type": "Tween::TweenBehavior"
     }
   ]
 }

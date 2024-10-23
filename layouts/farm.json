@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.2987985363607005,
+    "zoomFactor": 0.8635277700824237,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1156,22 +1156,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "VineGrow",
-      "persistentUuid": "19f60140-bbb5-4654-82ee-8f6f040a44b6",
-      "width": 0,
-      "x": 1408,
-      "y": -1536,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 1,
       "height": 128,
@@ -1200,214 +1184,6 @@
       "x": 1152,
       "y": -1536,
       "zOrder": 35,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "VineGrow",
-      "persistentUuid": "b1ba381b-361c-4936-abe7-a44acb3f6601",
-      "width": 0,
-      "x": 1408,
-      "y": -1408,
-      "zOrder": 34,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "VineGrow",
-      "persistentUuid": "0f5dd97b-3575-4492-a95d-4f63ce6183d7",
-      "width": 0,
-      "x": 1536,
-      "y": -1408,
-      "zOrder": 34,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "VineGrow",
-      "persistentUuid": "f2045bd8-6138-470a-b0d5-781c0ec12356",
-      "width": 0,
-      "x": 1664,
-      "y": -1408,
-      "zOrder": 34,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "VineGrow",
-      "persistentUuid": "fa4870da-5078-4c10-aabe-faabc3d91aeb",
-      "width": 0,
-      "x": 1664,
-      "y": -1536,
-      "zOrder": 34,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "VineGrow",
-      "persistentUuid": "2c1f07b1-a2d0-4929-ba52-def4f5b98f3f",
-      "width": 0,
-      "x": 1792,
-      "y": -1536,
-      "zOrder": 34,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "VineGrow",
-      "persistentUuid": "46b37b4c-228e-42fc-94a7-23caeb98d849",
-      "width": 0,
-      "x": 1792,
-      "y": -1408,
-      "zOrder": 34,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "VineGrow",
-      "persistentUuid": "e60c039c-8594-467d-951b-156aa73b0724",
-      "width": 0,
-      "x": 1920,
-      "y": -1408,
-      "zOrder": 34,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "VineGrow",
-      "persistentUuid": "54989e8f-2e93-45da-8da0-55fceaa0f4e4",
-      "width": 0,
-      "x": 1408,
-      "y": -1280,
-      "zOrder": 34,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "VineGrow",
-      "persistentUuid": "e97b27b8-2775-4944-b77a-340023cdba12",
-      "width": 0,
-      "x": 1536,
-      "y": -1280,
-      "zOrder": 34,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "VineGrow",
-      "persistentUuid": "69be714b-c284-48ce-8a58-b58298da8e16",
-      "width": 0,
-      "x": 1664,
-      "y": -1280,
-      "zOrder": 34,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "VineGrow",
-      "persistentUuid": "efe52dc5-ca78-4d4a-bf7b-777063a0ac54",
-      "width": 0,
-      "x": 1792,
-      "y": -1280,
-      "zOrder": 34,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "VineGrow",
-      "persistentUuid": "d2bf39e9-e3dc-4a9d-9cb5-9a4549a006ec",
-      "width": 0,
-      "x": 1920,
-      "y": -1280,
-      "zOrder": 34,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "VineGrow",
-      "persistentUuid": "4aedc344-de9d-4dab-9857-1d1376efd026",
-      "width": 0,
-      "x": 1536,
-      "y": -1536,
-      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1487,22 +1263,6 @@
       "keepRatio": true,
       "layer": "",
       "name": "knifeInteract",
-      "persistentUuid": "051018bd-6e50-48c6-99ce-b020b8c14af6",
-      "width": 0,
-      "x": 2048,
-      "y": -1152,
-      "zOrder": 105,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "knifeInteract",
       "persistentUuid": "f5c21967-29c9-410f-9b3a-06bbd81b90d8",
       "width": 0,
       "x": 519,
@@ -1529,23 +1289,6 @@
       "initialVariables": []
     },
     {
-      "angle": 270,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "GUI",
-      "name": "EnergyBar",
-      "persistentUuid": "4951167c-9063-410f-b3c5-eb27c6b804de",
-      "width": 256,
-      "x": -79,
-      "y": 254,
-      "zOrder": 108,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
       "angle": 0,
       "customSize": true,
       "depth": 1,
@@ -1557,6 +1300,54 @@
       "x": 24,
       "y": 165,
       "zOrder": 9999,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 252,
+      "layer": "GUI",
+      "name": "EnergyBar",
+      "persistentUuid": "d8e27ad9-58c2-4c9c-a862-7b078494b0f0",
+      "width": 64,
+      "x": 17,
+      "y": 158,
+      "zOrder": 99,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 252,
+      "layer": "GUI",
+      "name": "HpBar",
+      "persistentUuid": "4fb3201d-74c4-47dd-968b-d31bce8aba67",
+      "width": 64,
+      "x": 17,
+      "y": 425,
+      "zOrder": 999,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 240,
+      "layer": "GUI",
+      "name": "hpDrain",
+      "persistentUuid": "f69d9f4d-ccf9-4d7e-9167-01a18fad4585",
+      "width": 50,
+      "x": 24,
+      "y": 431,
+      "zOrder": 10000,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2907,83 +2698,6 @@
         "characterSize": 30,
         "color": "208;2;27"
       }
-    },
-    {
-      "assetStoreId": "603d81772c22a6401f0bb19588cb7bb6f384ae840c9e03391874c15a049ade25",
-      "bottomMargin": 12,
-      "height": 26,
-      "leftMargin": 10,
-      "name": "EnergyBar",
-      "rightMargin": 10,
-      "texture": "Energy Bar.png",
-      "tiled": false,
-      "topMargin": 13,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 78,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "drain",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "drain",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "drain",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 64
-                      },
-                      {
-                        "x": 0,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "objectsFolderStructure": {
@@ -3045,12 +2759,6 @@
       },
       {
         "objectName": "moundInteract"
-      },
-      {
-        "objectName": "EnergyBar"
-      },
-      {
-        "objectName": "drain"
       }
     ]
   },
@@ -3129,21 +2837,10 @@
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
-            "CoinAmount",
-            "Text",
-            "=",
-            "coins"
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
             "FleshAmount",
             "Text",
             "=",
-            "flesh"
+            "state.player.fleshCarrying"
           ]
         },
         {
@@ -3175,7 +2872,7 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "day",
+            "state.world.day",
             ">",
             "1"
           ]
@@ -3198,7 +2895,7 @@
             "MoundOfFlesh",
             "Scale",
             "+",
-            "(day * .5)"
+            "(state.world.day * .5)"
           ]
         }
       ]
@@ -3211,7 +2908,7 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "day",
+            "state.world.day",
             ">=",
             "12"
           ]
@@ -3299,19 +2996,8 @@
             "Donkey",
             "Random(2000)",
             "Random(2000)",
-            "20",
+            "50",
             "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "vineSeedCount",
-            "Text",
-            "=",
-            "seeds.vine"
           ]
         },
         {
@@ -3322,7 +3008,7 @@
             "needToFeed",
             "Text",
             "=",
-            "fleshFed+\"/\"+fleshNeeded"
+            "state.player.fleshGiven+\"/\"+state.world.fleshOwed"
           ]
         },
         {
@@ -3386,6 +3072,7 @@
       ]
     },
     {
+      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -3427,6 +3114,7 @@
       ]
     },
     {
+      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -3498,6 +3186,7 @@
       ]
     },
     {
+      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -3524,6 +3213,7 @@
       ]
     },
     {
+      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -3533,16 +3223,6 @@
           "parameters": [
             "",
             "e"
-          ]
-        },
-        {
-          "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "dialogState",
-            "=",
-            "0"
           ]
         },
         {
@@ -3582,20 +3262,11 @@
           "parameters": [
             "\"FeedMe\""
           ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "dialogState",
-            "=",
-            "0"
-          ]
         }
       ]
     },
     {
+      "disabled": true,
       "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -3627,39 +3298,6 @@
           "conditions": [
             {
               "type": {
-                "value": "CompareTimer"
-              },
-              "parameters": [
-                "",
-                "\"scrollText\"",
-                ">=",
-                "textScrollSpeed"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "DialogueTree::ScrollClippedText"
-              },
-              "parameters": []
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"scrollText\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
                 "value": "KeyReleased"
               },
               "parameters": [
@@ -3680,59 +3318,6 @@
                 "value": "DialogueTree::GoToNextLine"
               },
               "parameters": []
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Space"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "textScrollSpeed",
-                "=",
-                "0.01"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Space"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "textScrollSpeed",
-                "=",
-                ".05"
-              ]
             }
           ]
         }
@@ -3782,232 +3367,6 @@
     {
       "type": "BuiltinCommonInstructions::Comment",
       "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "plant growth and planting "
-    },
-    {
-      "folded": true,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyPressed"
-          },
-          "parameters": [
-            "",
-            "g"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AjoutObjConcern"
-              },
-              "parameters": [
-                "",
-                "VineGrow"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "VineGrow",
-                "stage",
-                "+",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "VineGrow",
-                "stage",
-                "=",
-                "2"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
-              },
-              "parameters": [
-                "VineGrow",
-                "Animation",
-                "=",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "VineGrow",
-                "stage",
-                "=",
-                "6"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
-              },
-              "parameters": [
-                "VineGrow",
-                "Animation",
-                "=",
-                "2"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "VineGrow",
-                "stage",
-                "=",
-                "14"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
-              },
-              "parameters": [
-                "VineGrow",
-                "Animation",
-                "=",
-                "3"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "folded": true,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyPressed"
-          },
-          "parameters": [
-            "",
-            "Space"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "seeds.vine",
-                ">",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "groundMarker",
-                "VineGrow",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "VineGrow",
-                "groundMarker.X()",
-                "groundMarker.Y()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "seeds.vine",
-                "-",
-                "1"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
         "b": 27,
         "g": 2,
         "r": 208,
@@ -4047,9 +3406,9 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "fleshFed",
+            "state.player.fleshGiven",
             ">=",
-            "fleshNeeded"
+            "state.world.fleshOwed"
           ]
         },
         {
@@ -4057,9 +3416,9 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "state.player.fleshGiven",
+            "state.player.fleshCarrying",
             ">",
-            "day"
+            "state.world.day"
           ]
         }
       ],
@@ -4069,9 +3428,9 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "state.player.fleshGiven",
+            "state.player.fleshCarrying",
             "-",
-            "day"
+            "state.world.day"
           ]
         },
         {
@@ -4079,9 +3438,9 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "fleshFed",
+            "state.player.fleshGiven",
             "+",
-            "day"
+            "state.world.day"
           ]
         },
         {
@@ -4092,7 +3451,7 @@
             "FleshAmount",
             "Text",
             "=",
-            "state.world.fleshOwed"
+            "state.player.fleshCarrying"
           ]
         }
       ]
@@ -4139,9 +3498,9 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "state.world.fleshOwed",
+            "state.player.fleshGiven",
             "<",
-            "fleshNeeded"
+            "state.world.fleshOwed"
           ]
         },
         {
@@ -4213,9 +3572,9 @@
             "value": "NumberVariable"
           },
           "parameters": [
-            "fleshFed",
+            "state.player.fleshGiven",
             ">=",
-            "fleshNeeded"
+            "state.world.fleshOwed"
           ]
         },
         {
@@ -4454,7 +3813,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "knifeOut",
+            "state.player.knifeOut",
             "True",
             "True"
           ]
@@ -4491,7 +3850,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "knifeOut",
+            "state.player.knifeOut",
             "True",
             "True"
           ]
@@ -4563,7 +3922,7 @@
             "value": "SetBooleanVariable"
           },
           "parameters": [
-            "knifeOut",
+            "state.player.knifeOut",
             "True",
             ""
           ]
@@ -4573,7 +3932,7 @@
             "value": "SetBooleanVariable"
           },
           "parameters": [
-            "knifeTaken",
+            "state.world.knifeTaken",
             "True",
             ""
           ]
@@ -4600,7 +3959,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "knifeTaken",
+            "state.world.knifeTaken",
             "True",
             ""
           ]
@@ -4657,7 +4016,7 @@
             "value": "BooleanVariable"
           },
           "parameters": [
-            "knifeTaken",
+            "state.world.knifeTaken",
             "=",
             ""
           ]
@@ -4925,9 +4284,44 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Health"
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "state.player.health",
+            "<",
+            "240"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetHeight"
+          },
+          "parameters": [
+            "hpDrain",
+            "Resizable",
+            "=",
+            "state.player.health"
+          ]
+        }
+      ]
     }
   ],
   "layers": [

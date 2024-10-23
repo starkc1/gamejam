@@ -1,7 +1,7 @@
 {
   "firstLayout": "Main Menu",
   "gdVersion": {
-    "build": 217,
+    "build": 216,
     "major": 5,
     "minor": 4,
     "revision": 0
@@ -2338,6 +2338,15 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/HpBar.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "HpBar.png",
+        "smoothed": true,
         "userAdded": false
       }
     ],
@@ -6693,6 +6702,160 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "603d81772c22a6401f0bb19588cb7bb6f384ae840c9e03391874c15a049ade25",
+      "bottomMargin": 12,
+      "height": 26,
+      "leftMargin": 10,
+      "name": "EnergyBar",
+      "rightMargin": 10,
+      "texture": "Energy Bar.png",
+      "tiled": true,
+      "topMargin": 13,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 78,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "drain",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "drain",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "drain",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "603d81772c22a6401f0bb19588cb7bb6f384ae840c9e03391874c15a049ade25",
+      "bottomMargin": 12,
+      "height": 26,
+      "leftMargin": 10,
+      "name": "HpBar",
+      "rightMargin": 10,
+      "texture": "HpBar.png",
+      "tiled": true,
+      "topMargin": 13,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 78,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "hpDrain",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "drain",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "drain",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -6754,6 +6917,18 @@
       },
       {
         "objectName": "needToFeed"
+      },
+      {
+        "objectName": "EnergyBar"
+      },
+      {
+        "objectName": "HpBar"
+      },
+      {
+        "objectName": "drain"
+      },
+      {
+        "objectName": "hpDrain"
       }
     ]
   },
@@ -6791,6 +6966,11 @@
               "name": "followers",
               "type": "array",
               "children": []
+            },
+            {
+              "name": "health",
+              "type": "number",
+              "value": 0
             },
             {
               "name": "inventory",
@@ -6852,36 +7032,6 @@
           ]
         }
       ]
-    },
-    {
-      "name": "day",
-      "type": "number",
-      "value": 1
-    },
-    {
-      "name": "knifeOut",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "fleshNeeded",
-      "type": "number",
-      "value": 500
-    },
-    {
-      "name": "fleshFed",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "knifeTaken",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "dayHasChanged",
-      "type": "boolean",
-      "value": false
     }
   ],
   "layouts": [
