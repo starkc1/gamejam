@@ -2375,6 +2375,15 @@
         "name": "spacebar-next.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/HpBar.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "HpBar.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -3239,40 +3248,15 @@
       "effects": [],
       "behaviors": [
         {
-          "acceleration": 400,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "maxSpeed": 200,
-          "name": "Pathfinding",
-          "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
-        },
-        {
-          "acceleration": 1500,
-          "canGoDownFromJumpthru": false,
-          "canGrabPlatforms": false,
-          "canGrabWithoutMoving": false,
-          "deceleration": 1500,
-          "gravity": 0,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 0,
-          "jumpSustainTime": 0,
-          "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 0,
-          "maxSpeed": 150,
-          "name": "PlatformerObject",
-          "slopeMaxAngle": 60,
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
-          "yGrabOffset": 0
+          "isFolded": true,
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
         }
       ],
       "animations": [
@@ -3768,40 +3752,14 @@
       "effects": [],
       "behaviors": [
         {
-          "acceleration": 400,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "maxSpeed": 100,
-          "name": "Pathfinding",
-          "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
-        },
-        {
-          "acceleration": 1500,
-          "canGoDownFromJumpthru": false,
-          "canGrabPlatforms": false,
-          "canGrabWithoutMoving": false,
-          "deceleration": 1500,
-          "gravity": 0,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 0,
-          "jumpSustainTime": 0,
-          "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 0,
-          "maxSpeed": 100,
-          "name": "PlatformerObject",
-          "slopeMaxAngle": 60,
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
-          "yGrabOffset": 0
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
         }
       ],
       "animations": [
@@ -4297,40 +4255,14 @@
       "effects": [],
       "behaviors": [
         {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 200,
-          "maxSpeed": 100,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "rotateObject": true,
-          "smoothingMaxCellGap": 1
-        },
-        {
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "acceleration": 100,
-          "canGoDownFromJumpthru": false,
-          "canGrabPlatforms": false,
-          "canGrabWithoutMoving": false,
-          "deceleration": 100,
-          "gravity": 0,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 0,
-          "jumpSustainTime": 0,
-          "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 0,
-          "maxSpeed": 100,
-          "slopeMaxAngle": 60,
-          "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
-          "yGrabOffset": 0
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
         }
       ],
       "animations": [
@@ -4826,40 +4758,14 @@
       "effects": [],
       "behaviors": [
         {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 200,
-          "maxSpeed": 100,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "rotateObject": true,
-          "smoothingMaxCellGap": 1
-        },
-        {
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "acceleration": 100,
-          "canGoDownFromJumpthru": false,
-          "canGrabPlatforms": false,
-          "canGrabWithoutMoving": false,
-          "deceleration": 100,
-          "gravity": 0,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 0,
-          "jumpSustainTime": 0,
-          "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 0,
-          "maxSpeed": 100,
-          "slopeMaxAngle": 60,
-          "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
-          "yGrabOffset": 0
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
         }
       ],
       "animations": [
@@ -5500,40 +5406,14 @@
       "effects": [],
       "behaviors": [
         {
-          "acceleration": 100,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "maxSpeed": 100,
-          "name": "Pathfinding",
-          "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
-        },
-        {
-          "acceleration": 100,
-          "canGoDownFromJumpthru": false,
-          "canGrabPlatforms": false,
-          "canGrabWithoutMoving": false,
-          "deceleration": 100,
-          "gravity": 0,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 0,
-          "jumpSustainTime": 0,
-          "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 0,
-          "maxSpeed": 100,
-          "name": "PlatformerObject",
-          "slopeMaxAngle": 60,
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
-          "yGrabOffset": 0
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
         }
       ],
       "animations": [
@@ -6029,40 +5909,14 @@
       "effects": [],
       "behaviors": [
         {
-          "acceleration": 200,
-          "maxSpeed": 100,
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "rotateObject": true,
-          "smoothingMaxCellGap": 1
-        },
-        {
-          "acceleration": 200,
-          "maxSpeed": 50,
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "canGoDownFromJumpthru": false,
-          "canGrabPlatforms": false,
-          "canGrabWithoutMoving": false,
-          "deceleration": 100,
-          "gravity": 0,
-          "ignoreDefaultControls": false,
-          "jumpSpeed": 0,
-          "jumpSustainTime": 0,
-          "ladderClimbingSpeed": 150,
-          "maxFallingSpeed": 0,
-          "slopeMaxAngle": 60,
-          "useLegacyTrajectory": false,
-          "xGrabTolerance": 10,
-          "yGrabOffset": 0
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
         }
       ],
       "animations": [
@@ -6569,10 +6423,19 @@
       "effects": [],
       "behaviors": [
         {
-          "isFolded": true,
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        },
+        {
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
-          "FireCooldown": 0.3,
+          "FireCooldown": 1,
           "HasJustFired": false,
           "RotateBullet": true,
           "FiringArc": 45,
@@ -7257,6 +7120,227 @@
         "characterSize": 25,
         "color": "255;255;255"
       }
+    },
+    {
+      "assetStoreId": "603d81772c22a6401f0bb19588cb7bb6f384ae840c9e03391874c15a049ade25",
+      "bottomMargin": 12,
+      "height": 26,
+      "leftMargin": 10,
+      "name": "EnergyBar",
+      "rightMargin": 10,
+      "texture": "Energy Bar.png",
+      "tiled": true,
+      "topMargin": 13,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 78,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "drain",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "drain",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "drain",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "603d81772c22a6401f0bb19588cb7bb6f384ae840c9e03391874c15a049ade25",
+      "bottomMargin": 12,
+      "height": 26,
+      "leftMargin": 10,
+      "name": "HpBar",
+      "rightMargin": 10,
+      "texture": "HpBar.png",
+      "tiled": true,
+      "topMargin": 13,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 78,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "hpDrain",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "drain",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "drain",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "FleshIcon",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "worth",
+          "type": "number",
+          "value": 100
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "spawn",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Flesh.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 58,
+                        "y": 1
+                      },
+                      {
+                        "x": 58,
+                        "y": 54
+                      },
+                      {
+                        "x": 0,
+                        "y": 54
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -7287,10 +7371,10 @@
         "objectName": "FemalePriest"
       },
       {
-        "objectName": "Policeman"
+        "objectName": "InventoryBar"
       },
       {
-        "objectName": "InventoryBar"
+        "objectName": "Policeman"
       },
       {
         "objectName": "Hoe"
@@ -7306,6 +7390,9 @@
       },
       {
         "objectName": "Flesh"
+      },
+      {
+        "objectName": "FleshIcon"
       },
       {
         "objectName": "FleshAmount"
@@ -7336,37 +7423,22 @@
       },
       {
         "objectName": "shift_key_text"
+      },
+      {
+        "objectName": "EnergyBar"
+      },
+      {
+        "objectName": "HpBar"
+      },
+      {
+        "objectName": "drain"
+      },
+      {
+        "objectName": "hpDrain"
       }
     ]
   },
-  "objectsGroups": [
-    {
-      "name": "Citizens",
-      "objects": [
-        {
-          "name": "MaleChild"
-        },
-        {
-          "name": "FemaleChild"
-        },
-        {
-          "name": "MaleAdult"
-        },
-        {
-          "name": "MalePriest"
-        },
-        {
-          "name": "FemalePriest"
-        },
-        {
-          "name": "Policeman"
-        },
-        {
-          "name": "FemaleAdult"
-        }
-      ]
-    }
-  ],
+  "objectsGroups": [],
   "variables": [
     {
       "name": "state",
@@ -7379,7 +7451,7 @@
             {
               "name": "energy",
               "type": "number",
-              "value": 0
+              "value": -1
             },
             {
               "name": "equippedTool",
@@ -7389,7 +7461,7 @@
             {
               "name": "fleshCarrying",
               "type": "number",
-              "value": 99999999
+              "value": 0
             },
             {
               "name": "fleshGiven",
@@ -7400,6 +7472,11 @@
               "name": "followers",
               "type": "array",
               "children": []
+            },
+            {
+              "name": "health",
+              "type": "number",
+              "value": 0
             },
             {
               "name": "inventory",
@@ -7417,11 +7494,6 @@
           "name": "world",
           "type": "structure",
           "children": [
-            {
-              "name": "citizens",
-              "type": "array",
-              "children": []
-            },
             {
               "name": "day",
               "type": "number",
@@ -7467,36 +7539,6 @@
           ]
         }
       ]
-    },
-    {
-      "name": "day",
-      "type": "number",
-      "value": 1
-    },
-    {
-      "name": "knifeOut",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "fleshNeeded",
-      "type": "number",
-      "value": 500
-    },
-    {
-      "name": "fleshFed",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "knifeTaken",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "dayHasChanged",
-      "type": "boolean",
-      "value": false
     }
   ],
   "layouts": [
@@ -7521,12 +7563,7 @@
       "referenceTo": "/layouts/game-over"
     }
   ],
-  "externalEvents": [
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/untitled-external-events"
-    }
-  ],
+  "externalEvents": [],
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
