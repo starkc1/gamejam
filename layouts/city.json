@@ -9746,6 +9746,18 @@
             "+",
             "20 + state.world.day"
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "hurt.wav",
+            "",
+            "25",
+            ""
+          ]
         }
       ]
     },

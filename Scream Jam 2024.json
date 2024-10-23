@@ -2393,6 +2393,16 @@
         "name": "assets\\Mound4.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "hurt.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "hurt.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
