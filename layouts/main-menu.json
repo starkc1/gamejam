@@ -324,17 +324,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "coins",
-            "=",
-            "300"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "dialogState",
+            "state.player.fleshCarrying",
             "=",
             "0"
           ]
@@ -344,37 +334,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "textScrollSpeed",
-            "=",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "flesh",
-            "=",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "seeds.vine",
-            "=",
-            "6"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "day",
+            "state.world.day",
             "=",
             "1"
           ]
@@ -384,7 +344,7 @@
             "value": "SetBooleanVariable"
           },
           "parameters": [
-            "knifeOut",
+            "state.player.knifeOut",
             "False",
             ""
           ]
@@ -394,7 +354,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "fleshFed",
+            "state.player.fleshGiven",
             "=",
             "0"
           ]
@@ -404,7 +364,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "fleshNeeded",
+            "state.world.fleshOwed",
             "=",
             "500"
           ]
@@ -414,7 +374,7 @@
             "value": "SetBooleanVariable"
           },
           "parameters": [
-            "knifeTaken",
+            "state.world.knifeTaken",
             "False",
             ""
           ]
@@ -434,6 +394,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -481,7 +442,7 @@
             "    return randomWithinRange",
             "}",
             "",
-            "var seed = runtimeScene.getGame().getVariables().get(\"seed\").getAsString()",
+            "var seed = runtimeScene.getGame().getVariables().get(\"state.world.seed\").getAsString()",
             "for (var i = 0; i < 10; i++) {",
             "    var rand = getRandom(1, 10)",
             "",
@@ -491,7 +452,7 @@
             "        seed += rand.toString()",
             "    }",
             "}",
-            "runtimeScene.getGame().getVariables().get(\"seed\").setString(seed)",
+            "runtimeScene.getGame().getVariables().get(\"state.world.seed\").setString(seed)",
             "",
             "",
             "",

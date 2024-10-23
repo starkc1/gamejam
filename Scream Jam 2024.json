@@ -1,7 +1,7 @@
 {
   "firstLayout": "Main Menu",
   "gdVersion": {
-    "build": 216,
+    "build": 217,
     "major": 5,
     "minor": 4,
     "revision": 0
@@ -6616,77 +6616,98 @@
   "objectsGroups": [],
   "variables": [
     {
-      "folded": true,
-      "name": "dialogState",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "folded": true,
-      "name": "textScrollSpeed",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "coins",
-      "type": "number",
-      "value": 300
-    },
-    {
-      "name": "flesh",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "Seed",
-      "type": "string",
-      "value": ""
-    },
-    {
-      "name": "Seed",
-      "type": "string",
-      "value": ""
-    },
-    {
-      "name": "seeds",
+      "name": "state",
       "type": "structure",
       "children": [
         {
-          "name": "vine",
-          "type": "number",
-          "value": 6
+          "name": "player",
+          "type": "structure",
+          "children": [
+            {
+              "name": "energy",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "equippedTool",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "fleshCarrying",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "fleshGiven",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "followers",
+              "type": "array",
+              "children": []
+            },
+            {
+              "name": "inventory",
+              "type": "array",
+              "children": []
+            },
+            {
+              "name": "knifeOut",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "world",
+          "type": "structure",
+          "children": [
+            {
+              "name": "day",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "fleshOwed",
+              "type": "number",
+              "value": 500
+            },
+            {
+              "name": "knifeTaken",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "plants",
+              "type": "array",
+              "children": [
+                {
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "harvestable",
+                      "type": "boolean",
+                      "value": false
+                    },
+                    {
+                      "name": "isWatered",
+                      "type": "boolean",
+                      "value": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "seed",
+              "type": "string",
+              "value": ""
+            }
+          ]
         }
       ]
-    },
-    {
-      "name": "day",
-      "type": "number",
-      "value": 11
-    },
-    {
-      "name": "knifeOut",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "fleshNeeded",
-      "type": "number",
-      "value": 500
-    },
-    {
-      "name": "fleshFed",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "knifeTaken",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "dayHasChanged",
-      "type": "boolean",
-      "value": false
     }
   ],
   "layouts": [
