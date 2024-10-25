@@ -186,9 +186,9 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "day",
+            "state.world.day",
             "=",
-            "day + 1"
+            "state.world.day + 1"
           ]
         },
         {
@@ -199,7 +199,7 @@
             "NewDay",
             "Text",
             "=",
-            "\"Day \" + day"
+            "\"Day \" + state.world.day"
           ]
         },
         {
@@ -207,9 +207,9 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "fleshFed",
+            "state.player.fleshGiven",
             "=",
-            "state.player.fleshGiven- state.world.fleshOwed"
+            "state.player.fleshGiven - state.world.fleshOwed"
           ]
         },
         {
@@ -217,9 +217,9 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "fleshNeeded",
+            "state.world.fleshOwed",
             "=",
-            "((day * Random(500)) + fleshNeeded)"
+            "((state.world.day * Random(500)) + state.world.fleshOwed)"
           ]
         },
         {
@@ -238,6 +238,16 @@
             "",
             "\"Farm\"",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "state.player.energy",
+            "=",
+            "0"
           ]
         }
       ]
@@ -293,6 +303,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "ButtonFSM",
+      "type": "ButtonStates::ButtonFSM"
     },
     {
       "name": "Effect",
